@@ -1,7 +1,10 @@
 \documentclass[12pt,a4]{article}
 
 \usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+
+
 \usepackage[lined,boxed]{algorithm2e}
+\graphicspath{ {images/} }
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -12,13 +15,17 @@
 \newtheorem{exerciseD}[theorem]{*Exercise}
 \newtheorem{exerciseDD}[theorem]{**Exercise}
 
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+
 \date{}
 
 \title{
 	Mathematical Foundations \\of \\Computer Science\\
 	\vspace{3mm}
 	{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder\\}
-	{\normalsize Group Name: \textbf{Your Group Name}}
+	{\normalsize Group Name: \textbf{NOIDEA}}
 }
 
 \begin{document}
@@ -65,5 +72,48 @@
 \begin{proof}
 	Your proof ...
 \end{proof}
+
+\section{Exclusion-Inclusion}
+
+\subsection{Sets}
+
+\begin{exercise}
+\end{exercise}
+
+\begin{enumerate}
+\item \begin{proof}
+As is shown in the Venn diagram below, $\left\vert{A}\right\vert + \left\vert{B}\right\vert$ add the common part $\left\vert{A\cap B}\right\vert $ twice. So it should be subtracted once if we want to count $\left\vert{A \cup B}\right\vert $.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{Venn}
+\caption{Venn Diagram}
+\end{figure}
+\end{proof}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{B \cap C}\right\vert + \left\vert{A\cap B \cap C}\right\vert$
+\end{solution}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C \cup D}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert + \left\vert{D}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{A \cap D}\right\vert - \left\vert{B \cap C}\right\vert - \left\vert{B \cap D}\right\vert - \left\vert{C \cap D}\right\vert + \left\vert{A\cap B \cap C}\right\vert + \left\vert{A\cap B \cap D}\right\vert + \left\vert{A\cap C \cap D}\right\vert + \left\vert{B\cap C \cap D}\right\vert - \left\vert{A\cap B \cap C\cap D}\right\vert$
+\end{solution}
+\end{enumerate}
+
+\begin{exercise}
+\end{exercise}
+	\begin{solution}
+$\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{A_i}\right\vert - \sum\limits_{i,j:1\le i<j\le n}\left\vert{A_i\cap A_j}\right\vert + \\
+\sum\limits_{i,j,k:1\le i<j<k\le n}\left\vert{A_i\cap A_j \cap A_k}\right\vert - \ldots + (-1)^{n-1}\left\vert{A_1\cap\ldots\cap A_n}\right\vert$
+	\end{solution}
+\begin{exercise}
+\end{exercise}
+	\begin{proof}
+	
+
+	\end{proof}
+
+
+\begin{enumerate}
+\item testddd
+\item testddd
+\end{enumerate}
 
 \end{document}
