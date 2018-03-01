@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  28 FEB 2018 22:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  1 MAR 2018 09:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -261,18 +261,18 @@ LaTeX Warning: Unused global option(s):
 (./1st.aux)
 \openout1 = `1st.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -337,12 +337,12 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 27.
+LaTeX Font Info:    Try loading font information for U+msa on input line 31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 27.
+LaTeX Font Info:    Try loading font information for U+msb on input line 31.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -351,7 +351,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: No \author given.
 
 
-Overfull \hbox (16.20381pt too wide) in paragraph at lines 29--29
+Overfull \hbox (16.20381pt too wide) in paragraph at lines 33--33
 []\OT1/cmr/bx/n/17.28 Broken Chess-board and Jump-ing With Coins 
  []
 
@@ -359,86 +359,86 @@ Overfull \hbox (16.20381pt too wide) in paragraph at lines 29--29
 File: slightlydamaged.png Graphic file (type png)
 
 <use slightlydamaged.png>
-Package pdftex.def Info: slightlydamaged.png used on input line 44.
+Package pdftex.def Info: slightlydamaged.png used on input line 48.
 (pdftex.def)             Requested size: 142.26378pt x 140.28716pt.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./sligh
 tlydamaged.png>]
-Missing character: There is no Ô in font cmti12!
-Missing character: There is no ¨ in font cmti12!
-Missing character: There is no Å in font cmti12!
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Å in font cmr12!
 
 <corridor.png, id=14, 562.1pt x 547.04375pt>
 File: corridor.png Graphic file (type png)
  <use corridor.png>
-Package pdftex.def Info: corridor.png used on input line 68.
+Package pdftex.def Info: corridor.png used on input line 72.
 (pdftex.def)             Requested size: 142.26378pt x 138.44673pt.
 
 <corridor_a.png, id=15, 599.23875pt x 599.23875pt>
 File: corridor_a.png Graphic file (type png)
  <use corridor_a.png>
-Package pdftex.def Info: corridor_a.png used on input line 76.
+Package pdftex.def Info: corridor_a.png used on input line 80.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_b.png, id=16, 599.23875pt x 599.23875pt>
 File: corridor_b.png Graphic file (type png)
  <use corridor_b.png>
-Package pdftex.def Info: corridor_b.png used on input line 77.
+Package pdftex.def Info: corridor_b.png used on input line 81.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_c.png, id=17, 599.23875pt x 599.23875pt>
 File: corridor_c.png Graphic file (type png)
  <use corridor_c.png>
-Package pdftex.def Info: corridor_c.png used on input line 78.
+Package pdftex.def Info: corridor_c.png used on input line 82.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_d.png, id=18, 599.23875pt x 599.23875pt>
 File: corridor_d.png Graphic file (type png)
  <use corridor_d.png>
-Package pdftex.def Info: corridor_d.png used on input line 79.
+Package pdftex.def Info: corridor_d.png used on input line 83.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_e.png, id=19, 599.23875pt x 599.23875pt>
 File: corridor_e.png Graphic file (type png)
  <use corridor_e.png>
-Package pdftex.def Info: corridor_e.png used on input line 80.
+Package pdftex.def Info: corridor_e.png used on input line 84.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_f.png, id=20, 599.23875pt x 599.23875pt>
 File: corridor_f.png Graphic file (type png)
  <use corridor_f.png>
-Package pdftex.def Info: corridor_f.png used on input line 81.
+Package pdftex.def Info: corridor_f.png used on input line 85.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 <corridor_g.png, id=21, 599.23875pt x 599.23875pt>
 File: corridor_g.png Graphic file (type png)
  <use corridor_g.png>
-Package pdftex.def Info: corridor_g.png used on input line 82.
+Package pdftex.def Info: corridor_g.png used on input line 86.
 (pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
 [2 <./corridor.png>] <left_a.png, id=26, 480.79625pt x 1084.05pt>
 File: left_a.png Graphic file (type png)
 
 <use left_a.png>
-Package pdftex.def Info: left_a.png used on input line 93.
+Package pdftex.def Info: left_a.png used on input line 97.
 (pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
  <left_b.png, id=27, 480.79625pt x 1084.05pt>
 File: left_b.png Graphic file (type png)
  <use left_b.png>
-Package pdftex.def Info: left_b.png used on input line 94.
+Package pdftex.def Info: left_b.png used on input line 98.
 (pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
 
 <left_c.png, id=28, 480.79625pt x 1084.05pt>
 File: left_c.png Graphic file (type png)
  <use left_c.png>
-Package pdftex.def Info: left_c.png used on input line 95.
+Package pdftex.def Info: left_c.png used on input line 99.
 (pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
 
 <left_d.png, id=29, 480.79625pt x 1084.05pt>
 File: left_d.png Graphic file (type png)
  <use left_d.png>
-Package pdftex.def Info: left_d.png used on input line 96.
+Package pdftex.def Info: left_d.png used on input line 100.
 (pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
  [3 <./corridor_a.png> <./corridor_b.png> <./corridor_c.png> <./corridor_d.png>
  <./corridor_e.png> <./corridor_f.png> <./corridor_g.png> <./left_a.png> <./lef
@@ -447,45 +447,41 @@ t_b.png> <./left_c.png> <./left_d.png>] <twocoins.png, id=45, 1910.13625pt x 58
 File: twocoins.png Graphic file (type png)
 
 <use twocoins.png>
-Package pdftex.def Info: twocoins.png used on input line 120.
+Package pdftex.def Info: twocoins.png used on input line 124.
 (pdftex.def)             Requested size: 142.26378pt x 43.50871pt.
  <threecoins.png, id=46, 1438.37375pt x 808.01875pt>
 File: threecoins.png Graphic file (type png)
 
 <use threecoins.png>
-Package pdftex.def Info: threecoins.png used on input line 139.
+Package pdftex.def Info: threecoins.png used on input line 143.
 (pdftex.def)             Requested size: 142.26378pt x 79.90656pt.
  <fourcoins.png, id=47, 960.58875pt x 883.3pt>
 File: fourcoins.png Graphic file (type png)
 
 <use fourcoins.png>
-Package pdftex.def Info: fourcoins.png used on input line 157.
+Package pdftex.def Info: fourcoins.png used on input line 161.
 (pdftex.def)             Requested size: 142.26378pt x 130.818pt.
  [4 <./twocoins.png> <./threecoins.png>]
 <coinssameposition.png, id=53, 1013.7875pt x 581.17125pt>
 File: coinssameposition.png Graphic file (type png)
 
 <use coinssameposition.png>
-Package pdftex.def Info: coinssameposition.png used on input line 178.
+Package pdftex.def Info: coinssameposition.png used on input line 182.
 (pdftex.def)             Requested size: 142.26378pt x 81.54964pt.
  [5 <./fourcoins.png> <./coinssameposition.png>]
-(./1st.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+(./1st.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 5274 strings out of 493014
- 77749 string characters out of 6133352
- 156678 words of memory out of 5000000
- 8731 multiletter control sequences out of 15000+600000
+ 5275 strings out of 493014
+ 77760 string characters out of 6133352
+ 156837 words of memory out of 5000000
+ 8732 multiletter control sequences out of 15000+600000
  13050 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,49p,301b,2970s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,49p,301b,2980s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -493,7 +489,7 @@ cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
 mr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 12.pfb>
-Output written on 1st.pdf (5 pages, 781770 bytes).
+Output written on 1st.pdf (5 pages, 774797 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream
