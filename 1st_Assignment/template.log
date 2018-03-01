@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.13)  27 FEB 2018 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.1.13)  28 FEB 2018 01:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -324,7 +324,67 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2 <./images/Venn.png>] (./template.aux) )
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+[2 <./images/Venn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+
+ []
+
+
+Overfull \hbox (2.1955pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/12 notes the sum of all the pos-si-ble k-wise in-ter-sec-tions in 
+$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+[3] [4] (./template.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
@@ -336,23 +396,24 @@ Here is how much of TeX's memory you used:
  7438 multiletter control sequences out of 15000+600000
  12750 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,8n,35p,576b,1938s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,17n,35p,576b,1938s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb>
-Output written on template.pdf (2 pages, 136812 bytes).
+/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
+b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
+usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on template.pdf (4 pages, 156655 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -104,16 +104,63 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 \sum\limits_{i,j,k:1\le i<j<k\le n}\left\vert{A_i\cap A_j \cap A_k}\right\vert - \ldots + (-1)^{n-1}\left\vert{A_1\cap\ldots\cap A_n}\right\vert$
 	\end{solution}
 \begin{exercise}
-\end{exercise}
-	\begin{proof}
+\end{exercise}	
+\begin{proof}\end{proof}
+	\begin{enumerate}
+		 \item proof using induction on n\\
+
+			 First, let $A_{n,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n}\left\vert{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{A_1,A_2,\ldots,A_n\}$.\\
+
+			 Then the Inclusion-exclusion principle which we want to prove is as follows:\\
+			 $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
+		 
+		 The theorem holds for $n=1$, obviously.\\
+	
+		 The theorem holds for $n=2$, as is showed in the $2.1.1$\\
+
+		 For the induction step, we want to show if it holds for $n-1$, then it holds for $n$.\\
+
+
+		\begin{equation} 
+		\begin{split}
+		\left\vert{A_1\cup\ldots\cup A_n}\right\vert &= \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert\\
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert \\	
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}(A_i\cap A_n) }\right\vert \\
+		\end{split}
+	\end{equation}
+
+
+
+
+		 Let $B_i = (A_i\cap A_n)$.\\
+
+		 Similarly, let $B_{n-1,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n-1}\left\vert{B_{i_1}\cap B_{i_2}\ldots\cap B_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{B_1,B_2,\ldots,B_n-1\}$.\\
+
+		 $(1)$ now becomes\\
+
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}B_i }\right\vert 
+		 \end{equation}
+
+		 Similarly, it holds:\\
+		 \begin{equation}
+		 \left\vert{B_1\cup\ldots\cup B_{n-1}}\right\vert = \sum\limits_{k=1}^{n-1}(-1)^{k+1}B_{n-1,k}
+		 \end{equation}
+
+		 $(2)$ now becomes\\
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert + (-1)^k \sum\limits_{k=1}^{n-1}B_{n-1,k}
+		 \end{equation}	
+
+		 	 
+
+
+
+
+		\item proof not using induction on n
+	\end{enumerate}
+
 	
 
-	\end{proof}
-
-
-\begin{enumerate}
-\item testddd
-\item testddd
-\end{enumerate}
 
 \end{document}
