@@ -1,0 +1,201 @@
+\documentclass[12pt,a4]{article}
+
+\usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+\usepackage[lined,boxed]{algorithm2e}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{amsthm}
+
+\newtheoremstyle{exercise}{}{}{}{}{\bf}{.}{ }{}
+
+\theoremstyle{exercise}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exerciseD}[theorem]{*Exercise}
+\newtheorem{exerciseDD}[theorem]{**Exercise}
+
+\date{}
+
+\title{
+	Mathematical Foundations \\of \\Computer Science\\
+	\vspace{3mm}
+	{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder\\}
+	{\normalsize Group Name: \textbf{Your Group Name}}
+}
+
+\begin{document}
+\maketitle
+
+\section{Broken Chessboard and Jumping With Coins}
+
+\subsection{Tiling a Damaged Checkerboard}
+
+\begin{exercise}
+    Re-write the proof in your own way,  using simple English sentences.
+\end{exercise}
+
+\begin{proof}
+	Let's color the board black and beige, just like a typical chessboard.
+    In this case, there are 32 black and 30 beige squares.
+
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{slightlydamaged.png}
+        \label{fig:slightlyDamagedBoard}
+    \end{figure}
+
+    Since a domino stone placed in the board will cover both a black square and a beige square,
+    it's obviously that we can't fully tile the board with $1 \times 2$ domino stones.
+
+\end{proof}
+
+\begin{exercise}
+    Look at the seriously damaged $8 \times 8$ checkerboard.
+    For convenience I already colored it black and white (or rather black and beige):
+
+    Try to tile it with domino stones and you will fail.
+    However, since there are $24$ black and $24$ beige squares, the simple argument from the lecture will fail.
+
+    Prove that the above board cannot be tiled. Try to ﬁnd a short and simple argument!
+\end{exercise}
+
+\begin{proof}
+	To prove the claim, let's start by focusing on the ``corridor" in the chessboard.
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{corridor.png}
+        \label{fig:corridor}
+    \end{figure}
+
+    There are 7 ways to tile the ``corridor" with domino stones:
+
+    \begin{figure}[H]
+        \centering
+        \subfloat[]{\includegraphics[width=3cm]{corridor_a.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_b.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_c.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_d.png}} \\
+        \subfloat[]{\includegraphics[width=3cm]{corridor_e.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_f.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_g.png}}
+	\label{fig:corridorTile}
+    \end{figure}
+
+    In the case (a) and (b), each of the two remaining parts of the chessboard contains 21 square.
+    Since a domino stone tiles 2 sqaures, the  (a) and the case (b) are ruled out.
+
+    How about (c) ,(d), (e), (f) and (g)? We consider the possible remaining parts in these cases:
+
+    \begin{figure}[H]
+        \centering
+        \subfloat{\includegraphics[width=2cm]{left_a.png}}
+        \subfloat{\includegraphics[width=2cm]{left_b.png}}
+        \subfloat{\includegraphics[width=2cm]{left_c.png}}
+        \subfloat{\includegraphics[width=2cm]{left_d.png}}
+	\label{fig:leftPart}
+    \end{figure}
+
+    Becasue the number of black squares and beige squares is not equal, all of the possible remaining parts cannot be tiled.
+
+\end{proof}
+
+
+
+
+\subsection{Jumping with Coins}
+
+\begin{exercise}
+    You jump around with two coins.
+    Show that you cannot increase the distance between the two coins.
+\end{exercise}
+
+\begin{proof}
+    Clearly, the distance between two coins is fixed in one jump.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{twocoins.png}
+        \label{fig:twoCoins}
+    \end{figure}
+
+\end{proof}
+
+
+\begin{exercise}
+    You jump around with three coins.
+    Show that you cannot start with an equilateral triangle and end up with a bigger equilateral triangle.
+    Give a simple proof!
+\end{exercise}
+
+\begin{proof}
+    During a jump, either the side or the height of the triangle will not change, thus the area stays the same.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{threecoins.png}
+        \label{fig:threeCoins}
+    \end{figure}
+
+\end{proof}
+
+You jump around with four coins which in the beginning form a square of side length $1$.
+
+\begin{exercise}
+    Show that you cannot form a square of side length $2$.
+\end{exercise}
+
+\begin{proof}
+    Divide the square(it can change into a normal quadrilateral after several jumps) into two triangles.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{fourcoins.png}
+        \label{fig:fourCoins}
+    \end{figure}
+
+    The same as one triangle, the area of the quadrilateral cannot change.
+    This means it's impossible to form a square of side length 2, whose area is 4.
+
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot achieve a position in which two coins are at the same position.
+\end{exercise}
+
+\begin{proof}
+    If two coins will be at the same position after one jump, then there must be three collinear coins with the same distance before the jump.
+
+    What happens during the jump? The area of the shape formed with four coins reduce to half.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{coinssameposition.png}
+        \label{fig:coinsSamePosition}
+    \end{figure}
+
+    We have proved that if the inital shape formed with four coins is a square, the area of the shape will never change no matter how many jumps the coins give.
+
+    Therefore, the jump that causes two coins to stay at the same position will not happen.
+
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot form a larger square.
+\end{exercise}
+
+\begin{proof}
+    In exercise 1.5, we have proved that the quadrilateral formed with four coins has a constant area.
+    So a larger square can't be formed.
+\end{proof}
+
+\end{document}
