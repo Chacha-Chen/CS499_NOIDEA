@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 16:27
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 16:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,83 +339,67 @@ File: fourcoins.png Graphic file (type QTm)
  <use  "fourcoins.png" > [4]
 File: coinssameposition.png Graphic file (type QTm)
 
-<use  "coinssameposition.png" >
+<use  "coinssameposition.png" > [5]
 Missing character: There is no ﬁ in font cmr12!
- [5]
 File: Venn.png Graphic file (type QTm)
  <use  "Venn.png" > [6]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--255
+Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
+Underfull \hbox (badness 10000) in paragraph at lines 280--281
 
  []
 
-
-Overfull \hbox (2.1955pt too wide) in paragraph at lines 274--275
+[7]
+Overfull \hbox (2.1955pt too wide) in paragraph at lines 282--283
 \OT1/cmr/m/n/12 notes the sum of all the pos-si-ble k-wise in-ter-sec-tions in 
 $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
-
- []
-
-[7]
 Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--288
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 295--296
 
  []
 
@@ -424,14 +408,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
+
+ []
+
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 317--322
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--330
 
  []
 
 File: Exercise31-1.png Graphic file (type QTm)
 <use  "Exercise31-1.png" >
-Overfull \hbox (4.23392pt too wide) in paragraph at lines 344--349
+Overfull \hbox (4.23392pt too wide) in paragraph at lines 352--357
 \OT1/cmr/m/n/12 We can in-fer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\O
 ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cm
 m/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , $\OMS/cmsy/m/
@@ -444,15 +443,15 @@ OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm
 12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 353.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 361.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 353.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 361.
 
-Overfull \hbox (22.25684pt too wide) in paragraph at lines 350--355
+Overfull \hbox (22.25684pt too wide) in paragraph at lines 358--363
 \OT1/cmr/m/n/12 Then it is ob-vi-ous that there is 1 in\OMS/cmsy/m/n/12 f\OT1/c
 mr/m/n/12 5\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 , 0 in$\OMS/cmsy/m/n/12 f\OT1/cmr/
 m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/1
@@ -463,7 +462,7 @@ m/n/12 g$\OT1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--355
+Underfull \hbox (badness 10000) in paragraph at lines 358--363
 
  []
 
