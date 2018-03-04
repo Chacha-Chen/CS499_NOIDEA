@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1520148891 "template.xdv" "template.pdf" "template" 1520148892
-  "template.xdv" 1520148891 24384 35135b0469b34875215dd71b850f4487 "xelatex"
+["xdvipdfmx"] 1520149699 "template.xdv" "template.pdf" "template" 1520149700
+  "template.xdv" 1520149699 44380 bad2ce20618dcad8a1e2070600d640af "xelatex"
   (generated)
   "template.pdf"
-["xelatex"] 1520148890 "template.tex" "template.xdv" "template" 1520148892
+["xelatex"] 1520149699 "template.tex" "template.xdv" "template" 1520149700
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -36,6 +36,7 @@
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty" 1480098821 5159 a08c9bbd48fc492f15b22e458bef961f ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo" 1480098821 8303 1d67e16498f00f63da792fab169302fc ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty" 1480098823 2246 c5e2f9cee7fb5e15894c6d8564217d5c ""
+  "/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty" 1480098828 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1480098830 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def" 1485129666 21966 ed359f6c6c81a1c024b31a1bd86d1b4a ""
@@ -52,10 +53,14 @@
   "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
   "/usr/local/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520140291 3678518 360cae1edb57addf5feef5bd838e5bcc ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "Exercise31-1.png" 1520070413 10505 75ca6db3637fc5e1545c40d7b5a1609a ""
+  "Exercise31-2.png" 1520075208 9907 b4ab8ac829f221e7410b1e08c101a270 ""
+  "Exercise31-3.png" 1520075921 8849 b15b99caffd556205fb7e84e75c4b49f ""
+  "Exercise33-1.png" 1520081198 12439 be3c27654439b1dc8e71e147dc5138e5 ""
   "images/Venn.png" 1519716576 28266 7c2492997ba3206bde3540850d770d89 ""
-  "template.aux" 1520148891 447 48a518a7dd2ed685bc6f2c1ae4a22440 ""
-  "template.tex" 1520148890 7324 38e1f7fe468374dd90265aa758246939 ""
+  "template.aux" 1520149699 887 ce2b26b9b547946df9a66afb90d8c065 ""
+  "template.tex" 1520149698 11256 9120405ecdb1eb93a8afea63c3aab956 ""
   (generated)
   "template.xdv"
-  "template.aux"
   "template.log"
+  "template.aux"
