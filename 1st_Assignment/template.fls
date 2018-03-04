@@ -42,6 +42,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/epsfig.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty
@@ -95,8 +97,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT images/Venn.png
 OUTPUT template.xdv
-INPUT Exercise3.1-1.png
-INPUT Exercise3.1-2.png
-INPUT Exercise3.1-3.png
-INPUT Exercise3.3-1.png
+INPUT Exercise31-1.png
+INPUT Exercise31-2.png
+INPUT Exercise31-3.png
+INPUT Exercise33-1.png
 INPUT template.aux
