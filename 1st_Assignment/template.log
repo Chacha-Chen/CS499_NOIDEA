@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  4 MAR 2018 14:18
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  4 MAR 2018 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -341,81 +341,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
  []
 
 [3]
-File: Exercise3.1-1.png Graphic file (type QTm)
- <use  "Exercise3.1-1.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-File: Exercise3.1-2.png Graphic file (type QTm)
-<use  "Exercise3.1-2.png" >
-Overfull \hbox (12.03409pt too wide) in paragraph at lines 203--220
-[]\TU/lmr/m/n/12 from $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A[] [] A[]\OMS/cmsy/m
-/n/12 j \OT1/cmr/m/n/12 = 3$ \TU/lmr/m/n/12 for all $[] \OMS/cmsy/m/n/12 2[]$\T
-U/lmr/m/n/12 . We can infer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML
-/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/
-m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; [] 
  []
 
 
-Overfull \hbox (29.11952pt too wide) in paragraph at lines 203--220
-\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm
-/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n
-/12 g$\TU/lmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \O
-T1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OT1/cmr
-/m/n/12 14\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/1
-2 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OM
-L/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$ \TU/lmr/m/n/12 has each 3
- elements. From$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A[] [] A[] [] A[]\OMS/cmsy/m
-/n/12 j \OT1/cmr/m/n/12 =
+Underfull \hbox (badness 10000) in paragraph at lines 175--177
+
  []
 
 
-Overfull \hbox (8.72418pt too wide) in paragraph at lines 203--220
-\OT1/cmr/m/n/12 1$ \TU/lmr/m/n/12 for all $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 i
-; j; k\OMS/cmsy/m/n/12 g 2 \OT1/cmr/m/n/12 ([])$ \TU/lmr/m/n/12 We can infer th
-at Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12
- 10\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML
-/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy
-/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12
- g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1
-/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
+
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
-
-Overfull \hbox (131.90485pt too wide) in paragraph at lines 221--222
-[]\TU/lmr/m/n/12 For another thing, Domain{5}has no element.And then Domain{10}
-{12}{13}{14}{3}{4}{6}{8}has
  []
 
-File: Exercise3.1-3.png Graphic file (type QTm)
-<use  "Exercise3.1-3.png" > [4]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 183--188
 
-
-Overfull \hbox (5.02554pt too wide) in paragraph at lines 236--237
-[]\TU/lmr/m/n/12 In the spirit of the previous questions, let us call a sequenc
-e $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[]; a[]; :::; a[]\OT1/cmr/m/n/12 ) \OMS/c
-msy/m/n/12 2
  []
 
-[5]
-File: Exercise3.3-1.png Graphic file (type QTm)
- <use  "Exercise3.3-1.png" > [6] (./template.aux) )
+[4] (./template.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 3306 strings out of 493005
- 43670 string characters out of 6134597
+ 3289 strings out of 493005
+ 43429 string characters out of 6134597
  123280 words of memory out of 5000000
- 7235 multiletter control sequences out of 15000+600000
+ 7223 multiletter control sequences out of 15000+600000
  10948 words of font info for 51 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  27i,17n,35p,576b,1355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on template.xdv (6 pages, 42908 bytes).
+Output written on template.xdv (4 pages, 24384 bytes).
