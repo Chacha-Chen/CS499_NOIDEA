@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 14:56
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,24 +339,11 @@ File: fourcoins.png Graphic file (type QTm)
  <use  "fourcoins.png" > [4]
 File: coinssameposition.png Graphic file (type QTm)
 
-<use  "coinssameposition.png" > [5]
+<use  "coinssameposition.png" >
+Missing character: There is no ﬁ in font cmr12!
+ [5]
 File: Venn.png Graphic file (type QTm)
- <use  "Venn.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 242--243
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
-
- []
-
-
+ <use  "Venn.png" > [6]
 Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
@@ -367,128 +354,136 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Overfull \hbox (2.1955pt too wide) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+
+Overfull \hbox (2.1955pt too wide) in paragraph at lines 274--275
 \OT1/cmr/m/n/12 notes the sum of all the pos-si-ble k-wise in-ter-sec-tions in 
 $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
 
  []
 
-File: Exercise3.1-1.png Graphic file (type QTm)
-<use  "Exercise3.1-1.png" >
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 337.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 317--322
+
+ []
+
+File: Exercise31-1.png Graphic file (type QTm)
+<use  "Exercise31-1.png" >
+Overfull \hbox (4.23392pt too wide) in paragraph at lines 344--349
+\OT1/cmr/m/n/12 We can in-fer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\O
+ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cm
+m/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , $\OMS/cmsy/m/
+n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \
+OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12 g$\OT1/c
+mr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/
+12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\
+OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm
+/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OML/cmm/m/it/
+12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 353.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 337.
-File: Exercise3.1-2.png Graphic file (type QTm)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 353.
 
-<use  "Exercise3.1-2.png" >
-Overfull \hbox (11.90321pt too wide) in paragraph at lines 330--347
-[]\OT1/cmr/m/n/12 from $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A[] [] A[]\OMS/cmsy/
-m/n/12 j \OT1/cmr/m/n/12 = 3$ for all $[] \OMS/cmsy/m/n/12 2[]$\OT1/cmr/m/n/12 
-. We can in-fer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12
- ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \O
-T1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; [] 
+Overfull \hbox (22.25684pt too wide) in paragraph at lines 350--355
+\OT1/cmr/m/n/12 Then it is ob-vi-ous that there is 1 in\OMS/cmsy/m/n/12 f\OT1/c
+mr/m/n/12 5\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 , 0 in$\OMS/cmsy/m/n/12 f\OT1/cmr/
+m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/1
+2 13\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , 2
+ in $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 4\OM
+S/cmsy/m/n/12 gf\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 8\OMS/cmsy/
+m/n/12 g$\OT1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (29.1261pt too wide) in paragraph at lines 330--347
-\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm
-/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n
-/12 g$\OT1/cmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \
-OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OT1/cm
-r/m/n/12 14\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/
-12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\O
-ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$ \OT1/cmr/m/n/12 has each
- 3 el-e-ments. From$\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 A[] [] A[] [] A[]\OMS/cm
-sy/m/n/12 j \OT1/cmr/m/n/12 =
- []
+Underfull \hbox (badness 10000) in paragraph at lines 350--355
 
-
-Overfull \hbox (8.71933pt too wide) in paragraph at lines 330--347
-\OT1/cmr/m/n/12 1$ for all $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 i; j; k\OMS/cmsy
-/m/n/12 g 2 \OT1/cmr/m/n/12 ([])$ We can in-fer that Domain$\OMS/cmsy/m/n/12 f\
-OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OMS/cmsy/m/n/12 g\OML/cmm
-/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/1
-2 12\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OM
-L/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cms
-y/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/1
-2 g$
- []
-
-[8]
-Overfull \hbox (131.4224pt too wide) in paragraph at lines 348--349
-[]\OT1/cmr/m/n/12 For an-other thing, Do-main\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 
-5\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 has no el-e-ment.And then Do-main\OMS/cmsy/m
-/n/12 f\OT1/cmr/m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 
-gf\OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 gf\OT
-1/cmr/m/n/12 3\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 gf\OT1/cmr/m
-/n/12 6\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 8\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 ha
-s
- []
-
-File: Exercise3.1-3.png Graphic file (type QTm)
-<use  "Exercise3.1-3.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (4.67451pt too wide) in paragraph at lines 363--364
-[]\OT1/cmr/m/n/12 In the spirit of the pre-vi-ous ques-tions, let us call a se-
-quence $(\OML/cmm/m/it/12 a[]; a[]; :::; a[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 
-2
  []
 
 [9]
-File: Exercise3.3-1.png Graphic file (type QTm)
- <use  "Exercise3.3-1.png" > [10] [11] (./merge.aux)
+File: Exercise31-2.png Graphic file (type QTm)
+ <use  "Exercise31-2.png" >
+File: Exercise31-3.png Graphic file (type QTm)
+ <use  "Exercise31-3.png" >
+File: Exercise33-1.png Graphic file (type QTm)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- )
+<use  "Exercise33-1.png" > [10] [11] (./merge.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4568 strings out of 493591
- 66060 string characters out of 6143547
+ 4561 strings out of 493591
+ 65961 string characters out of 6143547
  146481 words of memory out of 5000000
- 7912 multiletter control sequences out of 15000+600000
+ 7906 multiletter control sequences out of 15000+600000
  13050 words of font info for 50 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
  44i,17n,49p,573b,2408s stack positions out of 5000i,500n,10000p,200000b,80000s
