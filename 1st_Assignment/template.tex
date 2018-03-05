@@ -29,7 +29,7 @@
 }
 
 \begin{document}
-	
+
 	\maketitle
 %\begin{quotation}
 %  You are welcome to discuss the exercises in the discussion
@@ -39,14 +39,14 @@
 %  I intentionally included very challenging exercises and marked them
 %  with one or two ``$*$''. No star means you should be able to solve
 %  the exercises without big problems once you have understood
-%  the material from the video lecture. One star means it requires 
-%  significant additional thinking. Two stars means it is not 
+%  the material from the video lecture. One star means it requires
+%  significant additional thinking. Two stars means it is not
 %  unlikely that you will fail to solve them, even once you have understood
 %  the material and thought a lot about the exercise. Don't feel bad
 %  if you fail. Failure is part of learning.
 %
 %  This is the first time this course is online. Thus there might be mistakes
-%  (typos or more serious conceptual mistakes) in the exercises. I will be 
+%  (typos or more serious conceptual mistakes) in the exercises. I will be
 %  grateful if you point them out to me!
 %\end{quotation}
 
@@ -104,7 +104,7 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 \sum\limits_{i,j,k:1\le i<j<k\le n}\left\vert{A_i\cap A_j \cap A_k}\right\vert - \ldots + (-1)^{n-1}\left\vert{A_1\cap\ldots\cap A_n}\right\vert$
 	\end{solution}
 \begin{exercise}
-\end{exercise}	
+\end{exercise}
 \begin{proof}\end{proof}
 	\begin{enumerate}
 		 \item proof using induction on n\\
@@ -113,23 +113,22 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 
 			 Then the Inclusion-exclusion principle which we want to prove is as follows:\\
 			 $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
-		 
+
 		 The theorem holds for $n=1$, obviously.\\
-	
+
 		 The theorem holds for $n=2$, as is showed in the $2.1.1$\\
 
 		 For the induction step, we want to show if it holds for $n-1$, then it holds for $n$.\\
 
 
-		\begin{equation} 
+		\begin{equation}
 		\begin{split}
 		\left\vert{A_1\cup\ldots\cup A_n}\right\vert &= \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert\\
-		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert \\	
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert \\
 		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}(A_i\cap A_n) }\right\vert \\
 		\end{split}
+
 	\end{equation}
-
-
 
 
 		 Let $B_i = (A_i\cap A_n)$.\\
@@ -139,7 +138,7 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 		 $(1)$ now becomes\\
 
 		 \begin{equation}
-		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}B_i }\right\vert 
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}B_i }\right\vert
 		 \end{equation}
 
 		 Similarly, it holds:\\
@@ -149,18 +148,34 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 
 		 $(2)$ now becomes\\
 		 \begin{equation}
-		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert + (-1)^k \sum\limits_{k=1}^{n-1}B_{n-1,k}
-		 \end{equation}	
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert +  \sum\limits_{k=1}^{n-1}(-1)^{k}B_{n-1,k}
+		 \end{equation}
 
-		 	 
+     Since $A_{n-1,k+1} + B_{n-1,k} = A_{n,k}$, it finally beconmes: $\sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$
+     \begin{equation}
+     \end{equation}
+
+		\item proof not using induction on n\\
+
+    First, let $A = \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert $. \\
+    Function $P_S(x)$ defined as if set $S$ includes element $x$, then $P_S(x) = 1$, else $P_S(x) = 0$.\\
+
+    $(1)$ If $P_A(x) = 1$, there must exist an $i$ that $P_{A_i}(x) = 1$. In this way:\\
+    $(P_A(x) - P_{A_1}(x))(P_A(x) - P_{A_2}(x))\ldots(P_A(x) - P_{A_n}(x)) = 0$\\
+
+    $(2)$ According to the properities of set, $P_{A_i}(x)P_{A_j}(x) = P_{A_i \cap A_j}(x)$.\\
+
+    $(3)$ Let $P_{n,k}$ denotes $P_{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}(1\le i_1<i_2<\ldots\le n)$.\\
+    Then decompose the first equation, we can have:\\
+    $P_A(x) = \sum\limits_{k=1}^{n}P_{n,k}$\\
+    which can be demonstrated as:\\
+     $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
 
 
 
-
-		\item proof not using induction on n
 	\end{enumerate}
 
-	
+
 
 
 \end{document}
