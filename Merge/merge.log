@@ -1,15 +1,14 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 16:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  5 MAR 2018 08:23
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **merge.tex
 (./merge.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -24,72 +23,66 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 96.
+Package graphics Info: Driver file: xetex.def on input line 99.
 
-(/usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
-e/RRM/JK)
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
+))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/03/10 v2.15b AMS math features
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/11/05 v2.16a AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen105
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen106
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count87
-LaTeX Info: Redefining \frac on input line 199.
+LaTeX Info: Redefining \frac on input line 213.
 \uproot@=\count88
 \leftroot@=\count89
-LaTeX Info: Redefining \overline on input line 297.
+LaTeX Info: Redefining \overline on input line 375.
 \classnum@=\count90
 \DOTSCASE@=\count91
-LaTeX Info: Redefining \ldots on input line 394.
-LaTeX Info: Redefining \dots on input line 397.
-LaTeX Info: Redefining \cdots on input line 518.
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen107
-LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count92
 \c@MaxMatrixCols=\count93
 \dotsspace@=\muskip10
@@ -110,20 +103,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2739.
-LaTeX Info: Redefining \] on input line 2740.
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amscls/amsthm.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks20
 \thm@bodyfont=\toks21
@@ -135,11 +128,11 @@ Package: amsthm 2015/03/04 v2.20.2
 \thm@headsep=\skip48
 \dth@everypar=\toks25
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -152,14 +145,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 275 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 290 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 540 replaced by U+FFFD.
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
 \c@AlgoLine=\count99
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Invalid UTF-8 byte or sequence at line 1311 replaced by U+FFFD.
@@ -167,10 +160,10 @@ Invalid UTF-8 byte or sequence at line 1313 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 1315 replaced by U+FFFD.
 \algocf@hangindent=\skip49
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/relsize/relsize.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 ********************************************************
@@ -214,7 +207,7 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \c@algocf=\count102
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count103
 \float@exts=\toks26
@@ -222,14 +215,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box37
 )
-(/usr/local/texlive/2016/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen120
 \captionmargin@=\dimen121
@@ -273,6 +266,8 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
@@ -281,27 +276,26 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 35.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: No \author given.
 
 
-Overfull \hbox (16.20381pt too wide) in paragraph at lines 37--37
-[]\OT1/cmr/bx/n/17.28 Broken Chess-board and Jump-ing With Coins 
+Overfull \hbox (14.17921pt too wide) in paragraph at lines 37--37
+[]\TU/lmr/bx/n/17.28 Broken Chessboard and Jumping With Coins 
  []
 
 File: slightlydamaged.png Graphic file (type QTm)
 <use  "slightlydamaged.png" > [1
 
 ]
-Missing character: There is no ﬁ in font cmr12!
 File: corridor.png Graphic file (type QTm)
  <use  "corridor.png" >
 File: corridor_a.png Graphic file (type QTm)
@@ -340,7 +334,6 @@ File: fourcoins.png Graphic file (type QTm)
 File: coinssameposition.png Graphic file (type QTm)
 
 <use  "coinssameposition.png" > [5]
-Missing character: There is no ﬁ in font cmr12!
 File: Venn.png Graphic file (type QTm)
  <use  "Venn.png" > [6]
 Underfull \hbox (badness 10000) in paragraph at lines 255--256
@@ -378,9 +371,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 280--281
  []
 
 [7]
-Overfull \hbox (2.1955pt too wide) in paragraph at lines 282--283
-\OT1/cmr/m/n/12 notes the sum of all the pos-si-ble k-wise in-ter-sec-tions in 
-$\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
+Overfull \hbox (2.79286pt too wide) in paragraph at lines 282--283
+\TU/lmr/m/n/12 notes the sum of all the possible k-wise intersections in $\OMS/
+cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
  []
 
 
@@ -430,35 +423,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 325--330
 
 File: Exercise31-1.png Graphic file (type QTm)
 <use  "Exercise31-1.png" >
-Overfull \hbox (4.23392pt too wide) in paragraph at lines 352--357
-\OT1/cmr/m/n/12 We can in-fer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\O
-ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cm
-m/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , $\OMS/cmsy/m/
-n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \
-OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12 g$\OT1/c
-mr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/
-12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\
-OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm
-/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OML/cmm/m/it/
-12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
+Overfull \hbox (4.2374pt too wide) in paragraph at lines 352--357
+\TU/lmr/m/n/12 We can infer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML
+/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/
+m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g$\TU/lmr/m/n/12 , $\OMS/cmsy/m/n/1
+2 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1
+/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OMS/cmsy/m/n/12 g$\TU/lmr/m
+/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6
+\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OMS/
+cmsy/m/n/12 g$\TU/lmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm/m/it
+/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 13\OML/cmm/m/it/12 ; 
+\OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 361.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 361.
-
-Overfull \hbox (22.25684pt too wide) in paragraph at lines 358--363
-\OT1/cmr/m/n/12 Then it is ob-vi-ous that there is 1 in\OMS/cmsy/m/n/12 f\OT1/c
-mr/m/n/12 5\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 , 0 in$\OMS/cmsy/m/n/12 f\OT1/cmr/
-m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/1
-2 13\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , 2
- in $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 4\OM
-S/cmsy/m/n/12 gf\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 8\OMS/cmsy/
-m/n/12 g$\OT1/cmr/m/n/12 ,
+Overfull \hbox (22.25717pt too wide) in paragraph at lines 358--363
+\TU/lmr/m/n/12 Then it is obvious that there is 1 in{5}, 0 in$\OMS/cmsy/m/n/12 
+f\OT1/cmr/m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 gf\OT1
+/cmr/m/n/12 13\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$\TU/lmr/m
+/n/12 , 2 in $\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OMS/cmsy/m/n/12 gf\OT1/cmr/m/
+n/12 4\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 8\
+OMS/cmsy/m/n/12 g$\TU/lmr/m/n/12 ,
  []
 
 
@@ -479,12 +464,12 @@ File: Exercise33-1.png Graphic file (type QTm)
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4561 strings out of 493591
- 65961 string characters out of 6143547
- 146481 words of memory out of 5000000
- 7906 multiletter control sequences out of 15000+600000
- 13050 words of font info for 50 fonts, out of 8000000 for 9000
- 1347 hyphenation exceptions out of 8191
- 44i,17n,49p,573b,2408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 4412 strings out of 493005
+ 63980 string characters out of 6134597
+ 153623 words of memory out of 5000000
+ 8319 multiletter control sequences out of 15000+600000
+ 10964 words of font info for 53 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 44i,17n,49p,573b,2419s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on merge.pdf (11 pages).
+Output written on merge.xdv (11 pages, 82812 bytes).
