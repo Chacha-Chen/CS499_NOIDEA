@@ -1,0 +1,294 @@
+\documentclass[12pt,a4]{article}
+
+\usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{subfigure}
+
+\usepackage[lined,boxed]{algorithm2e}
+\graphicspath{ {images/} }
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exerciseD}[theorem]{*Exercise}
+\newtheorem{exerciseDD}[theorem]{**Exercise}
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+
+\date{}
+
+\title{
+	Mathematical Foundations \\of \\Computer Science\\
+	\vspace{3mm}
+	{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder\\}
+	{\normalsize Group Name: \textbf{NOIDEA}}
+}
+
+\begin{document}
+	
+	\maketitle
+%\begin{quotation}
+%  You are welcome to discuss the exercises in the discussion
+%  forum. Please take them serious. Doing the exercises is as important
+%  than watching the videos.
+%
+%  I intentionally included very challenging exercises and marked them
+%  with one or two ``$*$''. No star means you should be able to solve
+%  the exercises without big problems once you have understood
+%  the material from the video lecture. One star means it requires
+%  significant additional thinking. Two stars means it is not
+%  unlikely that you will fail to solve them, even once you have understood
+%  the material and thought a lot about the exercise. Don't feel bad
+%  if you fail. Failure is part of learning.
+%
+%  This is the first time this course is online. Thus there might be mistakes
+%  (typos or more serious conceptual mistakes) in the exercises. I will be
+%  grateful if you point them out to me!
+%\end{quotation}
+
+
+%\setcounter{section}{0}
+
+\section{Broken Chessboard and Jumping With Coins}
+
+\subsection{Tiling a Damaged Checkerboard}
+
+\begin{exercise}
+  Re-write the proof in your own way,  using simple English sentences.
+\end{exercise}
+
+\begin{proof}
+	Your proof ...
+\end{proof}
+
+\begin{exercise}
+	Another exercise ...
+\end{exercise}
+
+\begin{proof}
+	Your proof ...
+\end{proof}
+
+\section{Exclusion-Inclusion}
+
+\subsection{Sets}
+
+\begin{exercise}
+\end{exercise}
+
+\begin{enumerate}
+\item \begin{proof}
+As is shown in the Venn diagram below, $\left\vert{A}\right\vert + \left\vert{B}\right\vert$ add the common part $\left\vert{A\cap B}\right\vert $ twice. So it should be subtracted once if we want to count $\left\vert{A \cup B}\right\vert $.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{Venn}
+\caption{Venn Diagram}
+\end{figure}
+\end{proof}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{B \cap C}\right\vert + \left\vert{A\cap B \cap C}\right\vert$
+\end{solution}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C \cup D}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert + \left\vert{D}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{A \cap D}\right\vert - \left\vert{B \cap C}\right\vert - \left\vert{B \cap D}\right\vert - \left\vert{C \cap D}\right\vert + \left\vert{A\cap B \cap C}\right\vert + \left\vert{A\cap B \cap D}\right\vert + \left\vert{A\cap C \cap D}\right\vert + \left\vert{B\cap C \cap D}\right\vert - \left\vert{A\cap B \cap C\cap D}\right\vert$
+\end{solution}
+\end{enumerate}
+
+\begin{exercise}
+\end{exercise}
+	\begin{solution}
+$\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{A_i}\right\vert - \sum\limits_{i,j:1\le i<j\le n}\left\vert{A_i\cap A_j}\right\vert + \\
+\sum\limits_{i,j,k:1\le i<j<k\le n}\left\vert{A_i\cap A_j \cap A_k}\right\vert - \ldots + (-1)^{n-1}\left\vert{A_1\cap\ldots\cap A_n}\right\vert$
+	\end{solution}
+\begin{exercise}
+\end{exercise}	
+\begin{proof}\end{proof}
+\begin{enumerate}
+		 \item proof using induction on n\\
+
+			 First, let $A_{n,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n}\left\vert{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{A_1,A_2,\ldots,A_n\}$.\\
+
+			 Then the Inclusion-exclusion principle which we want to prove is as follows:\\
+			 $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
+		
+		 The theorem holds for $n=1$, obviously.\\
+	
+		 The theorem holds for $n=2$, as is showed in the $2.1.1$\\
+
+		 For the induction step, we want to show if it holds for $n-1$, then it holds for $n$.\\
+
+
+		\begin{equation}
+		\begin{split}
+		\left\vert{A_1\cup\ldots\cup A_n}\right\vert &= \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert\\
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert \\	
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}(A_i\cap A_n) }\right\vert \\
+		\end{split}
+		\end{equation}
+
+
+
+
+		 Let $B_i = (A_i\cap A_n)$.\\
+
+		 Similarly, let $B_{n-1,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n-1}\left\vert{B_{i_1}\cap B_{i_2}\ldots\cap B_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{B_1,B_2,\ldots,B_n-1\}$.\\
+
+		 $(1)$ now becomes\\
+
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}B_i }\right\vert
+		 \end{equation}
+
+		 Similarly, it holds:\\
+		 \begin{equation}
+		 \left\vert{B_1\cup\ldots\cup B_{n-1}}\right\vert = \sum\limits_{k=1}^{n-1}(-1)^{k+1}B_{n-1,k}
+		 \end{equation}
+
+		 $(2)$ now becomes\\
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert +  \sum\limits_{k=1}^{n-1}(-1)^kB_{n-1,k}
+		 \end{equation}	
+		 In addition,
+	    \begin{equation}
+		\left\vert{A_n}\right\vert = (-1)^{1+1}\left\vert{A_n}\right\vert
+  		\end{equation}	
+  		Thus,
+  		\begin{equation}
+  		\left\vert{A_n}\right\vert+\sum\limits_{k=1}^{n-1}(-1)^kB_{n-1,k} = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k} - \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k}
+  		\end{equation}	
+
+		 Then equation(4) finally becomes: $\sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$
+
+		 	
+
+
+
+
+		\item proof not using induction on n\\
+
+    First, let $A = \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert $. \\
+    Function $P_S(x)$ defined as if set $S$ includes element $x$, then $P_S(x) = 1$, else $P_S(x) = 0$.\\
+
+    $(1)$ If $P_A(x) = 1$, there must exist an $i$ that $P_{A_i}(x) = 1$. In this way:\\
+    $(P_A(x) - P_{A_1}(x))(P_A(x) - P_{A_2}(x))\ldots(P_A(x) - P_{A_n}(x)) = 0$\\
+
+    $(2)$ According to the properities of set, $P_{A_i}(x)P_{A_j}(x) = P_{A_i \cap A_j}(x)$.\\
+
+    $(3)$ Let $P_{n,k}$ denotes $P_{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}(1\le i_1<i_2<\ldots\le n)$.\\
+    Then decompose the first equation, we can have:\\
+    $P_A(x) = \sum\limits_{k=1}^{n}P_{n,k}$\\
+    which can be demonstrated as:\\
+     $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
+\end{enumerate}
+
+\section{Feasible Intersection Patterns}
+
+\subsection{}
+
+\begin{exercise}
+\end{exercise}
+  Find sets $A_1, A_2, A_3, A_4$ such that all pairwise intersections have size 3 and all three-wise intersections have size 1. \\Formally,
+ 1.$|A_i\bigcap A_j| = 3 for all {i,j} \in (^{[4]}_{2})$,
+ 2.$|A_i\bigcap A_j\bigcap A_k| = 1$ for all $\{i,j,k\}\in (^{[4]}_{3})$.
+
+    
+    
+    $A_1=\{1,2,3,5,6,9\}$;
+    
+    $A_2=\{1,2,3,4,7,8\}$;
+    
+    $A_3=\{1,5,7,8,9,10\}$;
+    
+    $A_4=\{2,4,5,6,8,10\}$;
+    
+\begin{exercise}
+\end{exercise}
+	In the spirit of the previous questions, let us call a sequence $(a_1,a_2,...,a_n)\in\mathbb{N}_0$ feasible if there are sets $A_1,...,A_n$ such that all k-wise intersections have size $a_k$. That is, $|Ai| = a_{1}$ for all i, $|A_i \bigcap A_j| = a_2$ for all $i \not= j$ and so on. The previous exercise would thus state that $(5, 3, 1, 0)$ is not feasible, but $(6, 3, 1, 0)$ is, as one solution of Exercise 3.1 shows.
+
+\begin{proof}
+\end{proof}
+
+Assume that there exist such sets A,B,C,D to which $(5,3,1,0)$ is feasible.
+
+$|A|=|B|=|C|=|D|=5$;
+
+Since $|A\bigcap B|=3$,$|A\bigcap B\bigcap C|=1$,
+
+A and B have 3 same elements. A, B and C have 1.
+
+There are 2 elements in $A\bigcap B$ that are not in C;
+
+Since $|A\bigcap c|=3$, there are 2 elements in A and C but not in B.
+
+There are 2 elements in B and C but not in A.
+
+So, now we have 1 elements in A, B, C, 2 in A,C but not B, 2 in B,C but not A.
+
+Then, set D has the same requirement with C.
+
+Similarly,We have 1 elements in A, B, D, 2 in A,D but not B, 2 in B,D but not A.
+
+A has only 5 elements. So dose B.
+
+Then there is a contradiction. D will have at least 5 same elements with C.
+
+$|C\bigcap D|=5\not = 3$.
+
+\begin{exercise}
+\end{exercise}
+	Suppose I give you a sequence $(a_1,...,a_n)$. Find a way to determine whether such a sequence is feasible or not.
+
+\begin{proof}
+\end{proof}
+
+ Definition: 
+ 
+     Given $A_1,A_2,A_3,...,A_n$, 
+     
+     define 
+     \begin{center}
+      $A_{\{I\}}=\bigcap \limits_{i \in I} A_i $. 
+     \end{center} 
+     In other words, 
+     \begin{center}
+      $A_{\{i,j,k,...\}}= A_i \bigcap A_j \bigcap A_k \bigcap ...$
+     \end{center}
+     
+     \begin{center}
+      $a_{|I|}=|A_{\{I\}}|.$
+     
+      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i \cap \bigcap \limits_{j\notin I } \bar{A_j}$.
+     \end{center}
+     
+     In other words,
+     \begin{center}
+      $B_{\{I\}}$ is the number of elements in $\bigcap \limits_{i \in I} A_i$ but not in $\bigcap \limits_{j\notin I } A_j$.
+     
+      $b_{|I|}=|B_{\{I\}}|.$
+     \end{center}
+     
+     Because every set $B_i$ is not divided by existing boundaries, we can put any number of elements in set $B_i$.
+     
+     Thus, $(b_1,b_2,...,b_n)$ is feasible for all situations as long as $b_i$ are nonnegative integers.
+
+     Obviously, $(a_1,a_2,...,a_n)$ has something to do with $(b_1,b_2,...,b_n)$.We have
+     \begin{center}
+     $A_{\{I\}}=\bigcup \limits_{J\ge I}B_{\{J\}}$;
+     
+     Thus, $a_{|I|}=\sum \limits_{J\ge I}b_{|J|}=\sum \limits_{j=i}^{j=n} (_{j-i}^{n-i}) b_{|J|}$
+     
+     Then,$b_i=\sum \limits_{k=0}^{n-i} (-1)^k (_{k}^{n-i} )a_i+k$
+     
+     \end{center}
+     
+     For $(a_1,a_2,...,a_n)$, replace the $a_i$ into the formula.
+     
+     If all the results are nonnegative integers.The sequence is feasible.
+     
+ 
+\end{document}
