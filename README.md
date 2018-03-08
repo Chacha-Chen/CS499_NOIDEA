@@ -9,8 +9,8 @@ CS 499 homework assignments, Shanghai Jiaotong University, Dominik Scheder
 
 周数 | 1 | 2
 -----|---|--
-txy | 0 | 0
-gyf | 1 | 1
+txy | 0 | 1
+gyf | 1 | 0
 qwx | 1 | 0
 ccc | 1 | 0
 zyl | 0 | 1
