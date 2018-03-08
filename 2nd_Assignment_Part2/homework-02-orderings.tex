@@ -1,0 +1,193 @@
+\documentclass[12pt,a4]{article}
+
+
+
+\input{preamble}
+
+
+
+\setcounter{section}{1}
+
+
+\begin{itemize}
+ \item Homework assignment published on Monday, 2018-03-05.
+ \item Work on it and submit a first solution or questions by Sunday, 2018-03-11, 12:00 by
+ email to me and the TAs.
+ \item You will receive feedback by Wednesday, 2018-03-14.
+ \item Submit your final solution by Sunday, 2018-03-18 to me and the TAs.
+\end{itemize}
+
+
+
+\section{Partial Orderings}
+
+
+
+\subsection{Equivalence Relations as a Partial Ordering}
+
+An equivalence relation $R \subseteq V \times V$ is basically the same as a partition
+of $V$. A {\em partition} of $V$ is a set $\{V_1,\dots,V_k\}$ where
+(1) $V_1 \cup \dots \cup V_k = V$ and (2) the $V_i$ are pairwise disjoint,
+i.e., $V_i \cap V_j  = \emptyset$ for $1 \leq i < j \leq k$. For example,
+$\{ \{1\}, \{2,3\}, \{4\} \}$ is a partition of $\{1,2,3,4\}$ but
+$\{ \{1\}, \{2,3\}, \{1,4\}\}$ is not.
+
+
+
+\begin{exercise}
+  Let $E_4$ be the set of all equivalence relations on $\{1,2,3,4\}$. Note that
+  $E_4$ is ordered by set inclusion, i.e.,
+  \begin{align*}
+     (E_4, \{ (R_1,R_2) \in E_4 \times E_4 \ | \ R_1 \subseteq R_2 \} )
+  \end{align*}
+  is a partial ordering.
+  \begin{enumerate}
+    \item Draw the Hasse diagram of this partial ordering in a  nice way.
+    \item What is the size of the largest chain?
+    \item What is the size of the largest antichain?
+  \end{enumerate}
+  \end{exercise}
+
+
+\subsection{Chains and Antichains}
+
+Define the partially ordered set $(\nn, \leq)$ as follows:
+$x \leq y$ if $x_i \leq y_i$ for all $1 \leq i \leq n$. For example,
+$(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
+
+\begin{exercise}
+  Consider the infinite partially ordered set $(\nn, \leq)$.
+  \begin{enumerate}
+  \item
+    Which elements are minimal? Which are maximal?
+  \item Is there a minimum? A maximum?
+  \item Does it have an infinite chain?
+  \item Does it have arbitrarily large antichains? That is, can you find an
+  antichain $A$ of size $|A| = k$ for every $k \in \N$?
+\end{enumerate}
+\end{exercise}
+
+\begin{exerciseD}
+  Does every infinite subset $S \subseteq \nn$ contain
+  an infinite chain?
+\end{exerciseD}
+
+\begin{exercise}
+  Show that $(\nn,\leq)$ has no infinite antichain. \textbf{Hint.} Use
+  the previous exercise.
+\end{exercise}
+
+
+
+Consider the induced ordering on $\{0,1\}^n$. That is, for $x,y\in \{0,1\}^n$
+we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
+
+\begin{exercise}
+ Draw the Hasse diagrams of $(\{0,1\}^n, \leq)$ for $n=2,3$.
+\end{exercise}
+
+\begin{exercise}
+  Determine the maximum, minimum, maximal, and minimal elements of
+  $\{0,1\}^n$.
+\end{exercise}
+
+\begin{exercise}
+  What is the longest chain of $\{0,1\}^n$?
+\end{exercise}
+
+\begin{exerciseDD}
+  What is the largest antichain of $\{0,1\}^n$?
+\end{exerciseDD}
+
+
+
+\subsection{Infinite Sets}
+
+In the lecture (and the lecture notes) we have showed that $\N \times \N \cong \N$, i.e.,
+there is a bijection $f: \N \times \N \rightarrow \N$. From this, and by induction, it follows
+quite easily that $\N^k \cong \N$ for every $k$.
+
+\begin{exercise}
+   Consider $\N^*$, the set of all finite sequences of natural numbers, that is,
+   $\N^* = \{\epsilon\} \cup \N \cup \N^2 \cup \N^3 \cup \dots$. Here,
+   $\epsilon$ is the empty sequence. Show that $\N \cong \N^*$ by defining
+   a bijection $\N \rightarrow \N^*$.
+\end{exercise}
+
+\begin{exercise}
+   Show that $R \cong R \times R$. \textbf{Hint:} Use the fact that
+   $R \cong \{0,1\}^{\N}$ and thus show that $\{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N}$.
+\end{exercise}
+
+\begin{proof}
+We can define $f$:\\
+\begin{center}
+$f:\{0,1\}^{\N} \times \{0,1\}^{\N} \rightarrow \{0,1\}^{\N}$\\
+$((a_{11}, a_{12}, a_{13}, \dots),(a_{21}, a_{22},a_{23},\dots)) \mapsto (a_{11}, a_{21}, a_{12},a_{22}, \dots)$\
+\end{center}
+For any element $\mathbf{a} \in \{0,1\}^{\N}$, $\mathbf{a}$ can be representated by a combination of unique ordered pair $(\mathbf{a_1}, \mathbf{a_2})$ where $\mathbf{a_1}, \mathbf{a_2} \in \{0,1\}^{\N}$. In this way, $f$ is bijective.\\
+Then we can get $R \cong \{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N} \cong R \times R$.
+\end{proof}
+
+\begin{exercise}
+  Consider $\R^{\N}$, the set of all infinite sequences $(r_1, r_2, r_3,\dots)$ of real numbers.
+  Show that $\R \cong \R^{\N}$. \textbf{Hint:} Again, use the fact that $\R \cong \{0,1\}^{\N}$.
+\end{exercise}
+
+\begin{proof}
+
+\end{proof}
+
+Next, let us view $\{0,1\}^{\N}$ as a partial ordering: given two elements $\mathbf{a}, \mathbf{b} \in \{0,1\}^{\N}$,
+that is, sequences $\mathbf{a} = (a_1,a_2,\dots)$ and $\mathbf{b} = (b_1,b_2,\dots)$, we define
+$\mathbf{a} \leq \mathbf{b}$ if $a_i \leq b_i$ for all $i \in \N$. Clearly,
+$(0,0,\dots)$ is the minimum element in this ordering and $(1,1,\dots)$ the maximum.\\
+
+\begin{exercise}
+   Give a countably infinite chain in $\{0,1\}^{\N}$. Remember that a set $A$ is countably infinite
+   if $A \cong \N$.
+ \end{exercise}
+
+\begin{solution}
+For set $A \subseteq \{0,1\}^{\N}$, let $A = \{\mathbf{a_i} \in \{0,1\}^{\N} |$ if $k < i$,$a_k =1, else, a_k = 0\}$, any two elements in $A$ are comparable \\
+We can define a function $f$:\\
+\begin{center}
+$f: N \rightarrow A, x \mapsto \mathbf{a_x}$\\
+\end{center}
+which is obviously bijective. In this way, $A$ is a countably infinite chain.
+\end{solution}
+
+\begin{exercise}
+   Find a countably infinite antichain in $\{0,1\}^{\N}$.
+\end{exercise}
+
+\begin{solution}
+For set $A \subseteq \{0,1\}^{\N}$, let $A = \{ \mathbf{a_i} \in \{0,1\}^{\N} | a_i = 1$ and other bits is $0\}$. Any two elements in $A$ is uncomparable since each has one bit larger than the other.\\
+Also, we can define a function $f$:\\
+\begin{center}
+$f: N \rightarrow A, x \mapsto \mathbf{a_x}$\\
+\end{center}
+which is bijective.\\
+In this scense, $A$ is a countably infinite antichain in $\{0,1\}^{\N}$.
+\end{solution}
+
+\begin{exercise}
+   Find an uncountable antichain in $\{0,1\}^{\N}$. That is, an antichain $A$ with $A \cong \R$.
+\end{exercise}
+
+\begin{solution}
+Define a function $f$:\\
+\begin{center}
+$f: \{0,1\}^{\N} \rightarrow A, (a_1, a_2, a_3 \dots) \mapsto (a_1,1-a_1,a_2,1-a_2,\dots)$
+\end{center}
+$f$ is a bijective function, and $\{0,1\}^{\N} \cong A$\\
+For $\mathbf{a},\mathbf{b} \in A$, if $\mathbf{a} \ne \mathbf{b}$ and $\mathbf{a},\mathbf{b}$ are comparable, let $\mathbf{a} < \mathbf{b}$.\\
+There must exist $a_i < b_i$, but $ 1-a_i > 1-b_i$, so $\mathbf{a}$ and $ \mathbf{b}$ are uncomparable. Then we get a contradiction.\\
+In this way, $A$ is a uncountable antichain.
+\end{solution}
+
+\begin{exerciseDD}
+   Find an uncountable chain in $\{0,1\}^{\N}$. That is, an antichain $A$ with $A \cong \R$.
+\end{exerciseDD}
+
+\end{document}
