@@ -126,7 +126,7 @@ $f:\{0,1\}^{\N} \times \{0,1\}^{\N} \rightarrow \{0,1\}^{\N}$\\
 $((a_{11}, a_{12}, a_{13}, \dots),(a_{21}, a_{22},a_{23},\dots)) \mapsto (a_{11}, a_{21}, a_{12},a_{22}, \dots)$\
 \end{center}
 For any element $\mathbf{a} \in \{0,1\}^{\N}$, $\mathbf{a}$ can be representated by a combination of unique ordered pair $(\mathbf{a_1}, \mathbf{a_2})$ where $\mathbf{a_1}, \mathbf{a_2} \in \{0,1\}^{\N}$. In this way, $f$ is bijective.\\
-Then we can get $R \cong \{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N} \cong R \times R$.
+Then we can get $R \cong \{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N} \cong R \times R$.\\
 \end{proof}
 
 \begin{exercise}
@@ -135,7 +135,37 @@ Then we can get $R \cong \{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N} \co
 \end{exercise}
 
 \begin{proof}
-
+Since $R \cong \{0,1\}^{\N}$, we need to prove $(\{0,1\})^{\N})^{\N} \cong \{0,1\}^{\N}$.\\
+The element $\mathbf{e} \in (\{0,1\})^{\N})^{\N}$ can be represented as $(\mathbf{a^1},\mathbf{a^2},\dots)$ where $\mathbf{a^i} \in \{0,1\}^{\N}$\\
+Also, $\mathbf{e}$ can be represented as a matrix:\\
+\begin{equation*}
+\mathbf{e} = \left(
+\begin{array}{ll}
+  \mathbf{a^1}\\
+  \mathbf{a^2}\\
+  \dots \\
+\end{array} \right)
+= \left(
+\begin{array}{ccc}
+  a^1_1 & a^1_2 & \dots\\
+  a^2_1 & a^2_2 & \dots\\
+  \dots & \dots & \dots\\
+\end{array} \right)
+\end{equation*}
+Define a function $f$:
+\begin{center}
+$f:\{0,1\} \rightarrow (\{0,1\})^{\N})^{\N}, (a_1, a_2, a_3, \dots) \mapsto \left(
+\begin{array}{cccc}
+  a_1 & a_3 & a_6 & \dots \\
+  a_2 & a_5 & \dots & \dots \\
+  a_4 & \dots & \dots & \dots \\
+  \dots & \dots & \dots & \dots
+\end{array}
+\right)$
+\end{center}
+For $\mathbf{a} \in \{0,1\}^{\N}$, we place each bit of $\mathbf{a}$ nn matrix following the diagonals in turn, then we get a unique $\mathbf{e} \in (\{0,1\})^{\N})^{\N}$.\\
+Also, for each $\mathbf{e} \in (\{0,1\})^{\N})^{\N}$, there is exactly one element $\mathbf{a} \in \{0,1\}^{\N}$ such that $f(\mathbf{a}) = \mathbf{e}$.\\
+In this sense, $\{0,1\} \cong (\{0,1\})^{\N})^{\N}$, which can be expressed as$\R \cong \R^{\N}$.
 \end{proof}
 
 Next, let us view $\{0,1\}^{\N}$ as a partial ordering: given two elements $\mathbf{a}, \mathbf{b} \in \{0,1\}^{\N}$,

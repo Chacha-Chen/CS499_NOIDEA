@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1520512307 "homework-02-orderings.xdv" "homework-02-orderings.pdf" "homework-02-orderings" 1520512686
-  "homework-02-orderings.xdv" 1520512306 43512 51d2202c9acb10c33876eb12c5d5e98b "xelatex"
+["xdvipdfmx"] 1520517565 "homework-02-orderings.xdv" "homework-02-orderings.pdf" "homework-02-orderings" 1520517566
+  "homework-02-orderings.xdv" 1520517565 48536 c37a6ac10b9b74e2b1bebb8aaf3ba399 "xelatex"
   (generated)
   "homework-02-orderings.pdf"
-["xelatex"] 1520512305 "homework-02-orderings.tex" "homework-02-orderings.xdv" "homework-02-orderings" 1520512686
+["xelatex"] 1520517564 "homework-02-orderings.tex" "homework-02-orderings.xdv" "homework-02-orderings" 1520517566
   "e:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1520323004 3332 103109f5612ad95229751940c61aada0 ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1520321538 1004 54797486969f23fa377b128694d548df ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1520321538 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -54,10 +54,10 @@
   "e:/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty" 1520325462 15188 91281c7ddbccfa54a8e0c3b56ab5aa72 ""
   "e:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty" 1520326229 55589 34128738f682d033422ca125f82e5d62 ""
   "e:/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520326546 3705163 833638e52313436df4e6dbacf35ce08d ""
-  "homework-02-orderings.aux" 1520512306 365 19c89acc5834dc843f2fce62b6136df9 ""
-  "homework-02-orderings.tex" 1520512304 6696 ebc82c1032b68244ad12c26002c0b74a ""
+  "homework-02-orderings.aux" 1520517565 365 19c89acc5834dc843f2fce62b6136df9 ""
+  "homework-02-orderings.tex" 1520517563 7980 5abfa53846cea00693889d86bbedd867 ""
   "preamble.tex" 1520468855 2710 339faac91ac960a659c9d5444c290f47 ""
   (generated)
   "homework-02-orderings.xdv"
-  "homework-02-orderings.aux"
   "homework-02-orderings.log"
+  "homework-02-orderings.aux"
