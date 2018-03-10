@@ -163,19 +163,18 @@ You jump around with four coins which in the beginning form a square of side len
 \end{exercise}
 
 \begin{proof}
-    Divide the square(it can change into a normal quadrilateral after several jumps) into two triangles.
+     We use the coordinate to express the position of coins. The initial coordinate will be
+    $$
+    (odd, odd), (odd, even), (even, even), (even, odd).
+    $$
+    If a coin at $(a, b)$ jump over the coin at $(c, d)$, the new position $(e, f)$ will be
+    $$
+    e = 2c - a, f = 2d - b
+    $$
 
-    \begin{figure}[H]
-        \small
-        \centering
-        \includegraphics[width=5cm]{fourcoins.png}
-        \label{fig:fourCoins}
-	\caption{Four Coins}
-    \end{figure}
+  Both $2c$ and $2d$ are even, so the parity of $e, f$ will be the same as $a, b$. It means that the parity of coordinate of a coin will not change during a jump.
 
-    The same as one triangle, the area of the quadrilateral cannot change.
-    This means it's impossible to form a square of side length 2, whose area is 4.
-
+  If a square of side lenth $2$ is formed, the parity of the coordinate will be diﬀerent with the initial one, which is impossible.
 \end{proof}
 
 \begin{exercise}
@@ -183,22 +182,9 @@ You jump around with four coins which in the beginning form a square of side len
 \end{exercise}
 
 \begin{proof}
-    If two coins will be at the same position after one jump, then there must be three collinear coins with the same distance before the jump.
-
-    What happens during the jump? The area of the shape formed with four coins reduces to half.
-
-    \begin{figure}[H]
-        \small
-        \centering
-        \includegraphics[width=5cm]{coinssameposition.png}
-        \label{fig:coinsSamePosition}
-        \caption{Coins at the Same Position}
-    \end{figure}
-
-    We have proved that if the inital shape formed with four coins is a square, the area of the shape will never change no matter how many jumps the coins give.
-
-    Therefore, the jump that causes two coins to stay at the same position will not happen.
-
+    We have proved that the parity of coordinate of a coin will not change during a jump. Hence two coins with different initial parity of the coordinate can not be at the same position. 
+    
+    And we know the all the four coins have different initial parity, so there won't be any coins at the same position.
 \end{proof}
 
 \begin{exercise}
@@ -206,8 +192,11 @@ You jump around with four coins which in the beginning form a square of side len
 \end{exercise}
 
 \begin{proof}
-    In exercise 1.5, we have proved that the quadrilateral formed with four coins has a constant area.
-    So a larger square can't be formed.
+   If we can make the four coins form a larger square with side length $n > 1$ in a few jumps. Then if the initial side length is $1/n$ we can use the same steps of jump to form a square of side length $1$.
+   
+    It means that with the converse steps, We can form a smaller square with side length $1/n < 1$ with initial side length $1$, which requiring that the coordinates of coins are not integer.
+    
+     Obviously, it's impossible.
 \end{proof}
 
 \section{Exclusion-Inclusion}
