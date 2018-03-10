@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  4 MAR 2018 16:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  10 MAR 2018 23:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -40,18 +40,19 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 96.
 
-(/usr/local/texlive/2016/texmf-dist/tex/xelatex/xetex-def/xetex.def
-File: xetex.def 2016/04/06 v4.08 LaTeX color/graphics driver for XeTeX (TeX Liv
-e/RRM/JK)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
+)
+\Gread@gobject=\count87
+))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
@@ -75,13 +76,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count87
+\inf@bad=\count88
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count88
-\leftroot@=\count89
+\uproot@=\count89
+\leftroot@=\count90
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count90
-\DOTSCASE@=\count91
+\classnum@=\count91
+\DOTSCASE@=\count92
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
@@ -90,15 +91,15 @@ LaTeX Info: Redefining \cdots on input line 518.
 \big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count92
-\c@MaxMatrixCols=\count93
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count94
-\dspbrk@lvl=\count95
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks16
-\row@=\count96
-\column@=\count97
-\maxfields@=\count98
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks17
 \eqnshift@=\dimen108
 \alignsep@=\dimen109
@@ -142,8 +143,9 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -153,18 +155,12 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
-Invalid UTF-8 byte or sequence at line 275 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 290 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 540 replaced by U+FFFD.
 Package: algorithm2e 2013/01/06 v5.00 algorithms environments
-\c@AlgoLine=\count99
+\c@AlgoLine=\count100
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-Invalid UTF-8 byte or sequence at line 1311 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1313 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1315 replaced by U+FFFD.
 \algocf@hangindent=\skip49
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
@@ -209,14 +205,14 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip64
 \algotitleheightruledefault=\skip65
 \algotitleheightrule=\skip66
-\c@algocfline=\count100
-\c@algocfproc=\count101
-\c@algocf=\count102
+\c@algocfline=\count101
+\c@algocfproc=\count102
+\c@algocf=\count103
 \algocf@algoframe=\box34
 \algocf@algobox=\box35
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count103
+\c@float@type=\count104
 \float@exts=\toks26
 \float@box=\box36
 \@float@everytoks=\toks27
@@ -239,24 +235,24 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen125
 \caption@hangindent=\dimen126
 )
-\c@ContinuedFloat=\count104
+\c@ContinuedFloat=\count105
 Package caption Info: float package is loaded.
 )
-\c@KVtest=\count105
+\c@KVtest=\count106
 \sf@farskip=\skip67
 \sf@captopadj=\dimen127
 \sf@capskip=\skip68
 \sf@nearskip=\skip69
-\c@subfigure=\count106
-\c@subfigure@save=\count107
-\c@lofdepth=\count108
-\c@subtable=\count109
-\c@subtable@save=\count110
-\c@lotdepth=\count111
+\c@subfigure=\count107
+\c@subfigure@save=\count108
+\c@lofdepth=\count109
+\c@subtable=\count110
+\c@subtable@save=\count111
+\c@lotdepth=\count112
 \sf@top=\skip70
 \sf@bottom=\skip71
 )
-\c@theorem=\count112
+\c@theorem=\count113
 
 
 LaTeX Warning: Unused global option(s):
@@ -277,11 +273,73 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count114
+\scratchdimen=\dimen128
+\scratchbox=\box38
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen129
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+msa on input line 35.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 35.
@@ -297,94 +355,172 @@ Overfull \hbox (16.20381pt too wide) in paragraph at lines 37--37
 []\OT1/cmr/bx/n/17.28 Broken Chess-board and Jump-ing With Coins 
  []
 
-File: slightlydamaged.png Graphic file (type QTm)
-<use  "slightlydamaged.png" > [1
+<slightlydamaged.png, id=1, 796.9775pt x 785.93625pt>
+File: slightlydamaged.png Graphic file (type png)
 
-]
-Missing character: There is no Ô¨Å in font cmr12!
-File: corridor.png Graphic file (type QTm)
- <use  "corridor.png" >
-File: corridor_a.png Graphic file (type QTm)
+<use slightlydamaged.png>
+Package pdftex.def Info: slightlydamaged.png used on input line 52.
+(pdftex.def)             Requested size: 142.26378pt x 140.28716pt.
+ [1
 
-<use  "corridor_a.png" >
-File: corridor_b.png Graphic file (type QTm)
- <use  "corridor_b.png" >
-File: corridor_c.png Graphic file (type QTm)
- <use  "corridor_c.png" >
-File: corridor_d.png Graphic file (type QTm)
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./sligh
+tlydamaged.png>]
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Å in font cmr12!
 
-<use  "corridor_d.png" >
-File: corridor_e.png Graphic file (type QTm)
- <use  "corridor_e.png" >
-File: corridor_f.png Graphic file (type QTm)
- <use  "corridor_f.png" >
-File: corridor_g.png Graphic file (type QTm)
+<corridor.png, id=13, 562.1pt x 547.04375pt>
+File: corridor.png Graphic file (type png)
+ <use corridor.png>
+Package pdftex.def Info: corridor.png used on input line 77.
+(pdftex.def)             Requested size: 142.26378pt x 138.44673pt.
 
-<use  "corridor_g.png" > [2]
-File: left_a.png Graphic file (type QTm)
- <use  "left_a.png" >
-File: left_b.png Graphic file (type QTm)
- <use  "left_b.png" >
-File: left_c.png Graphic file (type QTm)
+<corridor_a.png, id=14, 599.23875pt x 599.23875pt>
+File: corridor_a.png Graphic file (type png)
+ <use corridor_a.png>
+Package pdftex.def Info: corridor_a.png used on input line 86.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
-<use  "left_c.png" >
-File: left_d.png Graphic file (type QTm)
- <use  "left_d.png" > [3]
-File: twocoins.png Graphic file (type QTm)
- <use  "twocoins.png" >
-File: threecoins.png Graphic file (type QTm)
+<corridor_b.png, id=15, 599.23875pt x 599.23875pt>
+File: corridor_b.png Graphic file (type png)
+ <use corridor_b.png>
+Package pdftex.def Info: corridor_b.png used on input line 87.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
-<use  "threecoins.png" >
-File: fourcoins.png Graphic file (type QTm)
- <use  "fourcoins.png" > [4]
-File: coinssameposition.png Graphic file (type QTm)
+<corridor_c.png, id=16, 599.23875pt x 599.23875pt>
+File: corridor_c.png Graphic file (type png)
+ <use corridor_c.png>
+Package pdftex.def Info: corridor_c.png used on input line 88.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
 
-<use  "coinssameposition.png" > [5]
-Missing character: There is no Ô¨Å in font cmr12!
-File: Venn.png Graphic file (type QTm)
- <use  "Venn.png" > [6]
+<corridor_d.png, id=17, 599.23875pt x 599.23875pt>
+File: corridor_d.png Graphic file (type png)
+ <use corridor_d.png>
+Package pdftex.def Info: corridor_d.png used on input line 89.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
+
+<corridor_e.png, id=18, 599.23875pt x 599.23875pt>
+File: corridor_e.png Graphic file (type png)
+ <use corridor_e.png>
+Package pdftex.def Info: corridor_e.png used on input line 90.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
+
+<corridor_f.png, id=19, 599.23875pt x 599.23875pt>
+File: corridor_f.png Graphic file (type png)
+ <use corridor_f.png>
+Package pdftex.def Info: corridor_f.png used on input line 91.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
+
+<corridor_g.png, id=20, 599.23875pt x 599.23875pt>
+File: corridor_g.png Graphic file (type png)
+ <use corridor_g.png>
+Package pdftex.def Info: corridor_g.png used on input line 92.
+(pdftex.def)             Requested size: 85.35826pt x 85.35583pt.
+
+[2 <./corridor.png>] <left_a.png, id=26, 480.79625pt x 1084.05pt>
+File: left_a.png Graphic file (type png)
+
+<use left_a.png>
+Package pdftex.def Info: left_a.png used on input line 104.
+(pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
+ <left_b.png, id=27, 480.79625pt x 1084.05pt>
+File: left_b.png Graphic file (type png)
+ <use left_b.png>
+Package pdftex.def Info: left_b.png used on input line 105.
+(pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
+
+<left_c.png, id=28, 480.79625pt x 1084.05pt>
+File: left_c.png Graphic file (type png)
+ <use left_c.png>
+Package pdftex.def Info: left_c.png used on input line 106.
+(pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
+
+<left_d.png, id=29, 480.79625pt x 1084.05pt>
+File: left_d.png Graphic file (type png)
+ <use left_d.png>
+Package pdftex.def Info: left_d.png used on input line 107.
+(pdftex.def)             Requested size: 56.9055pt x 128.29393pt.
+ [3 <./corridor_a.png> <./corridor_b.png> <./corridor_c.png> <./corridor_d.png>
+ <./corridor_e.png> <./corridor_f.png> <./corridor_g.png> <./left_a.png> <./lef
+t_b.png> <./left_c.png> <./left_d.png>] <twocoins.png, id=45, 1910.13625pt x 58
+4.1825pt>
+File: twocoins.png Graphic file (type png)
+
+<use twocoins.png>
+Package pdftex.def Info: twocoins.png used on input line 132.
+(pdftex.def)             Requested size: 142.26378pt x 43.50871pt.
+ <threecoins.png, id=46, 1438.37375pt x 808.01875pt>
+File: threecoins.png Graphic file (type png)
+
+<use threecoins.png>
+Package pdftex.def Info: threecoins.png used on input line 152.
+(pdftex.def)             Requested size: 142.26378pt x 79.90656pt.
+ [4 <./twocoins.png> <./threecoins.png>]
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no Ô in font cmr12!
+Missing character: There is no ¨ in font cmr12!
+Missing character: There is no Å in font cmr12!
+ [5]
+<Venn.png, id=56, 1734.48pt x 1073.00874pt>
+File: Venn.png Graphic file (type png)
+ <use Venn.png>
+Package pdftex.def Info: Venn.png used on input line 222.
+(pdftex.def)             Requested size: 173.45816pt x 107.30716pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+
+ []
+
+[6 <./Venn.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
-
- []
-
-[7]
-Overfull \hbox (2.1955pt too wide) in paragraph at lines 282--283
+Overfull \hbox (2.1955pt too wide) in paragraph at lines 271--272
 \OT1/cmr/m/n/12 notes the sum of all the pos-si-ble k-wise in-ter-sec-tions in 
 $\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 271--272
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
@@ -394,43 +530,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--285
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
+Underfull \hbox (badness 10000) in paragraph at lines 309--311
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--319
+Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 314--319
 
  []
 
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+[8] <Exercise31-1.png, id=75, 319.1925pt x 276.03125pt>
+File: Exercise31-1.png Graphic file (type png)
+ <use Exercise31-1.png>
+Package pdftex.def Info: Exercise31-1.png used on input line 330.
+(pdftex.def)             Requested size: 124.80286pt x 107.92552pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 325--330
-
- []
-
-File: Exercise31-1.png Graphic file (type QTm)
-<use  "Exercise31-1.png" >
-Overfull \hbox (4.23392pt too wide) in paragraph at lines 352--357
+Overfull \hbox (4.23392pt too wide) in paragraph at lines 341--346
 \OT1/cmr/m/n/12 We can in-fer that Domain$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\O
 ML/cmm/m/it/12 ; \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 12\OML/cm
 m/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 , $\OMS/cmsy/m/
@@ -443,15 +573,15 @@ OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 ,$\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 5\OML/cmm
 12 ; \OT1/cmr/m/n/12 14\OMS/cmsy/m/n/12 g$
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 361.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 350.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 361.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 350.
 
-Overfull \hbox (22.25684pt too wide) in paragraph at lines 358--363
+Overfull \hbox (22.25684pt too wide) in paragraph at lines 347--352
 \OT1/cmr/m/n/12 Then it is ob-vi-ous that there is 1 in\OMS/cmsy/m/n/12 f\OT1/c
 mr/m/n/12 5\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 , 0 in$\OMS/cmsy/m/n/12 f\OT1/cmr/
 m/n/12 10\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/12 12\OMS/cmsy/m/n/12 gf\OT1/cmr/m/n/1
@@ -462,29 +592,63 @@ m/n/12 g$\OT1/cmr/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--363
+Underfull \hbox (badness 10000) in paragraph at lines 347--352
 
  []
 
-[9]
-File: Exercise31-2.png Graphic file (type QTm)
- <use  "Exercise31-2.png" >
-File: Exercise31-3.png Graphic file (type QTm)
- <use  "Exercise31-3.png" >
-File: Exercise33-1.png Graphic file (type QTm)
+<Exercise31-2.png, id=76, 309.155pt x 287.0725pt>
+File: Exercise31-2.png Graphic file (type png)
+ <use Exercise31-2.png>
+Package pdftex.def Info: Exercise31-2.png used on input line 358.
+(pdftex.def)             Requested size: 128.04219pt x 128.03815pt.
 
-<use  "Exercise33-1.png" > [10] [11] (./merge.aux) )
+<Exercise31-3.png, id=77, 307.1475pt x 255.95625pt>
+File: Exercise31-3.png Graphic file (type png)
+ <use Exercise31-3.png>
+Package pdftex.def Info: Exercise31-3.png used on input line 362.
+(pdftex.def)             Requested size: 133.72993pt x 113.80838pt.
+
+[9 <./Exercise31-1.png (PNG copy)>]
+<Exercise33-1.png, id=81, 207.77625pt x 187.70125pt>
+File: Exercise33-1.png Graphic file (type png)
+ <use Exercise33-1.png>
+Package pdftex.def Info: Exercise33-1.png used on input line 417.
+(pdftex.def)             Requested size: 124.80286pt x 112.74477pt.
+
+[10 <./Exercise31-2.png (PNG copy)> <./Exercise31-3.png (PNG copy)>] [11 <./Exe
+rcise33-1.png>] (./merge.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4561 strings out of 493591
- 65961 string characters out of 6143547
- 146481 words of memory out of 5000000
- 7906 multiletter control sequences out of 15000+600000
+ 5311 strings out of 493014
+ 78361 string characters out of 6133352
+ 159789 words of memory out of 5000000
+ 8762 multiletter control sequences out of 15000+600000
  13050 words of font info for 50 fonts, out of 8000000 for 9000
- 1347 hyphenation exceptions out of 8191
- 44i,17n,49p,573b,2408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 44i,17n,49p,573b,2984s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.p
+fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+>
+Output written on merge.pdf (11 pages, 743273 bytes).
+PDF statistics:
+ 138 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on merge.pdf (11 pages).
