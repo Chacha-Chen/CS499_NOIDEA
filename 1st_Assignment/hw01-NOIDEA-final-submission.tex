@@ -1,13 +1,17 @@
 \documentclass[12pt,a4]{article}
 
 \usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
-\usepackage{float}
-\usepackage{epsfig}
-\usepackage{subfigure}
-
 \usepackage[lined,boxed]{algorithm2e}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{amsthm}
+
+\newtheoremstyle{exercise}{}{}{}{}{\bf}{.}{ }{}
 \graphicspath{ {images/} }
 
+\theoremstyle{exercise}
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
@@ -29,50 +33,172 @@
 	{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder\\}
 	{\normalsize Group Name: \textbf{NOIDEA}}
 }
-
-\begin{document}
-	
-	\maketitle
-%\begin{quotation}
-%  You are welcome to discuss the exercises in the discussion
-%  forum. Please take them serious. Doing the exercises is as important
-%  than watching the videos.
-%
-%  I intentionally included very challenging exercises and marked them
-%  with one or two ``$*$''. No star means you should be able to solve
-%  the exercises without big problems once you have understood
-%  the material from the video lecture. One star means it requires
-%  significant additional thinking. Two stars means it is not
-%  unlikely that you will fail to solve them, even once you have understood
-%  the material and thought a lot about the exercise. Don't feel bad
-%  if you fail. Failure is part of learning.
-%
-%  This is the first time this course is online. Thus there might be mistakes
-%  (typos or more serious conceptual mistakes) in the exercises. I will be
-%  grateful if you point them out to me!
-%\end{quotation}
-
-
-%\setcounter{section}{0}
+ \begin{document}
+\maketitle
 
 \section{Broken Chessboard and Jumping With Coins}
 
 \subsection{Tiling a Damaged Checkerboard}
 
 \begin{exercise}
-  Re-write the proof in your own way,  using simple English sentences.
+    Re-write the proof in your own way,  using simple English sentences.
 \end{exercise}
 
 \begin{proof}
-	Your proof ...
+	Let's color the board black and beige, just like a typical chessboard.
+    In this case, there are 32 black and 30 beige squares.
+
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{slightlydamaged.png}
+        \label{fig:slightlyDamagedBoard}
+        \caption{The Chessboard}
+    \end{figure}
+
+    Since a domino stone placed in the board will cover both a black square and a beige square,
+    it's obviously that we can't fully tile the board with $1 \times 2$ domino stones.
+
 \end{proof}
 
 \begin{exercise}
-	Another exercise ...
+    Look at the seriously damaged $8 \times 8$ checkerboard.
+    For convenience I already colored it black and white (or rather black and beige):
+
+    Try to tile it with domino stones and you will fail.
+    However, since there are $24$ black and $24$ beige squares, the simple argument from the lecture will fail.
+
+    Prove that the above board cannot be tiled. Try to ﬁnd a short and simple argument!
 \end{exercise}
 
 \begin{proof}
-	Your proof ...
+	To prove the claim, let's start by focusing on the ``corridor" in the chessboard.
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{corridor.png}
+        \label{fig:corridor}
+        \caption{The ``Corridor"}
+    \end{figure}
+
+    There are 7 ways to tile the ``corridor" with domino stones:
+
+    \begin{figure}[H]
+        \centering
+        \subfloat[]{\includegraphics[width=3cm]{corridor_a.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_b.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_c.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_d.png}} \\
+        \subfloat[]{\includegraphics[width=3cm]{corridor_e.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_f.png}}
+        \subfloat[]{\includegraphics[width=3cm]{corridor_g.png}}
+	\label{fig:corridorTile}
+	\caption{Tiling the Corridor}
+    \end{figure}
+
+    In the case (a) and (b), each of the two remaining parts of the chessboard contains 21 square.
+    Since a domino stone tiles 2 sqaures, the  (a) and the case (b) are ruled out.
+
+    How about (c) ,(d), (e), (f) and (g)? We consider the possible remaining parts in these cases:
+
+    \begin{figure}[H]
+        \centering
+        \subfloat{\includegraphics[width=2cm]{left_a.png}}
+        \subfloat{\includegraphics[width=2cm]{left_b.png}}
+        \subfloat{\includegraphics[width=2cm]{left_c.png}}
+        \subfloat{\includegraphics[width=2cm]{left_d.png}}
+	\label{fig:leftPart}
+	\caption{The Remaining Parts}
+    \end{figure}
+
+    Becasue the number of black squares and beige squares is not equal, all of the possible remaining parts cannot be tiled.
+
+\end{proof}
+
+
+
+
+\subsection{Jumping with Coins}
+
+\begin{exercise}
+    You jump around with two coins.
+    Show that you cannot increase the distance between the two coins.
+\end{exercise}
+
+\begin{proof}
+    Clearly, the distance between two coins is fixed in one jump.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{twocoins.png}
+        \label{fig:twoCoins}
+        \caption{Two Coins}
+    \end{figure}
+
+\end{proof}
+
+
+\begin{exercise}
+    You jump around with three coins.
+    Show that you cannot start with an equilateral triangle and end up with a bigger equilateral triangle.
+    Give a simple proof!
+\end{exercise}
+
+\begin{proof}
+    During a jump, either the side or the height of the triangle will not change, thus the area stays the same.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{threecoins.png}
+        \label{fig:threeCoins}
+        \caption{Three Coins}
+    \end{figure}
+
+\end{proof}
+
+You jump around with four coins which in the beginning form a square of side length $1$.
+
+\begin{exercise}
+    Show that you cannot form a square of side length $2$.
+\end{exercise}
+
+\begin{proof}
+     We use the coordinate to express the position of coins. The initial coordinate will be
+    $$
+    (odd, odd), (odd, even), (even, even), (even, odd).
+    $$
+    If a coin at $(a, b)$ jump over the coin at $(c, d)$, the new position $(e, f)$ will be
+    $$
+    e = 2c - a, f = 2d - b
+    $$
+
+  Both $2c$ and $2d$ are even, so the parity of $e, f$ will be the same as $a, b$. It means that the parity of coordinate of a coin will not change during a jump.
+
+  If a square of side lenth $2$ is formed, the parity of the coordinate will be diﬀerent with the initial one, which is impossible.
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot achieve a position in which two coins are at the same position.
+\end{exercise}
+
+\begin{proof}
+    We have proved that the parity of coordinate of a coin will not change during a jump. Hence two coins with different initial parity of the coordinate can not be at the same position. 
+    
+    And we know the all the four coins have different initial parity, so there won't be any coins at the same position.
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot form a larger square.
+\end{exercise}
+
+\begin{proof}
+   If we can make the four coins form a larger square with side length $n > 1$ in a few jumps. Then if the initial side length is $1/n$ we can use the same steps of jump to form a square of side length $1$.
+   
+    It means that with the converse steps, We can form a smaller square with side length $1/n < 1$ with initial side length $1$, which requiring that the coordinates of coins are not integer.
+    
+     Obviously, it's impossible.
 \end{proof}
 
 \section{Exclusion-Inclusion}
@@ -290,5 +416,7 @@ $|C\bigcap D|=5\not = 3$.
      
      If all the results are nonnegative integers.The sequence is feasible.
      
- 
+
+\end{document}
+
 \end{document}
