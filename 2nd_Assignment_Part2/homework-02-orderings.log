@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  9 MAR 2018 08:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  11 MAR 2018 09:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -222,32 +222,41 @@ LaTeX Warning: No \author given.
 ) [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+./homework-02-orderings.tex:118: Missing $ inserted.
+<inserted text> 
+                $
+l.118 ...*$, so we need proof $\N^* \cong \{0,1\)^
+                                                  *$.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--141
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 171--175
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
@@ -261,4 +270,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  29i,8n,35p,286b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework-02-orderings.xdv (5 pages, 48536 bytes).
+Output written on homework-02-orderings.xdv (5 pages, 50360 bytes).

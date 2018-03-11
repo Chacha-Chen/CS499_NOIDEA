@@ -1,0 +1,34 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.2.22)  10 MAR 2018 18:43
+entering extended mode
+**C:/Users/21467/Downloads/hw2-tex-sources/preamble.tex
+(C:/Users/21467/Downloads/hw2-tex-sources/preamble.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 495354
+ 349 string characters out of 3183859
+ 44842 words of memory out of 3000000
+ 3276 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 5i,0n,5p,123b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
