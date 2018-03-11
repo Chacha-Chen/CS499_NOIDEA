@@ -319,7 +319,7 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
 \begin{exercise}
 \end{exercise}
   Find sets $A_1, A_2, A_3, A_4$ such that all pairwise intersections have size 3 and all three-wise intersections have size 1. \\Formally,
- 1.$|A_i\bigcap A_j| = 3 for all {i,j} \in (^{[4]}_{2})$,
+ 1.$|A_i\bigcap A_j| = 3$ for all ${i,j} \in (^{[4]}_{2})$,
  2.$|A_i\bigcap A_j\bigcap A_k| = 1$ for all $\{i,j,k\}\in (^{[4]}_{3})$.
 
     
@@ -349,7 +349,7 @@ A and B have 3 same elements. A, B and C have 1.
 
 There are 2 elements in $A\bigcap B$ that are not in C;
 
-Since $|A\bigcap c|=3$, there are 2 elements in A and C but not in B.
+Since $|A\bigcap C|=3$, there are 2 elements in A and C but not in B.
 
 There are 2 elements in B and C but not in A.
 
@@ -359,20 +359,20 @@ Then, set D has the same requirement with C.
 
 Similarly,We have 1 elements in A, B, D, 2 in A,D but not B, 2 in B,D but not A.
 
-A has only 5 elements. So dose B.
+A has only $5$ elements. So dose B.
 
-Then there is a contradiction. D will have at least 5 same elements with C.
+Then there is a contradiction. D will have at least $5$ same elements with C.
 
 $|C\bigcap D|=5\not = 3$.
 
 \begin{exercise}
 \end{exercise}
-	Suppose I give you a sequence $(a_1,...,a_n)$. Find a way to determine whether such a sequence is feasible or not.
+	Given a sequence $(a_1,...,a_n)$, Find a way to determine whether such a sequence is feasible or not.
 
 \begin{proof}
 \end{proof}
 
- Definition: 
+ \textbf{Definition}: 
  
      Given $A_1,A_2,A_3,...,A_n$, 
      
@@ -383,34 +383,40 @@ $|C\bigcap D|=5\not = 3$.
      In other words, 
      \begin{center}
       $A_{\{i,j,k,...\}}= A_i \bigcap A_j \bigcap A_k \bigcap ...$
-     \end{center}
-     
-     \begin{center}
+      
       $a_{|I|}=|A_{\{I\}}|.$
      
-      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i \cap \bigcap \limits_{j\notin I } \bar{A_j}$.
+      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i / \bigcup \limits_{j\notin I }{A_j}$.
      \end{center}
      
      In other words,
      \begin{center}
-      $B_{\{I\}}$ is the number of elements in $\bigcap \limits_{i \in I} A_i$ but not in $\bigcap \limits_{j\notin I } A_j$.
+      $B_{\{I\}}$ is the number of elements in $\bigcap \limits_{i \in I} A_i$ but not in $A_j,j\notin I$.
      
       $b_{|I|}=|B_{\{I\}}|.$
      \end{center}
      
      Because every set $B_i$ is not divided by existing boundaries, we can put any number of elements in set $B_i$.
      
+     \textbf{a.Whether a given B-table is feasible:}
+
      Thus, $(b_1,b_2,...,b_n)$ is feasible for all situations as long as $b_i$ are nonnegative integers.
 
      Obviously, $(a_1,a_2,...,a_n)$ has something to do with $(b_1,b_2,...,b_n)$.We have
      \begin{center}
+     \textbf{b.Given a feasible B-table, how to compute A-table:}
+
      $A_{\{I\}}=\bigcup \limits_{J\ge I}B_{\{J\}}$;
-     
+
      Thus, $a_{|I|}=\sum \limits_{J\ge I}b_{|J|}=\sum \limits_{j=i}^{j=n} (_{j-i}^{n-i}) b_{|J|}$
      
-     Then,$b_i=\sum \limits_{k=0}^{n-i} (-1)^k (_{k}^{n-i} )a_i+k$
+     \textbf{c.Given a A-table, how to compute B-table:}
+
+     Then,$b_i=\sum \limits_{k=0}^{n-i} (-1)^k (_{k}^{n-i} )a_{i+k}$
      
      \end{center}
+
+     \textbf{d.Then apply a:}
      
      For $(a_1,a_2,...,a_n)$, replace the $a_i$ into the formula.
      
