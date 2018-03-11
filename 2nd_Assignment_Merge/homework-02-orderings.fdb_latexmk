@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1520739412 "homework-02-orderings.xdv" "homework-02-orderings.pdf" "homework-02-orderings" 1520739413
-  "homework-02-orderings.xdv" 1520739411 53156 0d8512d8dbfde5479617bdcfda6d52b8 "xelatex"
+["xdvipdfmx"] 1520739764 "homework-02-orderings.xdv" "homework-02-orderings.pdf" "homework-02-orderings" 1520739766
+  "homework-02-orderings.xdv" 1520739764 65720 db29c49ab4ddc29d0f6d6ebc1ac6089c "xelatex"
   (generated)
   "homework-02-orderings.pdf"
-["xelatex"] 1520739357 "homework-02-orderings.tex" "homework-02-orderings.xdv" "homework-02-orderings" 1520739413
+["xelatex"] 1520739706 "homework-02-orderings.tex" "homework-02-orderings.xdv" "homework-02-orderings" 1520739766
   "e:/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1520323004 3332 103109f5612ad95229751940c61aada0 ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1520321538 1004 54797486969f23fa377b128694d548df ""
   "e:/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1520321538 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -54,10 +54,13 @@
   "e:/texlive/2017/texmf-dist/tex/latex/subfigure/subfigure.sty" 1520325462 15188 91281c7ddbccfa54a8e0c3b56ab5aa72 ""
   "e:/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty" 1520326229 55589 34128738f682d033422ca125f82e5d62 ""
   "e:/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520326546 3705163 833638e52313436df4e6dbacf35ce08d ""
-  "homework-02-orderings.aux" 1520739411 365 19c89acc5834dc843f2fce62b6136df9 ""
-  "homework-02-orderings.tex" 1520739355 8680 5b3ce7044febd7b91a945d0898eb46cc ""
+  "homework-02-orderings.aux" 1520739764 614 ba5477b69a0611c3587df8c51f94ea92 ""
+  "homework-02-orderings.tex" 1520739561 10476 5f021655d5a6dc6f7f830cf2d6cba273 ""
+  "pic1.png" 1520682957 55332 e2ae26af409348cfee2634ade9166aeb ""
+  "pic2.png" 1520686877 5065 c759bf1764faa4aeb7add38b6a200a47 ""
+  "pic3.png" 1520686922 14969 18698384904a74ebcc3fc416a934c71d ""
   "preamble.tex" 1520468855 2710 339faac91ac960a659c9d5444c290f47 ""
   (generated)
-  "homework-02-orderings.xdv"
   "homework-02-orderings.log"
   "homework-02-orderings.aux"
+  "homework-02-orderings.xdv"

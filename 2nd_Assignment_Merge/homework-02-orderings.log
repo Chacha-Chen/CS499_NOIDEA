@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  11 MAR 2018 11:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  11 MAR 2018 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -219,55 +219,72 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 LaTeX Warning: No \author given.
 
-) [1
+)
+File: pic1.png Graphic file (type bmp)
+<pic1.png>
+ [1
 
 ] [2]
-./homework-02-orderings.tex:118: Missing $ inserted.
+Overfull \hbox (103.41113pt too wide) in paragraph at lines 89--90
+[]\TU/lmr/bx/n/12 solution: \TU/lmr/m/n/12 Yes.For every $\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$\TU/lmr/m/n/12 , there is an antichain like$\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 0)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; :::\OT1/cmr/m/n/12 0)\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 1)$\TU/lmr/m/n/12 ,
+ []
+
+File: pic2.png Graphic file (type bmp)
+<pic2.png>
+File: pic3.png Graphic file (type bmp)
+<pic3.png>
+
+Package amsmath Warning: Foreign command \over;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 139.
+
+[3]
+./homework-02-orderings.tex:155: Missing $ inserted.
 <inserted text> 
                 $
-l.118 ... $, so we need proof $\N^* \cong \{0,1\)^
+l.155 ... $, so we need proof $\N^* \cong \{0,1\)^
                                                   *$.\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 183--186
 
  []
 
-[5] (./homework-02-orderings.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 240--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+[6] (./homework-02-orderings.aux) ) 
 Here is how much of TeX's memory you used:
- 2928 strings out of 493007
- 36192 string characters out of 6137966
- 112083 words of memory out of 5000000
- 6862 multiletter control sequences out of 15000+600000
+ 2944 strings out of 493007
+ 36355 string characters out of 6137966
+ 111083 words of memory out of 5000000
+ 6873 multiletter control sequences out of 15000+600000
  11876 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 29i,8n,35p,298b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,518b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework-02-orderings.xdv (5 pages, 53156 bytes).
+Output written on homework-02-orderings.xdv (6 pages, 65720 bytes).
