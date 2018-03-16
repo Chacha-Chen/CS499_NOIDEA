@@ -1,0 +1,90 @@
+
+
+
+
+\usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{proposition*}{Proposition}
+
+
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exerciseD}[theorem]{*Exercise}
+\newtheorem{exerciseDD}[theorem]{**Exercise}
+
+\let\oldexercise\exercise
+\renewcommand{\exercise}{\oldexercise\normalfont}
+
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\scalar}[2]{\ensuremath{\langle #1, #2\rangle}}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\norm}[1]{\|#1\|}
+\newcommand{\pfrac}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\nth}[1]{#1^{\textsuperscript{th}}}
+\newcommand{\core}{\textnormal{core}}
+
+
+
+
+
+\newcommand{\poly}{\textnormal{poly}}
+\newcommand{\quasipol}{\textnormal{quasipol}}
+\newcommand{\ssubexp}{\textnormal{stronglySubExp}}
+\newcommand{\wsubexp}{\textnormal{weaklySubExp}}
+\newcommand{\simplyexp}{\textnormal{E}}
+\newcommand{\expo}{\textnormal{Exp}}
+
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\nn}{\mathbb{N}_0^n}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+
+\definecolor{darkgreen}{rgb}{0,0.6,0}
+
+
+\date{}
+
+\title{
+  Mathematical Foundations \\of \\Computer Science\\
+  \vspace{3mm}
+{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder}
+}
+
+\begin{document}
+
+\maketitle
+
+%\begin{quotation}
+%  You are welcome to discuss the exercises in the discussion
+%  forum. Please take them serious. Doing the exercises is as important
+%  than watching the videos.
+%
+%  I intentionally included very challenging exercises and marked them
+%  with one or two ``$*$''. No star means you should be able to solve
+%  the exercises without big problems once you have understood
+%  the material from the video lecture. One star means it requires 
+%  significant additional thinking. Two stars means it is not 
+%  unlikely that you will fail to solve them, even once you have understood
+%  the material and thought a lot about the exercise. Don't feel bad
+%  if you fail. Failure is part of learning.
+%
+%  This is the first time this course is online. Thus there might be mistakes
+%  (typos or more serious conceptual mistakes) in the exercises. I will be 
+%  grateful if you point them out to me!
+%\end{quotation}
