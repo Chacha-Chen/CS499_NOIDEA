@@ -1,0 +1,104 @@
+\documentclass[12pt,a4]{article}
+
+
+
+\input{preamble}
+
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+\setcounter{section}{2}
+
+
+\begin{itemize}
+ \item Homework assignment published on Tuesday, 2018-03-13
+ \item Submit questions and first solutions by Sunday, 2018-03-18, 12:00 by email to dominik.scheder@gmail.com  and the TAs.
+ \item You will receive feedback by Wednesday, 2018-03-21
+ \item Revise your solution and submit your final solution by Sunday, 2018-03-25 by  email to dominik.scheder@gmail.com and the TAs.
+\end{itemize}
+
+
+
+\section{Basic Counting}
+
+A function $[m] \rightarrow [n]$ is {\em monotone} if $f(1) \leq f(2) \leq \dots \leq f(m)$.
+It is  {\em strictly monotone} if $f(1) < f(2) < \dots < f(m)$.
+
+\begin{exercise}
+   Find and justify a closed formula for the number of strictly
+   monotone functions from $[m]$ to $[n]$.
+\end{exercise}
+
+\begin{solution}
+  ${n \choose m}$.
+\end{solution}
+
+\begin{exercise}
+   Find and justify a closed formula for the number of monotone functions from $[m]$ to $[n]$.
+\end{exercise}
+
+\begin{solution}
+  $n^m$.
+\end{solution}
+
+
+\textbf{Remark.} By ``closed'' I mean something using expressions like $\times$, $+$,
+${n \choose k}$, $n!$, but not $\sum$ or $\prod$.
+For example, ${n \choose k^2}$ is a closed formula but
+$\sum_{k=0}^n {n \choose k}$ is not.
+
+
+\begin{exercise}
+  Prove that $\sum_{k=0}^n {n \choose k}^2 = {2n \choose n}$ for every $n \geq 0$ by finding a combinatorial interpretation.
+\end{exercise}
+
+\proof We divide the set of $2n$ elements into $2$ sets of $n$ elements. For each $0 \leq k \leq n$, we pick out $k$ elements from one set, exclude $k$ elements in the other set and combine them, we will get $n$ elements, which is equivalent to selecting $n$ elements from $2n$ elements.
+
+Therefore, $\sum_{k=0}^n {n \choose k}^2 = {2n \choose n}$ for every $n \geq 0$.
+
+
+\begin{exercise}[From the textbook]
+   Find a closed formula for $\sum_{k=m}^n {k \choose m}{n \choose k}$ and prove it combinatorially, i.e., by giving an
+   interpretation.
+\end{exercise}
+
+\begin{solution}
+  $\sum_{k=m}^n {k \choose m}{n \choose k} = {n \choose m}\cdot 2^{n-m}$.
+  \proof The formula means for each $m \leq k \leq n$, we select $k$ elements from $n$ elements, then select $m$ elements from these $k$ elements, which is equivalent to first choose $n$ elements from $m$ elements, then decide whether to pick out the remaining elements that is ${n \choose m}\cdot 2^{n-m}$.
+\end{solution}
+
+\begin{exercise}
+   Let $B_n$ be the number of partitions of the set $[n]$ (this is the same as the number
+   of equivalence relations on $[n]$). This is called the Bell number, thus we
+   denote it $B_n$.
+   Prove that the following recursive formula
+   for $B_n$ is correct:
+   \begin{align*}
+     B_0 & = 1 \\
+     B_{n+1} & = \sum_{k=0}^n {n \choose k} B_k  \ .
+   \end{align*}
+\end{exercise}
+
+\proof $B_0 = 1$ is correct, undoubtedly.
+
+Denote the elements in the set $\lbrace x_1, x_2, \ldots, x_n, \ldots \rbrace$.
+
+Assume that for $B_0, B_1, \ldots, B_n$, the formula is right. Then we add a element $x_{n+1}$ to the set. How many options do we have?
+
+For each $0 \leq k \leq n$, we select $n - k$ elements from the former $n$ elements and combine them with the element $n_{k+1}$，which contains ${n \choose n-k} = {n \choose k}$ ways, then partition the remaining $k$ elements. Therefore we have $ B_{n+1} = \sum_{k=0}^n {n \choose k} B_k$.
+
+\begin{exercise}
+  Let $P_n$ be the number of ways to write the natural number $n$ as a sum $
+  a_1 + a_2 + \cdots + a_k$ such that
+  $1 \leq a_1 \leq a_2 \leq \dots \leq a_k$. For example, $3$ can be written
+  as $3$, $2 + 1$, and $1 + 1 + 1$, so $P_3 = 3$.
+   Find a recursive formula for $P_n$.\\
+
+   \textbf{Remark.} The formula might not be as simple as the above for $B_n$. Be creative!
+   Start by writing a simple recursive program that computes $P_n$.
+\end{exercise}
+
+
+
+\end{document}
