@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1520750507 "hw01-NOIDEA-final-submission.xdv" "hw01-NOIDEA-final-submission.pdf" "hw01-NOIDEA-final-submission" 1520750509
-  "hw01-NOIDEA-final-submission.xdv" 1520750507 82900 2443934e5f07c236a6a912e3122d248b "xelatex"
+["xdvipdfmx"] 1520816516 "hw01-NOIDEA-final-submission.xdv" "hw01-NOIDEA-final-submission.pdf" "hw01-NOIDEA-final-submission" 1520816517
+  "hw01-NOIDEA-final-submission.xdv" 1520816516 81956 e6482ecb0d871c46339ec9cdf12518bc "xelatex"
   (generated)
   "hw01-NOIDEA-final-submission.pdf"
-["xelatex"] 1520750506 "hw01-NOIDEA-final-submission.tex" "hw01-NOIDEA-final-submission.xdv" "hw01-NOIDEA-final-submission" 1520750509
+["xelatex"] 1520816516 "hw01-NOIDEA-final-submission.tex" "hw01-NOIDEA-final-submission.xdv" "hw01-NOIDEA-final-submission" 1520816517
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -54,21 +54,10 @@
   "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
   "/usr/local/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520140291 3678518 360cae1edb57addf5feef5bd838e5bcc ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "hw01-NOIDEA-final-submission.aux" 1520750507 2441 16c3b64cca44301164f46545ce6e54f7 ""
-  "hw01-NOIDEA-final-submission.tex" 1520750506 15294 f47cf15720dded3256a5055210599778 ""
+  "hw01-NOIDEA-final-submission.aux" 1520816516 1489 3a275b8a19c7fe5f5ea30875720963a5 ""
+  "hw01-NOIDEA-final-submission.tex" 1520816516 14849 8ae57e1fb64d1889d6143926eed9ff4f ""
   "images/Venn.png" 1519716576 28266 7c2492997ba3206bde3540850d770d89 ""
   "images/corridor.png" 1520740948 13222 8d80029b123a13adfcc7435b665c3b54 ""
-  "images/corridor_a.png" 1520740948 21582 7c9950d9a35c5b84c939216d1d280800 ""
-  "images/corridor_b.png" 1520740948 23877 c230af3e479b90e08ca1d100f4911a59 ""
-  "images/corridor_c.png" 1520740948 16578 65c9f44996f94af5a36a58f487fef452 ""
-  "images/corridor_d.png" 1520740948 16561 de157b4ee1c66dd6c792a7927b5b8372 ""
-  "images/corridor_e.png" 1520740948 26780 86f420fb6d40265058b3c550fd6a0191 ""
-  "images/corridor_f.png" 1520740948 24466 2950dfb2bf164ae5779af73827eb1c2f ""
-  "images/corridor_g.png" 1520740948 24404 6ad350337034da5b7f8265e9ae4b5495 ""
-  "images/left_a.png" 1520740948 6106 7f0127c888e0fe2adc8f985013effe2e ""
-  "images/left_b.png" 1520740948 6034 52305c6b80aac46410cbe73555abfac4 ""
-  "images/left_c.png" 1520740948 6097 881c5b38bdce71d5b8c264cb82116b4a ""
-  "images/left_d.png" 1520740948 6035 935d5e3c7b354e6bad405eaeaa6995e3 ""
   "images/slightlydamaged.png" 1520740948 20352 5b662a5789a6f4aef8b396eec9b7dabb ""
   "images/threecoins.png" 1520740948 165278 9cd4729d122a6223bb15a8ea13e114fc ""
   "images/twocoins.png" 1520740948 179553 1eab14b6eaa1c7582f61fb67168a70fa ""

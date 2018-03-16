@@ -72,7 +72,7 @@
 \end{exercise}
 
 \begin{proof}
-	To prove the claim, let's start by focusing on the ``corridor" in the chessboard.
+
     \begin{figure}[h]
         \small
         \centering
@@ -81,37 +81,10 @@
         \caption{The ``Corridor"}
     \end{figure}
 
-    There are 7 ways to tile the ``corridor" with domino stones:
 
-    \begin{figure}[H]
-        \centering
-        \subfloat[]{\includegraphics[width=3cm]{corridor_a.png}}
-        \subfloat[]{\includegraphics[width=3cm]{corridor_b.png}}
-        \subfloat[]{\includegraphics[width=3cm]{corridor_c.png}}
-        \subfloat[]{\includegraphics[width=3cm]{corridor_d.png}} \\
-        \subfloat[]{\includegraphics[width=3cm]{corridor_e.png}}
-        \subfloat[]{\includegraphics[width=3cm]{corridor_f.png}}
-        \subfloat[]{\includegraphics[width=3cm]{corridor_g.png}}
-	\label{fig:corridorTile}
-	\caption{Tiling the Corridor}
-    \end{figure}
+    \textbf{Solution: In the left half there's 13 back squares and 11 white squares.
+    cut it into 2 halves. A complete domino tiling "marries" one black block to one white tiling. In the left half, at least 2 white squares have to "marry" a back foreigner from the right half. But only 1 black can be married to a which block from the right half. Thus, you cannot cober the complete board. }
 
-    In the case (a) and (b), each of the two remaining parts of the chessboard contains 21 square.
-    Since a domino stone tiles 2 sqaures, the  (a) and the case (b) are ruled out.
-
-    How about (c) ,(d), (e), (f) and (g)? We consider the possible remaining parts in these cases:
-
-    \begin{figure}[H]
-        \centering
-        \subfloat{\includegraphics[width=2cm]{left_a.png}}
-        \subfloat{\includegraphics[width=2cm]{left_b.png}}
-        \subfloat{\includegraphics[width=2cm]{left_c.png}}
-        \subfloat{\includegraphics[width=2cm]{left_d.png}}
-	\label{fig:leftPart}
-	\caption{The Remaining Parts}
-    \end{figure}
-
-    Becasue the number of black squares and beige squares is not equal, all of the possible remaining parts cannot be tiled.
 
 \end{proof}
 
@@ -199,6 +172,14 @@ You jump around with four coins which in the beginning form a square of side len
     It means that with the converse steps, We can form a smaller square with side length $1/n < 1$ with initial side length $1$, which requiring that the coordinates of coins are not integer.
     
      Obviously, it's impossible.
+
+     \textbf{
+     \begin{itemize}
+     \item 1.Everything is reversible.
+     \item 2.If we can form a larger square, we can also form a a smaller square.
+     \item 3.This is impossible since you always stay on the grid
+     \item P.S. Hexagon can be also proofed as above but not pentagon.
+     \end{itemize}}
 \end{proof}
 
 \section{Exclusion-Inclusion}
@@ -312,6 +293,10 @@ $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{
      $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
 \end{enumerate}
 
+\textbf{solution: Let $X=A_1\cup...\cup A_n$. Then $LHS= \sum\limits_{a\in X} 1, RHS = \sum\limits_{\phi\neq I\in [n]}(-1)^{|I|+1}\sum\limits_{a\in X}[a\subseteq A_I]$
+Claim: LHS=RHS for each $a\in X$ individually, namely $1=\sum\limits_{\phi \neq I\subseteq [n]}(-1)^{|I|+1}[a\in A_I]$\\
+Page 100 in the book.}
+
 \section{Feasible Intersection Patterns}
 
 \subsection{}
@@ -386,7 +371,7 @@ $|C\bigcap D|=5\not = 3$.
       
       $a_{|I|}=|A_{\{I\}}|.$
      
-      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i / \bigcup \limits_{j\notin I }{A_j}$.
+      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i \backslash \bigcup \limits_{j\notin I }{A_j}$.
      \end{center}
      
      In other words,

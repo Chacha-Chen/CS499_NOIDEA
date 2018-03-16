@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  11 MAR 2018 14:41
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  12 MAR 2018 09:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -304,149 +304,118 @@ File: images/slightlydamaged.png Graphic file (type QTm)
 ]
 File: images/corridor.png Graphic file (type QTm)
  <use  "images/corridor.png" >
-File: images/corridor_a.png Graphic file (type QTm)
-
-<use  "images/corridor_a.png" >
-File: images/corridor_b.png Graphic file (type QTm)
- <use  "images/corridor_b.png" >
-File: images/corridor_c.png Graphic file (type QTm)
-
-<use  "images/corridor_c.png" >
-File: images/corridor_d.png Graphic file (type QTm)
- <use  "images/corridor_d.png" >
-File: images/corridor_e.png Graphic file (type QTm)
-
-<use  "images/corridor_e.png" >
-File: images/corridor_f.png Graphic file (type QTm)
- <use  "images/corridor_f.png" >
-File: images/corridor_g.png Graphic file (type QTm)
-
-<use  "images/corridor_g.png" > [2]
-File: images/left_a.png Graphic file (type QTm)
- <use  "images/left_a.png" >
-File: images/left_b.png Graphic file (type QTm)
-
-<use  "images/left_b.png" >
-File: images/left_c.png Graphic file (type QTm)
- <use  "images/left_c.png" >
-File: images/left_d.png Graphic file (type QTm)
-
-<use  "images/left_d.png" > [3]
 File: images/twocoins.png Graphic file (type QTm)
- <use  "images/twocoins.png" >
+
+<use  "images/twocoins.png" > [2]
 File: images/threecoins.png Graphic file (type QTm)
-
-<use  "images/threecoins.png" > [4]
+ <use  "images/threecoins.png" > [3]
 File: images/Venn.png Graphic file (type QTm)
- <use  "images/Venn.png" >
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+<use  "images/Venn.png" > [4]
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--244
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
-
- []
-
-
-Overfull \hbox (2.79286pt too wide) in paragraph at lines 265--266
+Overfull \hbox (2.79286pt too wide) in paragraph at lines 246--247
 \TU/lmr/m/n/12 notes the sum of all the possible k-wise intersections in $\OMS/
 cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; B[]; [] ; B[] \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--268
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--283
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--286
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 289--294
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--302
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 306--307
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 308--313
-
- []
-
-[8]
-Overfull \hbox (5.02554pt too wide) in paragraph at lines 337--338
+Overfull \hbox (5.02554pt too wide) in paragraph at lines 322--323
 []\TU/lmr/m/n/12 In the spirit of the previous questions, let us call a sequenc
 e $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a[]; a[]; :::; a[]\OT1/cmr/m/n/12 ) \OMS/c
 msy/m/n/12 2
  []
 
-[9] [10] (./hw01-NOIDEA-final-submission.aux) )
+[8] [9] [10] (./hw01-NOIDEA-final-submission.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 4429 strings out of 493005
- 64501 string characters out of 6134597
+ 4401 strings out of 493005
+ 64011 string characters out of 6134597
  154072 words of memory out of 5000000
- 8337 multiletter control sequences out of 15000+600000
- 10964 words of font info for 53 fonts, out of 8000000 for 9000
+ 8321 multiletter control sequences out of 15000+600000
+ 10956 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 44i,17n,49p,596b,2448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,17n,42p,596b,2429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on hw01-NOIDEA-final-submission.xdv (10 pages, 82900 bytes).
+Output written on hw01-NOIDEA-final-submission.xdv (10 pages, 81956 bytes).

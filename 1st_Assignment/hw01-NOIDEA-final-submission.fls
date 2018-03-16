@@ -100,17 +100,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT hw01-NOIDEA-final-submission.xdv
 INPUT images/corridor.png
-INPUT images/corridor_a.png
-INPUT images/corridor_b.png
-INPUT images/corridor_c.png
-INPUT images/corridor_d.png
-INPUT images/corridor_e.png
-INPUT images/corridor_f.png
-INPUT images/corridor_g.png
-INPUT images/left_a.png
-INPUT images/left_b.png
-INPUT images/left_c.png
-INPUT images/left_d.png
 INPUT images/twocoins.png
 INPUT images/threecoins.png
 INPUT images/Venn.png

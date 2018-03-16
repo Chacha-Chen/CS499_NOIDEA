@@ -1,0 +1,15 @@
+# Fdb version 3
+["xdvipdfmx"] 0 "preamble.xdv" "preamble.pdf" "preamble" 0
+  "preamble.xdv" 0 -1 0 "xelatex"
+  (generated)
+  "preamble.pdf"
+["xelatex"] 1520817464 "preamble.tex" "preamble.xdv" "preamble" 1520817464
+  "/usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf" 1494087824 32646 eadc4ca26cdbe7105ac7c593aa8c4f72 ""
+  "/usr/local/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520140291 3678518 360cae1edb57addf5feef5bd838e5bcc ""
+  "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
+  "preamble.aux" 1520817464 8 a94a2480d3289e625eea47cd1b285758 ""
+  "preamble.tex" 1520740948 2710 339faac91ac960a659c9d5444c290f47 ""
+  (generated)
+  "preamble.log"
+  "preamble.xdv"
+  "preamble.aux"

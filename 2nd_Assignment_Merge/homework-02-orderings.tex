@@ -136,7 +136,7 @@ we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
   What is the largest antichain of $\{0,1\}^n$?
 \end{exerciseDD}
 
-\textbf{solution:} $L_i={x\in{0,1}^n|x has i many 1's}$ ,obviously $|L_i|=(_i^n)$ and$ L_i$is an antichain. When $i=[{n\over 2}]$,$|L_i|=(_i^n)$has the largest value, let's name it A. If A is not the largest antichain, it must contain another element B below the midlevel. Since every B in the$ i_{th} $level can compare with an element in the $i+1_{th}$ level, we can move B upwards. If we continue moving B upwards B can reach the midlevel, thus this is not an antichain.
+\textbf{solution:} $L_i=\{x\in\{0,1\}^n$ | $x$ has $i$ 1's\} ,obviously $|L_i|=(_i^n)$ and $L_i$ is an antichain. When $i=[{n\over 2}]$,$|L_i|=(_i^n)$has the largest value, let's name it A. If A is not the largest antichain, it must contain another element B below the midlevel. Since every B in the$ i_{th} $level can compare with an element in the $i+1_{th}$ level, we can move B upwards. If we continue moving B upwards B can reach the midlevel, thus this is not an antichain.
 
 \subsection{Infinite Sets}
 
@@ -152,13 +152,14 @@ quite easily that $\N^k \cong \N$ for every $k$.
 \end{exercise}
 
 \begin{proof}
-As we have learn before, $\N \cong \{0,1\}^* $, so we need proof $\N^* \cong \{0,1\)^*$.\\
+As we have learn before, $\N \cong \{0,1\}^* $, so we need proof $\N^* \cong \{0,1\}^* $.\\
 We could define a function $f$:
 
 $f:\N^* \rightarrow \{0,1\}^*, (a_1, a_2, \dots) \mapsto$ sequnce of 1s with $(a_k + 1)$th bit replaced with 0.\\
 In other words, for each element $\mathbf{a} \in \N^*$, its corresponding bit sequence is combination of $a_k$ $1$s appended with a $0$ where $k \in [1, |\mathbf{a}|]$.\\
 Since $\{0,1\}^*$ is also a natural number sequence, $|\{0,1\}^*| \le \N^*$. Also, accoding to function $f$, each image of $\mathbf{a} \in \N^*$ in $\{0,1\}^*$ has different construction, which means $\N^* \le |\{0,1\}^*|$. In this way, function $f$ is bijective.
 \end{proof}
+
 \begin{exercise}
    Show that $R \cong R \times R$. \textbf{Hint:} Use the fact that
    $R \cong \{0,1\}^{\N}$ and thus show that $\{0,1\}^{\N} \cong \{0,1\}^{\N} \times \{0,1\}^{\N}$.
