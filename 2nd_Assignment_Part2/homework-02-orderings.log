@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  11 MAR 2018 11:35
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/W32TeX) (preloaded format=xelatex 2018.3.6)  17 MAR 2018 21:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -221,46 +221,67 @@ LaTeX Warning: No \author given.
 
 ) [1
 
-] [2]
-./homework-02-orderings.tex:118: Missing $ inserted.
-<inserted text> 
-                $
-l.118 ... $, so we need proof $\N^* \cong \{0,1\)^
-                                                  *$.\\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+]
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 107--110
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 112.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--183
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--192
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
-[5] (./homework-02-orderings.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+
+ []
+
+[6] (./homework-02-orderings.aux) ) 
 Here is how much of TeX's memory you used:
  2928 strings out of 493007
  36192 string characters out of 6137966
@@ -268,6 +289,6 @@ Here is how much of TeX's memory you used:
  6862 multiletter control sequences out of 15000+600000
  11876 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 29i,8n,35p,298b,259s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,312b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework-02-orderings.xdv (5 pages, 53156 bytes).
+Output written on homework-02-orderings.xdv (6 pages, 67496 bytes).

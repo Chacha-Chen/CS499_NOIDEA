@@ -1,4 +1,4 @@
-\documentclass[12pt,a4]{article}
+  \documentclass[12pt,a4]{article}
 
 
 
@@ -99,6 +99,18 @@ we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
   What is the largest antichain of $\{0,1\}^n$?
 \end{exerciseDD}
 
+\begin{solution}
+The largest antichain of $\{0,1\}^n$ is the set of all bit sequnce composed by $[n/2]$ $1$s and $(n-[n/2])$ $0$s.\\
+\begin{enumerate}
+\item We partition all elements in $\{0,1\}^n$ by the number of $1$s. $A_i$ denotes the set of all bit sequence containing $i$ $1$s, then $\{0,1\}^n$ consists of $A_1, A_2, \dots, A_n$. \\
+Each partition is an antichanin itself. According to character of enumerative combination, $A_{[n/2]}$ has the most elements.\\
+\item Consider an antichain $C = (c_1, c_2, \dots c_m)$ of $\{0,1\}^n$ whose elements lie in different partitions.\\
+Take any subset $C^* \subseteq C$ whose elements belong to $A_i$ where $i \neq [n/2]$, and $A_j$ next to $A_i$ with $|A_i| < |A_j|$.\\
+Take a subset $C^{**} \subseteq A_j$ containing all elements in $A_j$ which are comparable to elements in $C^*$. Obviously $|C^{**}| \geq |C^*|$ and elements $C^{**}$ are uncomparable to elements of $C \backslash C^*$. In this way, $C \backslash C^* + C^{**}$ is also a antichain.\\
+\item We can recursively replace $C^*$ with $C^{**}$ to get an antichain whose size is not smaller than the previous one until all elements lie in $A_{[n/2]}$.\\
+\end{enumerate}
+To sum up, $A_{[n/2]}$ is the largest antichain of  $\{0,1\}^n$ with size ${n \choose n/2}$.
+\end{solution}
 
 
 \subsection{Infinite Sets}
@@ -115,12 +127,16 @@ quite easily that $\N^k \cong \N$ for every $k$.
 \end{exercise}
 
 \begin{proof}
-As we have learn before, $\N \cong \{0,1\}^* $, so we need proof $\N^* \cong \{0,1\)^*$.\\
-We could define a function $f$:
-
-$f:\N^* \rightarrow \{0,1\}^*, (a_1, a_2, \dots) \mapsto$ sequnce of 1s with $(a_k + 1)$th bit replaced with 0.\\
-In other words, for each element $\mathbf{a} \in \N^*$, its corresponding bit sequence is combination of $a_k$ $1$s appended with a $0$ where $k \in [1, |\mathbf{a}|]$.\\
-Since $\{0,1\}^*$ is also a natural number sequence, $|\{0,1\}^*| \le \N^*$. Also, accoding to function $f$, each image of $\mathbf{a} \in \N^*$ in $\{0,1\}^*$ has different construction, which means $\N^* \le |\{0,1\}^*|$. In this way, function $f$ is bijective.
+As we have learn before, $\N \cong \{0,1\}^* $, so we need proof $\N^* \cong \{0,1\}^*$.\\
+Let $b_i$ denotes a bit sequence which starts with $i$ $1$s and ends with a $0$.\\
+Then define a function $f$:
+\begin{center}
+$f:\N^* \rightarrow \{0,1\}^*$, \\
+$(a_1, a_2, \dots) \mapsto (b_{a_1},b_{a_2},\dots)$\\
+\end{center}
+Since $\{0,1\}^*$ is also a natural number sequence, $|\{0,1\}^*| \le |\N^*|$. \\
+According to function $f$, for two different elements in $\N^*$, let natural number $a_i$ be the first different byte, its conresponding $b_i$ will also be different, so the their images in $\{0,1\}^8$ are different. We can get $|\N^*| \le |\{0,1\}^*|$. \\
+In this way, function $f$ is bijective.
 \end{proof}
 \begin{exercise}
    Show that $R \cong R \times R$. \textbf{Hint:} Use the fact that
@@ -225,7 +241,34 @@ In this way, $A$ is a uncountable antichain.
 \end{solution}
 
 \begin{exerciseDD}
-   Find an uncountable chain in $\{0,1\}^{\N}$. That is, an antichain $A$ with $A \cong \R$.
+   Find an uncountable chain in $\{0,1\}^{\N}$. That is, an chain $A$ with $A \cong \R$.
 \end{exerciseDD}
+\begin{solution}
+For $b_i \in \{0,1\}^{\N}$ where $i \in \N$,we define matrix $B_k$ as:\\
+\begin{equation*}
+\mathbf{B_k} = \left(
+\begin{array}{ll}
+  \mathbf{b_1}\\
+  \mathbf{b_2}\\
+  \dots \\
+  \mathbf{b_k}\\
+  1 \\
+  \dots \
+\end{array} \right)
+= \left(
+\begin{array}{ccc}
+  b_{11} & b_{12} & \dots\\
+  b_{21} & b_{22} & \dots\\
+  \dots & \dots & \dots\\
+  b_{k1} & b_{k2} & \dots\\
+  1 & 1 & \dots\\
+  \dots\\
+\end{array} \right)
+\end{equation*}
+Let $B$ denotes the set of all $B_k$, then $B \cong \{0,1\}^{\N}$. \\
+Take bit sequnce $a_k$ from $B_k$ following the diagonals, which means $a_k = (b_{11}, b_{21}, b_{12}, b_{31}, b_{22}, \dots)$. And set $A$ is the set of all $a_k$. We can get $A \cong B \cong \{0,1\}^{\N}$ \\
+According to the way we construct $B_k$, the 0s in $a_{k+1}$ will not be less than these in $a_k$ and exist at the same bits. In this way, any two elements in $A$ are comparable.\\
+So $A$ is an uncountable chain.
 
+\end{solution}
 \end{document}
