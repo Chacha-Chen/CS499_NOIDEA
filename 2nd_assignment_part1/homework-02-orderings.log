@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.2.22)  10 MAR 2018 21:42
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2018.2.22)  17 MAR 2018 22:21
 entering extended mode
-**C:/Users/21467/Downloads/hw2-tex-sources/homework-02-orderings.tex
-(C:/Users/21467/Downloads/hw2-tex-sources/homework-02-orderings.tex
+**D:/STUDY/离散数学/作业/w2/homework-02-orderings.tex
+(D:/STUDY/离散数学/作业/w2/homework-02-orderings.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for loaded.
 (D:\CTEX\MiKTeX\tex\latex\base\article.cls
@@ -21,7 +21,7 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\21467\Downloads\hw2-tex-sources\preamble.tex
+(D:\STUDY\离散数学\作业\w2\preamble.tex
 (D:\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -196,7 +196,7 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 LaTeX Warning: Unused global option(s):
     [a4].
 
-(C:\Users\21467\Downloads\hw2-tex-sources\homework-02-orderings.aux)
+(D:\STUDY\离散数学\作业\w2\homework-02-orderings.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
@@ -244,69 +244,58 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
 
-<pic1.png, id=1, 1280.53406pt x 525.46312pt>
-File: pic1.png Graphic file (type png)
- <use pic1.png>
-Package pdftex.def Info: pic1.png used on input line 49.
-(pdftex.def)             Requested size: 384.16318pt x 157.64015pt.
+<pic1.pdf, id=1, 1016.79875pt x 1005.7575pt>
+File: pic1.pdf Graphic file (type pdf)
+ <use pic1.pdf>
+Package pdftex.def Info: pic1.pdf used on input line 49.
+(pdftex.def)             Requested size: 305.04198pt x 301.72958pt.
  [1
 
-{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2 <C:/User
-s/21467/Downloads/hw2-tex-sources/pic1.png>]
-Overfull \hbox (102.75107pt too wide) in paragraph at lines 89--90
-[]\OT1/cmr/bx/n/12 solution: \OT1/cmr/m/n/12 Yes.For ev-ery $\OML/cmm/m/it/12 k
- \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N$\OT1/cmr/m/n/12 , there is an an-tichain li
-ke$(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/1
-2 0)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 (0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\O
-ML/cmm/m/it/12 ; :::\OT1/cmr/m/n/12 0)\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 (
-0\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; :::; \OT1/cmr/m/n/12 1)
-$,
- []
-
-<pic2.png, id=18, 231.86626pt x 235.63031pt>
+{D:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [2 <D:/STUD
+Y/离散数学/作业/w2/pic1.pdf>] <pic2.png, id=21, 267.24844pt x 246.1697pt>
 File: pic2.png Graphic file (type png)
  <use pic2.png>
 Package pdftex.def Info: pic2.png used on input line 117.
-(pdftex.def)             Requested size: 69.56041pt x 70.68964pt.
+(pdftex.def)             Requested size: 80.17514pt x 73.85147pt.
 
-<pic3.png, id=19, 485.56406pt x 447.92343pt>
+<pic3.png, id=22, 485.56406pt x 447.92343pt>
 File: pic3.png Graphic file (type png)
  <use pic3.png>
 Package pdftex.def Info: pic3.png used on input line 118.
 (pdftex.def)             Requested size: 97.11108pt x 89.5831pt.
-
+ [3 <D:/STUDY/离散数学/作业/w2/pic2.png> <D:/STUDY/离散数学/作业/w2
+/pic3.png>]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 139.
 
-[3 <C:/Users/21467/Downloads/hw2-tex-sources/pic2.png> <C:/Users/21467/Download
-s/hw2-tex-sources/pic3.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 166--170
 
  []
 
-[4] (C:\Users\21467\Downloads\hw2-tex-sources\homework-02-orderings.aux) ) 
+[4] [5] (D:\STUDY\离散数学\作业\w2\homework-02-orderings.aux) ) 
 Here is how much of TeX's memory you used:
  3245 strings out of 495354
- 39814 string characters out of 3183859
+ 39733 string characters out of 3183859
  100443 words of memory out of 3000000
  6376 multiletter control sequences out of 15000+200000
  13371 words of font info for 51 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,8n,35p,388b,366s stack positions out of 5000i,500n,10000p,200000b,50000s
-<D:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/CTEX/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/CTEX/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
-><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmti12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfont
-s/symbols/msbm10.pfb>
-Output written on homework-02-orderings.pdf (4 pages, 181479 bytes).
+ 29i,8n,35p,549b,364s stack positions out of 5000i,500n,10000p,200000b,50000s
+<D:/CTEX/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/CTEX/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmmi12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/CTEX/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr17.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr8.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/
+CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/CTEX/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmti12.pfb><D:/CTEX/MiKTeX/fonts/type1/public/amsfonts/sym
+bols/msbm10.pfb>
+Output written on homework-02-orderings.pdf (5 pages, 290899 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
