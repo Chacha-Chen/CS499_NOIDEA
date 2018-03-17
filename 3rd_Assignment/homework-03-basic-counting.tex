@@ -99,6 +99,13 @@ For each $0 \leq k \leq n$, we select $n - k$ elements from the former $n$ eleme
    Start by writing a simple recursive program that computes $P_n$.
 \end{exercise}
 
-
-
+\begin{solution}
+Let $G_i(n)$ be the number of ways to wirte the natural number $n$ as a sum of $i$ numbers following the rules $1 \leq a_1 \leq a_2 \leq \dots \leq a_i$. Speacially we define $G_i(k) = 0$ where $i > k$.\\
+Then we have $P_n = G_1(n) + G_2(n) + \dots + G_n(n)$.\\
+Consider wirting $n$ as a sum of $i$ numbers $a_1, a_2, \dots a_i$ with $1 \leq a_1 \leq a_2 \leq \dots \leq a_i$, and $a_1, a_2 \dots a_k$ are $1$s, $a_{k+1} \dots a_i$ are larger than $1$:\\
+Substract these numbers by 1, then we get $0, 0 \dots 0, a_{k+1}^*, \dots a_i^*$.\\
+For any $k$ with $1 \leq k \leq i$, the sum of $a_{k+1}^*, \dots a_i^*$ is $(n-i)$. Then the number of ways to wirte $i$ numbers which includes $k$ $1$s is equal to $G_{i-k}(n-i)$.\\
+In this way, $G_i(n) = \sum_{k=0}^{i-1}{G_{i-k}(n-i)}$ and  $P_n = \sum_{i=1}^{n-1}{\sum_{k=0}^{i-1}{G_{i-k}(n-i)}} + G_n(n) = \sum_{i=1}^{n-1}{\sum_{k=0}^{i-1}{G_{i-k}(n-i)}} + 1$\\
+Therefore $P_n - P_{n-1} = \sum_{k=1}^{n-1}{G_k(n-k)} = [n/2]$, so $P_n = P_{n-1} + [n/2]$.
+\end{solution}
 \end{document}
