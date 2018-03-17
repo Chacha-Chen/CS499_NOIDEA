@@ -46,7 +46,7 @@ $\{ \{1\}, \{2,3\}, \{1,4\}\}$ is not.
 
     \begin{figure}[ht]
     \centering
-    \includegraphics[scale=0.3]{pic1.png}
+    \includegraphics[scale=0.3]{pic1.pdf}
     \caption{the Hasse diagram of the partial ordering}
     \end{figure}
 
@@ -55,7 +55,7 @@ $\{ \{1\}, \{2,3\}, \{1,4\}\}$ is not.
     \textbf{solution:}the size of the largest chain is 4.
 
     \item What is the size of the largest antichain?
-    
+
     \textbf{solution:}the size of the largest antichain is 6.
   \end{enumerate}
   \end{exercise}
@@ -72,21 +72,21 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
   \begin{enumerate}
   \item
     Which elements are minimal? Which are maximal?
-    
+
     \textbf{solution:} (0,0,...,0)is the minimal. There is no maximal element.
-    
+
   \item Is there a minimum? A maximum?
-  
+
   \textbf{solution:} (0,0,...,0)is the minimum. There is no maximum element.
-  
+
   \item Does it have an infinite chain?
-  
+
   \textbf{solution:} Yes. If it does not have an infinite chain, it will have the maximum element which we assume it$ (a_1,a_2,...,a_n)$. Then we have the element$ (a_1+1,a_2+1,...,a_n+1)$, which is obviously greater than $ (a_1,a_2,...,a_n)$. Thus, it have an infinite chain.
 
   \item Does it have arbitrarily large antichains? That is, can you find an
   antichain $A$ of size $|A| = k$ for every $k \in \N$?
 
-  \textbf{solution:} Yes.For every  $k \in \N$, there is an antichain like$ (1,0,...,0), (0,1,...0),...,(0,0,...,1)$, which is an antichain.
+  \textbf{solution:} Yes.For every  $k \in \N$, there is an antichain like$(1,0,\cdots,0)$,\\$ (0,1,\cdots,0)$,$\cdots$,$(0,0,\cdots,1)$, which is an antichain.
 \end{enumerate}
 \end{exercise}
 
@@ -94,7 +94,7 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
   Does every infinite subset $S \subseteq \nn$ contain
   an infinite chain?
 \end{exerciseD}
-
+\textbf{solution:}  
 
 
 \begin{exercise}
@@ -118,7 +118,7 @@ we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
     \includegraphics[scale=0.2]{pic3.png}
     \caption{the Hasse diagrams of $(\{0,1\}^n, \leq)$ for $n=2,3$}
     \end{figure}
-    
+
 \begin{exercise}
   Determine the maximum, minimum, maximal, and minimal elements of
   $\{0,1\}^n$.
@@ -130,13 +130,13 @@ we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
   What is the longest chain of $\{0,1\}^n$?
 \end{exercise}
 
-\textbf{solution:} The longest chain of  $\{0,1\}^n$ is $ 00...0, 00...1,00...11,..., 11...1$.
+\textbf{solution:} The longest chain of  $\{0,1\}^n$ is $ 00...0, 00...1,00...11,..., 11...1$. The length of the chain is $n+1$.
 
 \begin{exerciseDD}
   What is the largest antichain of $\{0,1\}^n$?
 \end{exerciseDD}
 
-\textbf{solution:} $L_i={x\in{0,1}^n|x has i many 1's}$ ,obviously $|L_i|=(_i^n)$ and$ L_i$is an antichain. When $i=[{n\over 2}]$,$|L_i|=(_i^n)$has the largest value, let's name it A. If A is not the largest antichain, it must contain another element B below the midlevel. Since every B in the$ i_{th} $level can compare with an element in the $i+1_{th}$ level, we can move B upwards. If we continue moving B upwards B can reach the midlevel, thus this is not an antichain. 
+\textbf{solution:} $L_i={x\in{0,1}^n|x has i many 1's}$ ,obviously $|L_i|=(_i^n)$ and$ L_i$is an antichain. When $i=[{n\over 2}]$,$|L_i|=(_i^n)$has the largest value, let's name it A. If A is not the largest antichain, it must contain another element B below the midlevel. Since every B in the$ i_{th} $level can compare with an element in the $i+1_{th}$ level, we can move B upwards. If we continue moving B upwards B can reach the midlevel, thus this is not an antichain.
 
 
 
