@@ -43,8 +43,20 @@ $\{ \{1\}, \{2,3\}, \{1,4\}\}$ is not.
   is a partial ordering.
   \begin{enumerate}
     \item Draw the Hasse diagram of this partial ordering in a  nice way.
+
+    \begin{figure}[ht]
+    \centering
+    \includegraphics[scale=0.3]{pic1.pdf}
+    \caption{the Hasse diagram of the partial ordering}
+    \end{figure}
+
     \item What is the size of the largest chain?
+
+    \textbf{solution:}the size of the largest chain is 4.
+
     \item What is the size of the largest antichain?
+
+    \textbf{solution:}the size of the largest antichain is 7.
   \end{enumerate}
   \end{exercise}
 
@@ -60,10 +72,21 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
   \begin{enumerate}
   \item
     Which elements are minimal? Which are maximal?
+
+    \textbf{solution:} (0,0,...,0)is the minimal. There is no maximal element.
+
   \item Is there a minimum? A maximum?
+
+  \textbf{solution:} (0,0,...,0)is the minimum. There is no maximum element.
+
   \item Does it have an infinite chain?
+
+  \textbf{solution:} Yes. If it does not have an infinite chain, it will have the maximum element which we assume it$ (a_1,a_2,...,a_n)$. Then we have the element$ (a_1+1,a_2+1,...,a_n+1)$, which is obviously greater than $ (a_1,a_2,...,a_n)$. Thus, it have an infinite chain.
+
   \item Does it have arbitrarily large antichains? That is, can you find an
   antichain $A$ of size $|A| = k$ for every $k \in \N$?
+
+  \textbf{solution:} Yes.For every  $k \in \N$, there is an antichain like$(1,0,\cdots,0)$,\\$ (0,1,\cdots,0)$,$\cdots$,$(0,0,\cdots,1)$, which is an antichain.
 \end{enumerate}
 \end{exercise}
 
@@ -71,6 +94,11 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
   Does every infinite subset $S \subseteq \nn$ contain
   an infinite chain?
 \end{exerciseD}
+\textbf{solution:} For a infinite subset $S \subseteq \nn$ define $S_I := \{\mathbf{a}_I \vert \mathbf{a} \in S\}$. Because $S$ is infinite, there must be a division causing $S_I$ is infinite and $S_{[n]\backslash I}$ is finite($S_{[n]\backslash I}$ might be $\varnothing$).
+
+Hence, there are infinite elements of $S$ having the same part in $S_{[n]\backslash I}$ due to the finity.
+
+Consider the infinite part of these elements. For any element $S_i$ in $S$, we can find another element $S_j$ in the infinite subset $S$, whose finite part is the same as $S_i$ and the infinite part is all greater than $S_i$. Therefore, we can find an infinite chain.
 
 \begin{exercise}
   Show that $(\nn,\leq)$ has no infinite antichain. \textbf{Hint.} Use
@@ -79,12 +107,10 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
 
 \begin{solution}
 For any two elements $\mathbf{e^1}, \mathbf{e^2} \in (\nn,\leq)$ are uncomparable, there must be at least two corresponding bytes of them have opposite relations such as $e^1_i < e^2_i$ and $e^1_k > e^2_k$.\\
-Consider a element $\mathbf{e}$ in an antichain, for a byte $e_m$ of $\mathbf{e}$, the numbers in the interval $[1, e_m]$ is finite. Also, the number of bytes in $\mathbf{e}$ is finite.\\
+Take any element $\mathbf{e^1} \in  (\nn,\leq)$ to from any infinite antichain, for a byte $e_m$ of $\mathbf{e}$, the numbers in the interval $[1, e_m]$ is finite. Also, the number of bytes in $\mathbf{e}$ is finite.\\
 In this way, the number of elments which are uncomparable to $\mathbf{e}$ is also finite. So $(\nn,\leq)$ has no infinite antichain.
 
 \end{solution}
-
-
 
 Consider the induced ordering on $\{0,1\}^n$. That is, for $x,y\in \{0,1\}^n$
 we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
@@ -93,14 +119,25 @@ we have $x \leq y$ if $x_i \leq y_i$ for every coordinate $i \in [n]$.
  Draw the Hasse diagrams of $(\{0,1 \}^n, \leq)$ for $n=2,3$.
 \end{exercise}
 
+\begin{figure}[ht]
+  \centering
+  \includegraphics[scale=0.3]{pic2.png}
+  \includegraphics[scale=0.2]{pic3.png}
+  \caption{the Hasse diagrams of $(\{0,1\}^n, \leq)$ for $n=2,3$}
+  \end{figure}
+
 \begin{exercise}
   Determine the maximum, minimum, maximal, and minimal elements of
   $\{0,1\}^n$.
 \end{exercise}
 
+\textbf{solution:} The maximum and maximal element are both $11...1$(it has n many 1's). The minimum and minimal element are both $00...0$(it has n many 0's).
+
 \begin{exercise}
   What is the longest chain of $\{0,1\}^n$?
 \end{exercise}
+
+\textbf{solution:} The longest chain of  $\{0,1\}^n$ is $ 00...0, 00...1,00...11,..., 11...1$. The length of the chain is $n+1$.
 
 \begin{exerciseDD}
   What is the largest antichain of $\{0,1\}^n$?
