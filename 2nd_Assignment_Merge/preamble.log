@@ -1,13 +1,14 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  12 MAR 2018 09:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  18 MAR 2018 11:06
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **preamble.tex
 (./preamble.tex
-LaTeX2e <2017-04-15>
-Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:5: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -19,7 +20,7 @@ l.5 \usepackage{
 between \documentclass and \begin{document}.
 
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:7: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -31,7 +32,7 @@ l.7 \usepackage{
 between \documentclass and \begin{document}.
 
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:8: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -43,7 +44,7 @@ l.8 \usepackage{
 between \documentclass and \begin{document}.
 
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:10: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -55,7 +56,7 @@ l.10 \usepackage{
 between \documentclass and \begin{document}.
 
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:11: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -67,7 +68,7 @@ l.11 \usepackage{
 between \documentclass and \begin{document}.
 
 
-! LaTeX Error: \usepackage before \documentclass.
+./preamble.tex:12: LaTeX Error: \usepackage before \documentclass.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -80,7 +81,7 @@ between \documentclass and \begin{document}.
 
 \c@theorem=\count79
 
-! LaTeX Error: No counter 'section' defined.
+./preamble.tex:14: LaTeX Error: No counter 'section' defined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -93,7 +94,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: Command \* already defined.
+./preamble.tex:20: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -107,7 +108,7 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: Missing \begin{document}.
+./preamble.tex:20: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -126,7 +127,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 
-! LaTeX Error: Command \* already defined.
+./preamble.tex:21: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -145,7 +146,7 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 
-! LaTeX Error: Command \* already defined.
+./preamble.tex:22: LaTeX Error: Command \* already defined.
                Or name \end... illegal, see p.192 of the manual.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -174,7 +175,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 20--23
 []
  []
 
-! Undefined control sequence.
+./preamble.tex:64: Undefined control sequence.
 l.64 \definecolor
                  {darkgreen}{rgb}{0,0.6,0}
 The control sequence at the end of the top line
@@ -184,7 +185,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-! LaTeX Error: Missing \begin{document}.
+./preamble.tex:64: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -230,15 +231,14 @@ LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
 
 
-! LaTeX Error: The font size command \normalsize is not defined:
+./preamble.tex:75: LaTeX Error: The font size command \normalsize is not define
+d:
                there is probably something wrong with the class file.
 
 See the LaTeX manual or LaTeX Companion for explanation.
@@ -251,7 +251,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Undefined control sequence.
+./preamble.tex:77: Undefined control sequence.
 l.77 \maketitle
                
 The control sequence at the end of the top line
@@ -268,11 +268,11 @@ and I'll forget about whatever was undefined.
 
  
 Here is how much of TeX's memory you used:
- 55 strings out of 493005
- 502 string characters out of 6134597
- 61634 words of memory out of 5000000
- 4126 multiletter control sequences out of 15000+600000
+ 56 strings out of 493014
+ 587 string characters out of 6133352
+ 53601 words of memory out of 5000000
+ 3697 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  8i,0n,13p,92b,26s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+!  ==> Fatal error occurred, no output PDF file produced!

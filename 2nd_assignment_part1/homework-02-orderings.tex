@@ -94,8 +94,11 @@ $(2,5,4) \leq (2,6,6)$ but $(2,5,4) \not \leq (3,1,1)$.
   Does every infinite subset $S \subseteq \nn$ contain
   an infinite chain?
 \end{exerciseD}
-\textbf{solution:}  
+\textbf{solution:} For a subset $S \subseteq \nn$ define $S_I := \{\mathbf{a}_I \vert \mathbf{a} \in S\}$. Because $S$ is infinite, there must be a division causing $S_I$ is infinite and $S_{[n]\backslash I}$ is finite($S_{[n]\backslash I}$ might be $\varnothing$).
 
+Hence, there are infinite elements of $S$ having the same part in $S_{[n]\backslash I}$ due to the finity.
+
+Consider the infinite part of these elements. For any element $S_i$ in $S$, we can find another element $S_j$ in the infinite subset $S$, whose finite part is the same as $S_i$ and the infinite part is all greater than $S_i$. Therefore, we can find an infinite chain.
 
 \begin{exercise}
   Show that $(\nn,\leq)$ has no infinite antichain. \textbf{Hint.} Use
@@ -191,6 +194,3 @@ $(0,0,\dots)$ is the minimum element in this ordering and $(1,1,\dots)$ the maxi
 
 
 \end{document}
-
-
-
