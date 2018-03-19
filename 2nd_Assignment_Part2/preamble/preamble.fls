@@ -1,7 +1,0 @@
-PWD E:/Data/Ñ§Ï°×ÊÁÏ/DiscreteMathematics/HW2/hw2-tex-sources/preamble
-INPUT e:/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt
-INPUT ./preamble.tex
-OUTPUT preamble.log
-INPUT preamble.aux
-INPUT preamble.aux
-OUTPUT preamble.aux
