@@ -30,17 +30,31 @@ It is  {\em strictly monotone} if $f(1) < f(2) < \dots < f(m)$.
    monotone functions from $[m]$ to $[n]$.
 \end{exercise}
 
-\begin{solution}
+\begin{proof}
   ${n \choose m}$.
-\end{solution}
+
+  Since a strictly monotone function is needed which means that $f(1),...,f(m)$ are not equal with each other, $m$ different elements should be chosen from the set $[n]$, and each is assigned to $f(i), i=1,2,...,m$,  $s.t. f(1) < f(2) < \dots < f(m)$. Hence, the number of strictly monotone function is ${n \choose m}$.
+\end{proof}
 
 \begin{exercise}
    Find and justify a closed formula for the number of monotone functions from $[m]$ to $[n]$.
 \end{exercise}
 
-\begin{solution}
-  $n^m$.
-\end{solution}
+\begin{proof}
+  First of all, a sequence of $m$ elements in a non-decreasing order(repeated elements are allowed)should be chosen from the set $[n]$ to form a monotone function.
+  Without loss of generality, assume the set $[n]$ as $\{n_1,\dots,n_n\}$.\\ 
+  Let $num_i$ be the number of $n_i$ chosen, $i=1,2,...,n$. 
+
+  $num_1+num_2+...+num_n = m$ , $s.t.$ $0\le num_i\le m$ and $num_i\in N$
+
+Transform the problem into:
+
+  $num_1+1+num_2+1+...+num_n+1 = m+n$ , $s.t.$ $1\le (num_i+1)\le (m+1)$ and $num_i\in N^+$
+
+  Hence, then the number of all possible solutions of the equation above is ${m+n-1 \choose n-1} = {m+n-1 \choose m}$, which is also the number of monotone functions.
+
+
+\end{proof}
 
 
 \textbf{Remark.} By ``closed'' I mean something using expressions like $\times$, $+$,
