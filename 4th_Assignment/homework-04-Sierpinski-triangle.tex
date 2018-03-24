@@ -167,15 +167,15 @@ if $f_i(S) \ne S$.
 Let $d=3$ and $S = \{000, 100\}$. Which of the indices $1,2,3$ are active?
 \end{exercise}
 
-\begin{solution}
-$f_1{S}=\{100,000\}=S$
+%\begin{solution}
+$f_1(S)=\{100,000\}=S$
 
-$f_2{S}=\{010,110\}=S$
+$f_2(S)=\{010,110\}=S$
 
-$f_1{S}=\{001,101\}=S$
+$f_1(S)=\{001,101\}=S$
 
 2,3 are active.
-\end{solution}
+%\end{solution}
 
 \begin{exercise}
  Let $S \subseteq \{0,1\}^d$. Show that if $S \ne \emptyset$ and $S \ne \{0,1\}^d$ then
@@ -196,7 +196,7 @@ $s_j=a_{1}a_{2}...a_{d}$
 
 %\item Base case: $i=1$.$a_1\in S_1.$
 
-$So f_i(s_j)= a_1a_2...\bar a_ja_n\in S$.
+So $f_i(s_j)= a_1a_2...\bar a_ja_n\in S$.
 
 So take a sequence s from S, $\forall i$, when the $i^th$ position is flipped,the new $s'\in S$.
 
@@ -275,14 +275,26 @@ Above all,$f(f(S)) = S$. And the only fixed points of $f$ are $\emptyset$ and $\
 
 	For $1 \leq k \leq 2^d-1$, this bijection is an involution without fixed points.
 	
- 	\item 
+ 	\item  	Since $\mathcal{S}$ is bijective, it has a number of couples $(S_i,S_j)$ in which $f(S_i)=S_j$.
+
+ 	So $|\mathcal{S}|$ is even.
+
+ 	
+
 \end{enumerate}
 
 \begin{exercise}
   Complete the proof of Theorem~\ref{theorem-binomial-even}.
 \end{exercise}
 
+\begin{proof}
+\end{proof}
 
+$|\mathcal{S}|={ {\{0,1\}^d} \choose k }$,then $|\mathcal{S}|=$ $2^d \choose k$.
+
+$|\mathcal{S}|$ is even.
+
+Then $2^d \choose k$ is even.
 
 \begin{exerciseD}
   Generalize the above ``combinatorial'' proof to show the following theorem:
@@ -292,7 +304,37 @@ Above all,$f(f(S)) = S$. And the only fixed points of $f$ are $\emptyset$ and $\
  \end{theorem}
 \end{exerciseD}
 
+\begin{proof}
+\end{proof}
 
+\begin{enumerate}
+	\item 
+	Let $S\subseteq {0,1,2,3...p-1}^d$.
 
+	For $1\le i \le d$ and $x \in \{0,1\}^d$ let $g_i(x)$ be x with the $i^th$ position replaced with x'. 0 is replaced by 1, 1 by 2...$p-2$ by $p-1$,$p-1$ by 0.
+
+	\item
+	Let $S \subseteq \{0,1...p-1\}^d$. We define  $g_i(S)$ as the set arising from applying $g_i$ to every element of $S$. Formally,
+
+	\begin{align*}
+	g_i(S) := \{ g_i(x) \ | \ x \in S \} \ .
+	\end{align*}
+
+	Given a set $S \subseteq \{0,1\}^d$, we call an index $i \in [n]$ {\em active} for $S$
+	if $g_i(S) \ne S$. 
+
+	Given a set $S \subseteq \{0,1...p-1\}^d$, we call an index $i \in [n]$ {\em active} for $S$ if $g_i(S) \ne S$. 
+
+	\item
+	Similar to Ex 4.12, let Q = $\{0,1...p-1\}^d \choose k$.
+
+	Every p sequences are in a group, in which $g(s_1)=s_2$,$g_(s_2)=s_3$...$g_(s_{p-1})=s_p$,$g(s_p)=s_1$.
+
+	\item
+	Then $|Q|$ can be divided by p.
+
+	Then $p$ divides
+	 ${n \choose k}$ unless $k=0$ or $k=n$. 
+\end{enumerate}
 
 \end{document}

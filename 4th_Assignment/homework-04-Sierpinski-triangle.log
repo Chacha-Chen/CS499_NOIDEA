@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.9)  24 MAR 2018 10:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600 64-bit) (preloaded format=pdflatex 2018.3.9)  24 MAR 2018 12:09
 entering extended mode
 **E:/0课件/HW/数学基础/hw4-tex-sources/hw4-tex-sources/homework-04-Sierpi
 nski-triangle.tex
@@ -328,56 +328,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--123
 
  []
 
-[5]
+[5] [6] [7]
+Overfull \hbox (15.05467pt too wide) in paragraph at lines 331--332
+[]\OT1/cmr/m/n/12 Every p se-quences are in a group, in which $\OML/cmm/m/it/12
+ g\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 s[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 s[]
+$\OT1/cmr/m/n/12 ,$\OML/cmm/m/it/12 g[]s[]\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 
+s[]$\OT1/cmr/m/n/12 ...$\OML/cmm/m/it/12 g[]s[]\OT1/cmr/m/n/12 ) =
+ []
 
-! LaTeX Error: Environment solution undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170 \begin{solution}
-                      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{document} ended by \end{solution}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 \end{solution}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[6] [7] (homework-04-Sierpinski-triangle.aux) ) 
+[8] (homework-04-Sierpinski-triangle.aux) ) 
 Here is how much of TeX's memory you used:
- 3589 strings out of 495202
- 46734 string characters out of 3182335
+ 3587 strings out of 495202
+ 46715 string characters out of 3182335
  108582 words of memory out of 3000000
- 6827 multiletter control sequences out of 15000+200000
+ 6825 multiletter control sequences out of 15000+200000
  13451 words of font info for 51 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  43i,10n,35p,374b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.p
-fb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
-b><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/MiKTeX
- 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on homework-04-Sierpinski-triangle.pdf (7 pages, 778179 bytes).
+<E:/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><E
+:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><E:/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><E:/MiKTeX 2.9
+/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on homework-04-Sierpinski-triangle.pdf (8 pages, 782388 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 127 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
