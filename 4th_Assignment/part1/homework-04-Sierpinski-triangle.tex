@@ -1,0 +1,207 @@
+\documentclass[12pt,a4]{article}
+
+\input{preamble}
+
+\setcounter{section}{3}
+
+
+
+\begin{itemize}
+ \item Monday, 2018-03-19, homework handed out
+ \item Sunday, 2018-03-25, 12:00: submit questions and first submissions. You'll get feedback
+ until Wednesday.
+ \item Sunday, 2018-03-29 (Wednesday), 18:00: submit your review of the other group's first submission.
+ \item 2018-04-01: submit final solution.
+\end{itemize}
+
+
+
+\section{Pascal's Triangle Modulo 2}
+
+
+
+
+Here are two early tables of the binomial coefficient:
+\begin{center}
+  \includegraphics[width=\textwidth]{figures/two-pascal-triangles.pdf}
+\end{center}
+Here is my version of ``Pascal's triangle'', indicating that rows are indexes by $n$ and ``columns''
+by $k$:
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{figures/pascals-triangle.pdf}
+\end{center}
+
+\subsection{Lucas Theorem: ${n \choose k} \mod 2$}
+
+
+Something interesting happens when we take the triangle modulo $2$, that is, we replace
+even numbers by $0$ and odd numbers by $1$:
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{figures/sierpinski-small.pdf}
+\end{center}
+If we draw a black dot for every $1$ and look at a larger section of this triangle, we get
+the following pattern, known as the Sierpinski triangle:
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{figures/sierpinski-large.pdf}
+\end{center}
+
+Note the amazing recursive structure. This suggests we should be able to
+compute ${n \choose k} \mod 2$ without actually computing ${n \choose k}$,
+by somehow employing this structure. In fact, here is a cool result
+by \'Edouard Lucas, which we state here in a simpler, more special version:
+
+The set $\N_0$ comes equipped with a partial ordering $\preceq$, in which
+$x \preceq y$ if for every $i$, the $\nth{i}$ least significant bit of $x$ is
+at most that of $y$. Put in a simpler way, we write $x$ and $y$ as bit strings
+in binary. If their length differ, we put a bunch of $0$'s in front of the smaller number
+to make both strings of equal length $d$. Then we simply compare those strings
+using the usual partial ordering $\preceq$ on $\{0,1\}^d$. For example,
+$3 \preceq 7$ since $011 \preceq 111$, and $5 \preceq 23$ since $00101 \preceq 10111$,
+but $7 \not \preceq 8$ since $0111\not \preceq 1000$.
+
+
+\begin{theorem}
+  Let $n, k\in \N_0$. Then ${n \choose k}$ is odd if $k \preceq n$ and even otherwise.
+  \label{theorem-lucas-2}
+\end{theorem}
+
+Note that this theorem lets us compute ${n \choose k} \mod 2$ quickly for numbers $n,k$
+having millions of digits, whereas no computer on Earth has the memory to evaluate
+the formula
+
+\begin{align*}
+{n \choose k} & = \frac{n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+2) \cdot (n-k+1)}
+{k \cdot (k-1) \cdot (k-2) \cdot \dots \cdot 2 \cdot 1}
+\end{align*}
+for values that large. Let me now walk you through a proof of this theorem.
+
+\begin{definition}
+  For a natural number $n \in \N$, let $|n|_1$ be the number of $1$'s in the binary
+  representation of $n$. For example, $|1|_1 = |2|_1 = |4|_1 = 1$ but
+  $|3|_1 = 2$ and $|7|_1 = 3$.
+\end{definition}
+
+\begin{definition}
+ For a natural number $a \in \N$ define $f(a)$ as the number of times the factor
+ $2$ appears in $a$. Formally,
+ \begin{align*}
+ f(a) := \max \{ k \ | \ 2^k \textnormal{ divides } a\} \ .
+\end{align*}
+For example, $f(24) = 3$ since $8$ divides $24$ but $16$ does not.
+\end{definition}
+
+\begin{exercise}
+   Find a closed formula for $f(n!)$ in terms of $n$ and $|n|_1$.
+\end{exercise}
+\textbf{Solution:} \\
+First, for divisor 2, there are $[{x\over 2}]$ numbers have the divisor 2. \\
+For  divisor 4, there are $[{x\over 4}]$ numbers have the divisor 4.\\
+So for divisor $2^i$, there are $[{x\over {2^i}}]$ numbers have the divisor $2^i$.\\
+Then,for $x!$ it have divisors between 1 and $x$. Thus, we have the formula for $f(x!)=\sum\limits_{i=1}^\infty {x\over {2^i}} $.\\
+Next, let's assume $\delta(x)=[x \ mode \ 2]$. So, $x=[{x \over 2}] +[{x \over 2}] + {\delta(x)}$. 
+Obviously in this way we have $$x=\sum_{i=1}^\infty {x\over {2^i}} +\sum_{i=1}^\infty {\delta ({x\over {2^i}})} = f(x!)+\sum_{i=1}^\infty {\delta ({x\over {2^i}})}$$.\\
+Surprisingly, $\sum\limits_{i=1}^\infty {\delta ({x\over {2^i}})}$ is exactly $|n|_1$, 
+for every time we divide $x$ by 2 it equals moving the binary code to right by one digit.
+In conclusion, $f(n!)=n-|n|_1$.
+
+\begin{exercise}
+   Find a closed formula for $f\left({n \choose k}\right)$ in terms of $n, k, |n|_1$, and so on.
+\end{exercise}
+\textbf{Solution:}\\
+
+\[{n \choose k}={{n!}\over {({n-k})! k!}}\]
+\[f\left({n \choose k}\right)={f(n!)+f((n-k)!)-f(k!)}={{n-|n|_1- (k-|k|_1)-(n-k-|n-k|_1)}}\]
+
+\begin{exercise}
+ Prove Theorem~\ref{theorem-lucas-2}. With our new notation, prove that
+ $f\left( {n \choose k}\right)$ is $0$ if $k \preceq n$ and at least $1$ if
+ $k \not \preceq n$.
+\end{exercise}
+\textbf{Proof:} With the conclusion of 4.5, what we have to prove is that $|k|_1+|n-k|_1-|n|_1$.\\
+Case1: In $k+(n-k)$, every digit does not produce a carry bit. In this situation, obviously $|k|_1+|n-k|_1-|n|_1$ is correct.\\
+Case2: In $k+(n-k)$, there exists some digit that will produce a carry bit, in binary system which must be $1+1$. 
+Then $n$ ,the result of the addition, in this digit should be 0, which is contradicted to the condition that  $k \preceq n$.
+(If there are more than 1 carry bit, which can make some digit in $n$ still be 1, we can simply trace back to the lowest digit that produces the carry bit and then the proof is universal.)
+
+\subsection{Almost Empty Rows}
+
+One feature of the Sierpinski triangle is that some rows are almost empty. For example, row 64
+has a black dot at the very left and the very right, and only white space in between. This is because
+\begin{theorem}
+  Let $d \in \N_0$ and $0 < k < 2^d$. Then ${2^d \choose k}$ is even.
+  \label{theorem-binomial-even}
+\end{theorem}
+Although this theorem follows easily from Lucas' Theorem, I want you to think about an alternative proof.
+Intuitively, if some number is even, then one suspects it can be proved by ``pairing things up'' perfectly.
+After all, if you can prove that in a set $S$, every element can be ``married'' to another element,
+you have partitioned $S$ into couples and thus $|S|$ must be even. So let's see whether
+there is a proof of Theorem~\ref{theorem-binomial-even} along these lines.
+This is also
+valuable because it lets you practice with notions of sets and functions. \\
+
+Consider
+the set $\{0,1\}^d$. You can view this as the set of all binary strings of length $d$.
+This set has size $2^d=n$.
+For $1 \leq i \leq d$ and $x \in \{0,1\}^d$ let $f_i(x)$ be $x$ with the $\nth{i}$ position
+flipped. For example, $f_3(11011) = 11111$.
+\begin{exercise}
+ Show that $f_i$ is an involution without a fixed point.
+ That is, $f(f(x)) = x$ and $f(x) \ne x$ for all $x \in \{0,1\}^d$.
+\end{exercise}
+
+Let $S \subseteq \{0,1\}^d$. We define  $f_i(S)$ as the set arising from applying
+$f_i$ to every element of $S$. Formally,
+\begin{align*}
+f_i(S) := \{ f_i(x) \ | \ x \in S \} \ .
+\end{align*}
+Given a set $S \subseteq \{0,1\}^d$, we call an index $i \in [n]$ {\em active} for $S$
+if $f_i(S) \ne S$.
+\begin{exercise}
+Let $d=3$ and $S = \{000, 100\}$. Which of the indices $1,2,3$ are active?
+\end{exercise}
+
+
+\begin{exercise}
+ Let $S \subseteq \{0,1\}^d$. Show that if $S \ne \emptyset$ and $S \ne \{0,1\}^d$ then
+ $S$ has at least one active index.
+\end{exercise}
+
+
+Given $S \subseteq \{0,1\}^d$, define $f(S)$ as follows: if $S = \emptyset$ or $S = \{0,1\}^d$
+define $f(S) = S$. Otherwise, let $f(S) := f_i(S)$ where $i$ is the smallest active
+index of $S$ (which exists by the previous exercise).
+
+\begin{exercise}
+ Show that $f$ is an involution. That is, $f(f(S)) = S$. Furthermore, show that
+ the only fixed points of $f$ are $\emptyset$ and $\{0,1\}^d$.
+\end{exercise}
+
+\begin{exercise}
+   Let $\mathcal{S} = { \{0,1\}^d \choose k }$. This is a set of sets, and each set $S \in \mathcal{S}$
+   consists of exactly $k$ strings from $\{0,1\}^d$. Prove the following statements:
+   \begin{enumerate}
+   \item $f$ is a bijection from $\mathcal{S}$ to $\mathcal{S}$.
+   \item For $1 \leq k \leq 2^d-1$, this bijection is an involution
+   without fixed points.
+   \item $|\mathcal{S}|$ is even for $1 \leq k \leq 2^d-1$.
+   \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+  Complete the proof of Theorem~\ref{theorem-binomial-even}.
+\end{exercise}
+
+
+
+\begin{exerciseD}
+  Generalize the above ``combinatorial'' proof to show the following theorem:
+  \begin{theorem}
+ Let $n = p^d$ where $p$ is a prime number. Then $p$ divides
+ ${n \choose k}$ unless $k=0$ or $k=n$.
+ \end{theorem}
+\end{exerciseD}
+
+
+
+
+\end{document} 
