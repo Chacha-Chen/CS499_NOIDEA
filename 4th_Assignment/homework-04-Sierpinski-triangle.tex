@@ -4,10 +4,6 @@
 
 \setcounter{section}{3}
 
-\newenvironment{solution}
-  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
-  {\end{proof}}
-
 
 
 \begin{itemize}
@@ -135,6 +131,31 @@ flipped. For example, $f_3(11011) = 11111$.
  That is, $f(f(x)) = x$ and $f(x) \ne x$ for all $x \in \{0,1\}^d$.
 \end{exercise}
 
+
+\begin{proof}
+If x has n bits, write down x as $x=a_1a_2a_3...a_n$.
+
+$\forall$ $j=1,2,3,...n$, $a_j=0 or 1$.
+
+If $a_j$ is flipped, record it as $\bar a_j$.
+
+Then $\forall$ $i=1,2,3,...n$, $f_i(x)=a_1a_2a_3...\bar a_i...a_n$
+
+Then $f(f_i(x))=a_1a_2a_3...\bar{\bar a_i}...a_n=a_1a_2a_3...a_i...a_n=x$.
+
+If there is $x_k $ making $f(x)=x$,.
+
+Then for an i, $x=a_1a_2a_3...a_n=a_1a_2a_3...\bar a_i...a_n$.
+
+$a_i=\bar a_i$.
+
+It is impossible.
+
+Above all,$f_i$ is an involution without a fixed point.
+
+
+\end{proof} 
+
 Let $S \subseteq \{0,1\}^d$. We define  $f_i(S)$ as the set arising from applying
 $f_i$ to every element of $S$. Formally,
 \begin{align*}
@@ -146,12 +167,51 @@ if $f_i(S) \ne S$.
 Let $d=3$ and $S = \{000, 100\}$. Which of the indices $1,2,3$ are active?
 \end{exercise}
 
+\begin{solution}
+$f_1{S}=\{100,000\}=S$
+
+$f_2{S}=\{010,110\}=S$
+
+$f_1{S}=\{001,101\}=S$
+
+2,3 are active.
+\end{solution}
 
 \begin{exercise}
  Let $S \subseteq \{0,1\}^d$. Show that if $S \ne \emptyset$ and $S \ne \{0,1\}^d$ then
  $S$ has at least one active index.
 \end{exercise}
 
+\begin{proof}
+Soppose S has no active index and $S \ne \emptyset$.
+%When $d=k$, record S as $S_k$
+
+Then $\forall i\in\{1,2,3...d\}$, $f_i(S)=S$.
+
+%We use induction to verify it.
+
+$S=\{s_{1},s_{2}...s_n\}$
+
+$s_j=a_{1}a_{2}...a_{d}$
+
+%\item Base case: $i=1$.$a_1\in S_1.$
+
+$So f_i(s_j)= a_1a_2...\bar a_ja_n\in S$.
+
+So take a sequence s from S, $\forall i$, when the $i^th$ position is flipped,the new $s'\in S$.
+
+Then through change every bit of s and its child sequences, we can get every sequences of $\{0,1\}^d$.
+
+$s=\{0,1\}^d$.
+
+So if $S \ne \emptyset$ and $S \ne \{0,1\}^d$ then
+ $S$ has at least one active index.
+
+%\item Induction:$d=k$,$S_d = \{0,1\}^d$.
+
+%When $d=k+1$, record $S_{k+1}=\{s_{k1}a_1,s_{k2}a_2\}$
+
+\end{proof}
 
 Given $S \subseteq \{0,1\}^d$, define $f(S)$ as follows: if $S = \emptyset$ or $S = \{0,1\}^d$
 define $f(S) = S$. Otherwise, let $f(S) := f_i(S)$ where $i$ is the smallest active
@@ -161,6 +221,20 @@ index of $S$ (which exists by the previous exercise).
  Show that $f$ is an involution. That is, $f(f(S)) = S$. Furthermore, show that
  the only fixed points of $f$ are $\emptyset$ and $\{0,1\}^d$.
 \end{exercise} 
+
+\begin{proof}
+From Ex 4.8, we know $\forall i=\{1,2...d\}$,$\forall x\in S$, $f(f(x))=x$.
+
+Then $\forall s\in S$, $f(f(s))=s$.
+
+So $f(f(S))=S$.
+
+If f has fixed point, namely $f(S)=S$.
+
+From Ex 4.10, we know that it is impossible that $f(S)=S$ unless $S = \emptyset$ or $S = \{0,1\}^d$.
+
+Above all,$f(f(S)) = S$. And the only fixed points of $f$ are $\emptyset$ and $\{0,1\}^d$.
+\end{proof}
 
 \begin{exercise}
    Let $\mathcal{S} = { \{0,1\}^d \choose k }$. This is a set of sets, and each set $S \in \mathcal{S}$
@@ -172,6 +246,37 @@ index of $S$ (which exists by the previous exercise).
    \item $|\mathcal{S}|$ is even for $1 \leq k \leq 2^d-1$.
    \end{enumerate}
 \end{exercise}
+
+\begin{proof}
+\end{proof}
+
+\begin{enumerate}
+	\item For a sequence $\in S$, $f(s)$is a certain sequence.
+
+	So for $S=\{s_1,s_2...,s_k\}$,$f(S)=\{f(s_1),f(s_2),...,f(s_k)\}$is a certain set.
+
+	Then f is surjective.
+
+	If for $a,b\in \mathcal{S}$,$a\ne b$,$f(a)=f(b)=A$.
+
+	From exercise above we know,$f(f(a))=a$ and $f(f(b))=b$,namely $f(A)=a$,$f(A)=b$
+
+	which is contradictive with f is surjective.
+
+	So f is bijective.
+
+	\item In 1 we have proved $f(f(S))=S$,it is an involution.
+
+	If f has fixed points, namely f(S)=S.
+
+	From Ex 4.11, the only fixed points of $f$ are $\emptyset$ and $\{0,1\}^d$.
+
+	However $k\in [1,2^d-1]$, f has no fixed points.
+
+	For $1 \leq k \leq 2^d-1$, this bijection is an involution without fixed points.
+	
+ 	\item 
+\end{enumerate}
 
 \begin{exercise}
   Complete the proof of Theorem~\ref{theorem-binomial-even}.
