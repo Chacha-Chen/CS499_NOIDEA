@@ -45,13 +45,13 @@ the following pattern, known as the Sierpinski triangle:
   \includegraphics[width=0.8\textwidth]{figures/sierpinski-large.pdf}
 \end{center}
 
-Note the amazing recursive structure. This suggests we should be able to 
+Note the amazing recursive structure. This suggests we should be able to
 compute ${n \choose k} \mod 2$ without actually computing ${n \choose k}$,
 by somehow employing this structure. In fact, here is a cool result
 by \'Edouard Lucas, which we state here in a simpler, more special version:
 
 The set $\N_0$ comes equipped with a partial ordering $\preceq$, in which
-$x \preceq y$ if for every $i$, the $\nth{i}$ least significant bit of $x$ is 
+$x \preceq y$ if for every $i$, the $\nth{i}$ least significant bit of $x$ is
 at most that of $y$. Put in a simpler way, we write $x$ and $y$ as bit strings
 in binary. If their length differ, we put a bunch of $0$'s in front of the smaller number
 to make both strings of equal length $d$. Then we simply compare those strings
@@ -66,19 +66,19 @@ but $7 \not \preceq 8$ since $0111\not \preceq 1000$.
 \end{theorem}
 
 Note that this theorem lets us compute ${n \choose k} \mod 2$ quickly for numbers $n,k$
-having millions of digits, whereas no computer on Earth has the memory to evaluate 
+having millions of digits, whereas no computer on Earth has the memory to evaluate
 the formula
 
 \begin{align*}
 {n \choose k} & = \frac{n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot (n-k+2) \cdot (n-k+1)}
 {k \cdot (k-1) \cdot (k-2) \cdot \dots \cdot 2 \cdot 1}
 \end{align*}
-for values that large. Let me now walk you through a proof of this theorem. 
+for values that large. Let me now walk you through a proof of this theorem.
 
 \begin{definition}
   For a natural number $n \in \N$, let $|n|_1$ be the number of $1$'s in the binary
   representation of $n$. For example, $|1|_1 = |2|_1 = |4|_1 = 1$ but
-  $|3|_1 = 2$ and $|7|_1 = 3$. 
+  $|3|_1 = 2$ and $|7|_1 = 3$.
 \end{definition}
 
 \begin{definition}
@@ -94,16 +94,37 @@ For example, $f(24) = 3$ since $8$ divides $24$ but $16$ does not.
    Find a closed formula for $f(n!)$ in terms of $n$ and $|n|_1$.
 \end{exercise}
 
+\textbf{Solution:} \\
+First, for divisor 2, there are $[{x\over 2}]$ numbers have the divisor 2. \\
+For  divisor 4, there are $[{x\over 4}]$ numbers have the divisor 4.\\
+So for divisor $2^i$, there are $[{x\over {2^i}}]$ numbers have the divisor $2^i$.\\
+Then,for $x!$ it have divisors between 1 and $x$. Thus, we have the formula for $f(x!)=\sum\limits_{i=1}^\infty {x\over {2^i}} $.\\
+Next, let's assume $\delta(x)=[x \ mode \ 2]$. So, $x=[{x \over 2}] +[{x \over 2}] + {\delta(x)}$.
+Obviously in this way we have $$x=\sum_{i=1}^\infty {x\over {2^i}} +\sum_{i=1}^\infty {\delta ({x\over {2^i}})} = f(x!)+\sum_{i=1}^\infty {\delta ({x\over {2^i}})}$$.\\
+Surprisingly, $\sum\limits_{i=1}^\infty {\delta ({x\over {2^i}})}$ is exactly $|n|_1$,
+for every time we divide $x$ by 2 it equals moving the binary code to right by one digit.
+In conclusion, $f(n!)=n-|n|_1$.
+
 \begin{exercise}
    Find a closed formula for $f\left({n \choose k}\right)$ in terms of $n, k, |n|_1$, and so on.
 \end{exercise}
 
+\textbf{Solution:}\\
+
+\[{n \choose k}={{n!}\over {({n-k})! k!}}\]
+\[f\left({n \choose k}\right)={f(n!)+f((n-k)!)-f(k!)}={{n-|n|_1- (k-|k|_1)-(n-k-|n-k|_1)}}\]
 
 \begin{exercise}
  Prove Theorem~\ref{theorem-lucas-2}. With our new notation, prove that
- $f\left( {n \choose k}\right)$ is $0$ if $k \preceq n$ and at least $1$ if 
+ $f\left( {n \choose k}\right)$ is $0$ if $k \preceq n$ and at least $1$ if
  $k \not \preceq n$.
 \end{exercise}
+
+\textbf{Proof:} With the conclusion of 4.5, what we have to prove is that $|k|_1+|n-k|_1-|n|_1$.\\
+Case1: In $k+(n-k)$, every digit does not produce a carry bit. In this situation, obviously $|k|_1+|n-k|_1-|n|_1$ is correct.\\
+Case2: In $k+(n-k)$, there exists some digit that will produce a carry bit, in binary system which must be $1+1$.
+Then $n$ ,the result of the addition, in this digit should be 0, which is contradicted to the condition that  $k \preceq n$.
+(If there are more than 1 carry bit, which can make some digit in $n$ still be 1, we can simply trace back to the lowest digit that produces the carry bit and then the proof is universal.)
 
 \subsection{Almost Empty Rows}
 
@@ -154,7 +175,7 @@ It is impossible.
 Above all,$f_i$ is an involution without a fixed point.
 
 
-\end{proof} 
+\end{proof}
 
 Let $S \subseteq \{0,1\}^d$. We define  $f_i(S)$ as the set arising from applying
 $f_i$ to every element of $S$. Formally,
@@ -162,7 +183,7 @@ $f_i$ to every element of $S$. Formally,
 f_i(S) := \{ f_i(x) \ | \ x \in S \} \ .
 \end{align*}
 Given a set $S \subseteq \{0,1\}^d$, we call an index $i \in [n]$ {\em active} for $S$
-if $f_i(S) \ne S$. 
+if $f_i(S) \ne S$.
 \begin{exercise}
 Let $d=3$ and $S = \{000, 100\}$. Which of the indices $1,2,3$ are active?
 \end{exercise}
@@ -220,7 +241,7 @@ index of $S$ (which exists by the previous exercise).
 \begin{exercise}
  Show that $f$ is an involution. That is, $f(f(S)) = S$. Furthermore, show that
  the only fixed points of $f$ are $\emptyset$ and $\{0,1\}^d$.
-\end{exercise} 
+\end{exercise}
 
 \begin{proof}
 From Ex 4.8, we know $\forall i=\{1,2...d\}$,$\forall x\in S$, $f(f(x))=x$.
@@ -238,7 +259,7 @@ Above all,$f(f(S)) = S$. And the only fixed points of $f$ are $\emptyset$ and $\
 
 \begin{exercise}
    Let $\mathcal{S} = { \{0,1\}^d \choose k }$. This is a set of sets, and each set $S \in \mathcal{S}$
-   consists of exactly $k$ strings from $\{0,1\}^d$. Prove the following statements: 
+   consists of exactly $k$ strings from $\{0,1\}^d$. Prove the following statements:
    \begin{enumerate}
    \item $f$ is a bijection from $\mathcal{S}$ to $\mathcal{S}$.
    \item For $1 \leq k \leq 2^d-1$, this bijection is an involution
@@ -274,12 +295,12 @@ Above all,$f(f(S)) = S$. And the only fixed points of $f$ are $\emptyset$ and $\
 	However $k\in [1,2^d-1]$, f has no fixed points.
 
 	For $1 \leq k \leq 2^d-1$, this bijection is an involution without fixed points.
-	
+
  	\item  	Since $\mathcal{S}$ is bijective, it has a number of couples $(S_i,S_j)$ in which $f(S_i)=S_j$.
 
  	So $|\mathcal{S}|$ is even.
 
- 	
+
 
 \end{enumerate}
 
@@ -300,7 +321,7 @@ Then $2^d \choose k$ is even.
   Generalize the above ``combinatorial'' proof to show the following theorem:
   \begin{theorem}
  Let $n = p^d$ where $p$ is a prime number. Then $p$ divides
- ${n \choose k}$ unless $k=0$ or $k=n$. 
+ ${n \choose k}$ unless $k=0$ or $k=n$.
  \end{theorem}
 \end{exerciseD}
 
@@ -308,7 +329,7 @@ Then $2^d \choose k$ is even.
 \end{proof}
 
 \begin{enumerate}
-	\item 
+	\item
 	Let $S\subseteq {0,1,2,3...p-1}^d$.
 
 	For $1\le i \le d$ and $x \in \{0,1\}^d$ let $g_i(x)$ be x with the $i^th$ position replaced with x'. 0 is replaced by 1, 1 by 2...$p-2$ by $p-1$,$p-1$ by 0.
@@ -321,9 +342,9 @@ Then $2^d \choose k$ is even.
 	\end{align*}
 
 	Given a set $S \subseteq \{0,1\}^d$, we call an index $i \in [n]$ {\em active} for $S$
-	if $g_i(S) \ne S$. 
+	if $g_i(S) \ne S$.
 
-	Given a set $S \subseteq \{0,1...p-1\}^d$, we call an index $i \in [n]$ {\em active} for $S$ if $g_i(S) \ne S$. 
+	Given a set $S \subseteq \{0,1...p-1\}^d$, we call an index $i \in [n]$ {\em active} for $S$ if $g_i(S) \ne S$.
 
 	\item
 	Similar to Ex 4.12, let Q = $\{0,1...p-1\}^d \choose k$.
@@ -334,7 +355,7 @@ Then $2^d \choose k$ is even.
 	Then $|Q|$ can be divided by p.
 
 	Then $p$ divides
-	 ${n \choose k}$ unless $k=0$ or $k=n$. 
+	 ${n \choose k}$ unless $k=0$ or $k=n$.
 \end{enumerate}
 
 \end{document}
