@@ -1,0 +1,434 @@
+\documentclass[12pt,a4]{article}
+
+\usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
+\usepackage[lined,boxed]{algorithm2e}
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{amsthm}
+
+\newtheoremstyle{exercise}{}{}{}{}{\bf}{.}{ }{}
+\graphicspath{ {images/} }
+
+\theoremstyle{exercise}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{exerciseD}[theorem]{*Exercise}
+\newtheorem{exerciseDD}[theorem]{**Exercise}
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+
+\date{}
+
+\title{
+	Mathematical Foundations \\of \\Computer Science\\
+	\vspace{3mm}
+	{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder\\}
+	{\normalsize Group Name: \textbf{NOIDEA}}
+}
+ \begin{document}
+\maketitle
+
+\section{Broken Chessboard and Jumping With Coins}
+
+\subsection{Tiling a Damaged Checkerboard}
+
+\begin{exercise}
+    Re-write the proof in your own way,  using simple English sentences.
+\end{exercise}
+
+\begin{proof}
+	Let's color the board black and beige, just like a typical chessboard.
+    In this case, there are 32 black and 30 beige squares.
+
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{slightlydamaged.png}
+        \label{fig:slightlyDamagedBoard}
+        \caption{The Chessboard}
+    \end{figure}
+
+    Since a domino stone placed in the board will cover both a black square and a beige square,
+    it's obviously that we can't fully tile the board with $1 \times 2$ domino stones.
+
+\end{proof}
+
+\begin{exercise}
+    Look at the seriously damaged $8 \times 8$ checkerboard.
+    For convenience I already colored it black and white (or rather black and beige):
+
+    Try to tile it with domino stones and you will fail.
+    However, since there are $24$ black and $24$ beige squares, the simple argument from the lecture will fail.
+
+    Prove that the above board cannot be tiled. Try to ﬁnd a short and simple argument!
+\end{exercise}
+
+\begin{proof}
+
+    \begin{figure}[h]
+        \small
+        \centering
+        \includegraphics[width=5cm]{corridor.png}
+        \label{fig:corridor}
+        \caption{The ``Corridor"}
+    \end{figure}
+
+
+    \textbf{Solution: In the left half there's 13 back squares and 11 white squares.
+    cut it into 2 halves. A complete domino tiling "marries" one black block to one white tiling. In the left half, at least 2 white squares have to "marry" a back foreigner from the right half. But only 1 black can be married to a which block from the right half. Thus, you cannot cober the complete board. }
+
+
+\end{proof}
+
+
+
+
+\subsection{Jumping with Coins}
+
+\begin{exercise}
+    You jump around with two coins.
+    Show that you cannot increase the distance between the two coins.
+\end{exercise}
+
+\begin{proof}
+    Clearly, the distance between two coins is fixed in one jump.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{twocoins.png}
+        \label{fig:twoCoins}
+        \caption{Two Coins}
+    \end{figure}
+
+\end{proof}
+
+
+\begin{exercise}
+    You jump around with three coins.
+    Show that you cannot start with an equilateral triangle and end up with a bigger equilateral triangle.
+    Give a simple proof!
+\end{exercise}
+
+\begin{proof}
+    During a jump, either the side or the height of the triangle will not change, thus the area stays the same.
+
+    \begin{figure}[H]
+        \small
+        \centering
+        \includegraphics[width=5cm]{threecoins.png}
+        \label{fig:threeCoins}
+        \caption{Three Coins}
+    \end{figure}
+
+\end{proof}
+
+You jump around with four coins which in the beginning form a square of side length $1$.
+
+\begin{exercise}
+    Show that you cannot form a square of side length $2$.
+\end{exercise}
+
+\begin{proof}
+     We use the coordinate to express the position of coins. The initial coordinate will be
+    $$
+    (odd, odd), (odd, even), (even, even), (even, odd).
+    $$
+    If a coin at $(a, b)$ jump over the coin at $(c, d)$, the new position $(e, f)$ will be
+    $$
+    e = 2c - a, f = 2d - b
+    $$
+
+  Both $2c$ and $2d$ are even, so the parity of $e, f$ will be the same as $a, b$. It means that the parity of coordinate of a coin will not change during a jump.
+
+  If a square of side lenth $2$ is formed, the parity of the coordinate will be diﬀerent with the initial one, which is impossible.
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot achieve a position in which two coins are at the same position.
+\end{exercise}
+
+\begin{proof}
+    We have proved that the parity of coordinate of a coin will not change during a jump. Hence two coins with different initial parity of the coordinate can not be at the same position. 
+    
+    And we know the all the four coins have different initial parity, so there won't be any coins at the same position.
+\end{proof}
+
+\begin{exercise}
+    Show that you cannot form a larger square.
+\end{exercise}
+
+\begin{proof}
+   If we can make the four coins form a larger square with side length $n > 1$ in a few jumps. Then if the initial side length is $1/n$ we can use the same steps of jump to form a square of side length $1$.
+   
+    It means that with the converse steps, We can form a smaller square with side length $1/n < 1$ with initial side length $1$, which requiring that the coordinates of coins are not integer.
+    
+     Obviously, it's impossible.
+
+     \textbf{
+     \begin{itemize}
+     \item 1.Everything is reversible.
+     \item 2.If we can form a larger square, we can also form a a smaller square.
+     \item 3.This is impossible since you always stay on the grid
+     \item P.S. Hexagon can be also proofed as above but not pentagon.
+     \end{itemize}}
+\end{proof}
+
+\section{Exclusion-Inclusion}
+
+\subsection{Sets}
+
+\begin{exercise}
+\end{exercise}
+
+\begin{enumerate}
+\item \begin{proof}
+As is shown in the Venn diagram below, $\left\vert{A}\right\vert + \left\vert{B}\right\vert$ add the common part $\left\vert{A\cap B}\right\vert $ twice. So it should be subtracted once if we want to count $\left\vert{A \cup B}\right\vert $.
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.1]{Venn}
+\caption{Venn Diagram}
+\end{figure}
+\end{proof}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{B \cap C}\right\vert + \left\vert{A\cap B \cap C}\right\vert$
+\end{solution}
+\item \begin{solution}
+$\left\vert{A\cup B\cup C \cup D}\right\vert = \left\vert{A}\right\vert + \left\vert{B}\right\vert + \left\vert{C}\right\vert + \left\vert{D}\right\vert - \left\vert{A\cap B}\right\vert - \left\vert{A\cap C}\right\vert - \left\vert{A \cap D}\right\vert - \left\vert{B \cap C}\right\vert - \left\vert{B \cap D}\right\vert - \left\vert{C \cap D}\right\vert + \left\vert{A\cap B \cap C}\right\vert + \left\vert{A\cap B \cap D}\right\vert + \left\vert{A\cap C \cap D}\right\vert + \left\vert{B\cap C \cap D}\right\vert - \left\vert{A\cap B \cap C\cap D}\right\vert$
+\end{solution}
+\end{enumerate}
+
+\begin{exercise}
+\end{exercise}
+	\begin{solution}
+$\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{i=1}^{n}\left\vert{A_i}\right\vert - \sum\limits_{i,j:1\le i<j\le n}\left\vert{A_i\cap A_j}\right\vert + \\
+\sum\limits_{i,j,k:1\le i<j<k\le n}\left\vert{A_i\cap A_j \cap A_k}\right\vert - \ldots + (-1)^{n-1}\left\vert{A_1\cap\ldots\cap A_n}\right\vert$
+	\end{solution}
+\begin{exercise}
+\end{exercise}	
+\begin{proof}\end{proof}
+\begin{enumerate}
+		 \item proof using induction on n\\
+
+			 First, let $A_{n,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n}\left\vert{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{A_1,A_2,\ldots,A_n\}$.\\
+
+			 Then the Inclusion-exclusion principle which we want to prove is as follows:\\
+			 $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
+		
+		 The theorem holds for $n=1$, obviously.\\
+	
+		 The theorem holds for $n=2$, as is showed in the $2.1.1$\\
+
+		 For the induction step, we want to show if it holds for $n-1$, then it holds for $n$.\\
+
+
+		\begin{equation}
+		\begin{split}
+		\left\vert{A_1\cup\ldots\cup A_n}\right\vert &= \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert\\
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(A_1\cup\ldots\cup A_{n-1})\cap A_n }\right\vert \\	
+		&= \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}(A_i\cap A_n) }\right\vert \\
+		\end{split}
+		\end{equation}
+
+
+
+
+		 Let $B_i = (A_i\cap A_n)$.\\
+
+		 Similarly, let $B_{n-1,k} = \sum\limits_{1\le i_1<i_2<\ldots\le n-1}\left\vert{B_{i_1}\cap B_{i_2}\ldots\cap B_{i_k}}\right\vert$, which denotes the sum of all the possible k-wise intersections in $\{B_1,B_2,\ldots,B_n-1\}$.\\
+
+		 $(1)$ now becomes\\
+
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert - \left\vert{(\cup_{i=1}^{i=n-1}B_i }\right\vert
+		 \end{equation}
+
+		 Similarly, it holds:\\
+		 \begin{equation}
+		 \left\vert{B_1\cup\ldots\cup B_{n-1}}\right\vert = \sum\limits_{k=1}^{n-1}(-1)^{k+1}B_{n-1,k}
+		 \end{equation}
+
+		 $(2)$ now becomes\\
+		 \begin{equation}
+		  \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k} + \left\vert{A_n}\right\vert +  \sum\limits_{k=1}^{n-1}(-1)^kB_{n-1,k}
+		 \end{equation}	
+		 In addition,
+	    \begin{equation}
+		\left\vert{A_n}\right\vert = (-1)^{1+1}\left\vert{A_n}\right\vert
+  		\end{equation}	
+  		Thus,
+  		\begin{equation}
+  		\left\vert{A_n}\right\vert+\sum\limits_{k=1}^{n-1}(-1)^kB_{n-1,k} = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k} - \sum\limits_{k=1}^{n-1}(-1)^{k+1}A_{n-1,k}
+  		\end{equation}	
+
+		 Then equation(4) finally becomes: $\sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$
+
+		 	
+
+
+
+
+		\item proof not using induction on n\\
+
+    First, let $A = \left\vert{A_1\cup\ldots\cup A_{n-1}}\right\vert $. \\
+    Function $P_S(x)$ defined as if set $S$ includes element $x$, then $P_S(x) = 1$, else $P_S(x) = 0$.\\
+
+    $(1)$ If $P_A(x) = 1$, there must exist an $i$ that $P_{A_i}(x) = 1$. In this way:\\
+    $(P_A(x) - P_{A_1}(x))(P_A(x) - P_{A_2}(x))\ldots(P_A(x) - P_{A_n}(x)) = 0$\\
+
+    $(2)$ According to the properities of set, $P_{A_i}(x)P_{A_j}(x) = P_{A_i \cap A_j}(x)$.\\
+
+    $(3)$ Let $P_{n,k}$ denotes $P_{A_{i_1}\cap A_{i_2}\ldots\cap A_{i_k}}(1\le i_1<i_2<\ldots\le n)$.\\
+    Then decompose the first equation, we can have:\\
+    $P_A(x) = \sum\limits_{k=1}^{n}P_{n,k}$\\
+    which can be demonstrated as:\\
+     $\left\vert{A_1\cup\ldots\cup A_n}\right\vert = \sum\limits_{k=1}^{n}(-1)^{k+1}A_{n,k}$\\
+\end{enumerate}
+
+\textbf{solution: Let $X=A_1\cup...\cup A_n$. Then $LHS= \sum\limits_{a\in X} 1, RHS = \sum\limits_{\phi\neq I\in [n]}(-1)^{|I|+1}\sum\limits_{a\in X}[a\subseteq A_I]$
+Claim: LHS=RHS for each $a\in X$ individually, namely $1=\sum\limits_{\phi \neq I\subseteq [n]}(-1)^{|I|+1}[a\in A_I]$\\
+Page 100 in the book.}
+
+\section{Feasible Intersection Patterns}
+
+\subsection{}
+
+\begin{exercise}
+\end{exercise}
+  Find sets $A_1, A_2, A_3, A_4$ such that all pairwise intersections have size 3 and all three-wise intersections have size 1. \\Formally,
+ 1.$|A_i\bigcap A_j| = 3$ for all ${i,j} \in (^{[4]}_{2})$,
+ 2.$|A_i\bigcap A_j\bigcap A_k| = 1$ for all $\{i,j,k\}\in (^{[4]}_{3})$.
+
+    
+    
+    $A_1=\{1,2,3,5,6,9\}$;
+    
+    $A_2=\{1,2,3,4,7,8\}$;
+    
+    $A_3=\{1,5,7,8,9,10\}$;
+    
+    $A_4=\{2,4,5,6,8,10\}$;
+    
+\begin{exercise}
+\end{exercise}
+	In the spirit of the previous questions, let us call a sequence $(a_1,a_2,...,a_n)\in\mathbb{N}_0$ feasible if there are sets $A_1,...,A_n$ such that all k-wise intersections have size $a_k$. That is, $|Ai| = a_{1}$ for all i, $|A_i \bigcap A_j| = a_2$ for all $i \not= j$ and so on. The previous exercise would thus state that $(5, 3, 1, 0)$ is not feasible, but $(6, 3, 1, 0)$ is, as one solution of Exercise 3.1 shows.
+
+\begin{proof}
+\end{proof}
+
+\begin{enumerate}
+\item Assume that there exist such sets A,B,C,D to which $(5,3,1,0)$ is feasible.
+
+$|A|=|B|=|C|=|D|=5$;
+
+%Define $A\\B$ is a set of elements in A but not in B.
+
+\item \textbf {Take A as an example.}
+
+\item Since,
+
+$|A_i\bigcap A_j| = 3$ for all ${i,j} \in (^{[4]}_{2})$
+
+%$|A\bigcap B\bigcap C| =|A\bigcap B\bigcap D|=|A\bigcap C\bigcap D| =  1$
+
+$|A\bigcap B\bigcap C\bigcap  D = 0|$
+
+Then $|A_i\bigcap A_j \bigcap \bar{A_k}\bigcap \bar{A_l}| = 1$.........................................*
+
+\item Now we take 3 elements in A in $|A\bigcap B\bigcap C|$, $|A\bigcap B\bigcap D|$ and  $|A\bigcap C\bigcap D|$.
+
+Then every couple of sets have two common elements.
+
+\item From * we know now we need to put another 3 elements of A in $|A\bigcap B \bigcap \bar C \bigcap \bar D|$,$|A\bigcap C \bigcap \bar B \bigcap \bar D|$,$|A\bigcap D \bigcap \bar B \bigcap \bar C|$ respectively.
+
+\item However there is only 2 elements left.It is impossible to meet the conditions.
+
+\item The same to B, C and D.
+\item So $\{5,3,1,0\}$is not feasible.
+\end{enumerate}
+
+
+\begin{exercise}
+\end{exercise}
+	Given a sequence $(a_1,...,a_n)$, Find a way to determine whether such a sequence is feasible or not.
+
+\begin{proof}
+\end{proof}
+
+ \textbf{Definition}: 
+ 
+ 	 %1.Define $|A|$ is the number of elements in A.
+
+     Given $A_1,A_2,A_3,...,A_n$, 
+     
+     define 
+     \begin{center}
+      $A_{\{I\}}=\bigcap \limits_{i \in I} A_i $. 
+     \end{center} 
+
+     In other words, 
+
+     \begin{center}
+      $A_{\{i,j,k,...\}}= A_i \bigcap A_j \bigcap A_k \bigcap ...$
+      
+      $a_{\{I\}}=|A_{\{I\}}|.$
+     
+      $B_{\{I\}}=\bigcap \limits_{i \in I} A_i \backslash \bigcup \limits_{j\notin I }{A_j}$.
+     \end{center}
+     
+     In other words,
+     \begin{center}
+      $B_{\{I\}}$ is the number of elements in $\bigcap \limits_{i \in I} A_i$ but not in $A_j,j\notin I$.
+     
+      $b_{\{I\}}=|B_{\{I\}}|.$
+     \end{center}
+     
+     Because every set $B_i$ is not divided by existing boundaries, we can put any number of elements in set $B_i$.
+     
+     \ 
+
+     \textbf{a.Whether a given B-table is feasible:}
+
+     
+     Thus, $(b_1,b_2,...,b_n)$ is feasible for all situations as long as $b_i$ are nonnegative integers.
+
+     Obviously, $(a_1,a_2,...,a_n)$ has something to do with $(b_1,b_2,...,b_n)$.
+     
+     \textbf{b.Given a feasible B-table, how to compute A-table:}
+
+	 \begin{center}
+     $A_{\{I\}}=\bigcup \limits_{J\ge I}B_{\{J\}}$;
+     \end{center}
+
+     Thus, 
+     \begin{center}
+     $a_{\{I\}}=\sum \limits_{J\ge I}b_{\{J\}}=\sum \limits_{j=i}^{j=n} (_{j-i}^{n-i}) b_{\{J\}}$
+	 \end{center}
+     
+
+     \textbf{c.Given a A-table, how to compute B-table:}
+
+     Then,
+
+     \begin{center}
+     $b_i=\sum \limits_{k=0}^{n-i} (-1)^k (_{k}^{n-i} )a_{i+k}$
+     \end{center}
+
+     \textbf{d.Then apply a:}
+     
+     For $(a_1,a_2,...,a_n)$, replace the $a_i$ into the formula.
+     
+     If all the results are nonnegative integers.The sequence is feasible.
+     
+
+\end{document}
+
+\end{document}
