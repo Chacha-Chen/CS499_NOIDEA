@@ -115,13 +115,19 @@ In conclusion, $f(n!)=n-|n|_1$.
 \begin{exercise}
    Find a closed formula for $f\left({n \choose k}\right)$ in terms of $n, k, |n|_1$, and so on.
 \end{exercise}
-\textbf{Solution:}\\
 
-${n \choose k}={{n!}\over {({n-k})! k!}}$\\
-$f\left({n \choose k}\right)$\\
-$={f(n!)+f((n-k)!)-f(k!)}$\\
-$={{n-|n|_1- (k-|k|_1)-(n-k-|n-k|_1)}}$\\
-$=|n-k|_1+|k|_1-|n|_1$\\
+\begin{solution}
+\end{solution}
+
+\[{n \choose k}={{n!}\over {({n-k})! k!}}\]
+
+\begin{align}
+f\left({n \choose k}\right)&={f(n!)+f((n-k)!)-f(k!)}\\
+&={{n-|n|_1- (k-|k|_1)-(n-k-|n-k|_1)}}\\
+&=|n-k|_1+|k|_1-|n|_1
+\end{align}
+
+
 
 \begin{exercise}
  Prove Theorem~\ref{theorem-lucas-2}. With our new notation, prove that
@@ -202,6 +208,8 @@ Let $d=3$ and $S = \{000, 100\}$. Which of the indices $1,2,3$ are active?
 \end{exercise}
 
 \begin{solution}
+\end{solution}
+
 $f_1(S)=\{100,000\}=S$
 
 $f_2(S)=\{010,110\}=S$
@@ -209,7 +217,7 @@ $f_2(S)=\{010,110\}=S$
 $f_1(S)=\{001,101\}=S$
 
 2,3 are active.
-\end{solution}
+
 
 \begin{exercise}
  Let $S \subseteq \{0,1\}^d$. Show that if $S \ne \emptyset$ and $S \ne \{0,1\}^d$ then
