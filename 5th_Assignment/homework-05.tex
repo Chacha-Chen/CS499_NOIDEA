@@ -81,7 +81,31 @@
     There is a self-complementary graph on n vertices if and only if $n\mod 4 = 0$ or $n\mod 4 = 1$.
   \end{theorem*}
   \begin{proof}
-    If $n\mod 4 \neq 0$ and $n\mod 4 \neq 1$, the number of edges of the complete graph $n(n-1)/2/2$ is not an integer, namely the edges of the complete graph cannot be divide into two parts with the same number of edges. Hence there isn't any self-complementary graph on $n$ vertices.
+    \quad \newline
+    \begin{itemize}
+      \item If $n\mod 4 \neq 0$ and $n\mod 4 \neq 1$, the number of edges of the complete graph $n(n-1)/2/2$ is not an integer, namely the edges of the complete graph cannot be divide into two parts with the same number of edges. Hence there isn't any self-complementary graph on $n$ vertices.
+
+      \item If $n\mod 4 = 0$, that is $n = 4k$, where $k$ is a positive integer. we denote an graph $G_k$ containing $k$ vertices whose complement is $G_k^C$. Now we form the following graph $G$ on $n$ vertices
+
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=5cm]{figures/graph4k.png}
+      \end{figure}
+      The graph $G$ contains four induced subgraphs $G_k, G_k, G_k^C, G_k^C$. Between some subgraphs there are edges between each vertex of two subgraphs, whose total number is $k^2$.
+
+      The complementary graph $G^C$ is as follows. Obviously, $G^C$ and $G$ are isomorphic.
+
+      \begin{figure}[h]
+        \centering
+        \includegraphics[width=5cm]{figures/graphc4k.png}
+      \end{figure}
+
+      \item If $n\mod 4 = 1$, that is $n = 4k +1$, where $k$ is a positive integer.
+
+
+    \end{itemize}
+
+
   \end{proof}
 
 \end{document}
