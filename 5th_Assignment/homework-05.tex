@@ -1,0 +1,87 @@
+\documentclass[12pt,a4]{article}
+
+\input{preamble}
+
+\setcounter{section}{5}
+
+
+\section{Graph Theory Basics}
+
+\begin{exercise}
+  For each of the graphs below, compute the number of automorphisms it has.
+
+  Justify your answer!
+\end{exercise}
+
+\begin{solution}
+  \quad \newline
+  \begin{enumerate}
+    \item The number of automorphisms is $2$. We denote the vertices $v_1, v_2, v_3, v_4$ from the left side to the right side, which itself is an automorphisms. The other automorphism is to denote the vertices from the right to the left.
+
+    \item The number of automorphisms is $2\times 6 = 12$. For each vertex, we denote it $v_1$ and number the remaining vertex clockwise or anticlockwise in order, all of which are automorphisms.
+
+    \item The number of automorphisms is $8\times 6 = 48$. For each vertex, we denote it $v_0$, and its adjacent three vertices $v_1,v_2,v_3$, which has $3!=6$ choices. Each selection can form an automorphism, thus the total number is $48$.
+  \end{enumerate}
+\end{solution}
+
+\begin{exercise}
+  Show that H n has exactly 2 n · n! automorphisms. Be careful: it is easy to construct 2 n · n! diﬀerent automorphisms. It is more diﬃcult to show that there are no automorphisms other than those.
+\end{exercise}
+
+\begin{proof}
+  \quad \newline
+  \begin{itemize}
+    \item There are at least $2^n\cdot n!$ automorphisms. For each vertex we denote it $v_0$ , and denote its adjacent vertices $v_1, v_2, \ldots, v_n$, which has $n!$ choice. All $2^n\cdot n!$ will at least form one automorphism.
+
+    \item There are no more than $2^n\cdot n!$ automorphisms. If there are more than $2^n\cdot n!$ automorphisms, then after we choose $v_0, v_1, v_2, \ldots, v_n$, we can still find more than one automorphism when numbering $v_{n+1}, v_{n+2}, \ldots, v_{2^n-1}$.
+
+    Consider the n-dimensional Hamming cube as a n-dimensional linear space with each vertex having the coordinates $(x_1, x_2, \ldots, x_n)$ ($x_i = 1$ or $0$ ) However, after choosing $v_0, v_1, \ldots, v_n$, equivalently, we have defined the origin and basis of the space, all vertices' coordinates are fixed, there is no alternative automorphism.
+  \end{itemize}
+\end{proof}
+
+\begin{exercise}
+  Give an example of an asymmetric graph on six vertices.
+\end{exercise}
+
+\begin{solution}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm]{figures/6.3.png}
+  \end{figure}
+\end{solution}
+
+\begin{exercise}
+  Find an asymmetric tree.
+\end{exercise}
+
+\begin{solution}
+  The is no asymmetric tree on six vertices.
+  \begin{proof}
+    A tree containing only $2$ leaves is a path, which has $2$ automorphisms. Thus the tree must containing at least $3$ leaves $v_1, v_2, v_3$ and the leaves have different adjacent vertices $v_1', v_2', v_3'$. Otherwise switching the number of $2$ leaves connecting the same adjacent vertex will form a new automorphism.
+
+    There already exist $6$ vertices. But if there are only 6 vertice to form a tree, $v_1', v_2', v_3'$ must be connected. But this will form automorphisms by switch the name of vertices groups $(v_1,v_1'), (v_2,v_2'), (v_3,v_3')$.
+
+    Therefore, an asymmetric tree cannot be found on less than $7$ vertices.
+  \end{proof}
+\end{solution}
+
+\begin{exercise}
+  Show that there is no self-complementary graph on 999 vertices.
+\end{exercise}
+
+\begin{proof}
+  A complete graph on $999$ vertices has $999\times 998 /2 = 498501$ edges, which cannot be divide by $2$, that is, the edges cannot be divide into two parts with the same number of edges.
+\end{proof}
+
+\begin{exercise}
+  Exercise 6.6. Characterize the natural numbers n for which there is a selfcomplementary graph G on n vertices.
+\end{exercise}
+
+  \begin{theorem*}
+    There is a self-complementary graph on n vertices if and only if $n\mod 4 = 0$ or $n\mod 4 = 1$.
+  \end{theorem*}
+  \begin{proof}
+    If $n\mod 4 \neq 0$ and $n\mod 4 \neq 1$, the number of edges of the complete graph $n(n-1)/2/2$ is not an integer, namely the edges of the complete graph cannot be divide into two parts with the same number of edges. Hence there isn't any self-complementary graph on $n$ vertices.
+  \end{proof}
+
+\end{document}
