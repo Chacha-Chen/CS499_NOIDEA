@@ -1,16 +1,42 @@
 \documentclass[12pt,a4]{article}
-
 \input{preamble}
+
+
+
 
 \setcounter{section}{5}
 
 
 \section{Graph Theory Basics}
 
-\begin{exercise}
-  For each of the graphs below, compute the number of automorphisms it has.
 
-  Justify your answer!
+
+\begin{itemize}
+ \item Homework assignment published on Monday, 2018-04-02.
+ \item Submit first solutions and questions by Sunday, 2018-04-08, 12:00, by
+ email to dominik.scheder@gmail.com and to the TAs.
+ \item You will receive feedback by Wednesday, 2018-04-11.
+ \item Submit final solution by Sunday, 2018-04-15 to me and the TAs.
+\end{itemize}
+
+
+Let $G = (V, E)$ and $H = (V', E')$ be two graphs. A {\em graph isomorphism} from $G$ to $H$
+ is a bijective function $f: V \rightarrow V'$ such that
+ for all $u,v \in V$ it holds that $\{u,v\} \in E$ if and only if $\{f(u),f(v)\} \in E'$. 
+ If such a function exists, we write $G \cong H$ and say that $G$ and $H$ are {\em isomorphic}.
+ In other words, $G$ and $H$ being isomorphic means that they 
+ are identical up to the names of its vertices.
+ 
+Obviously, every graph $G$ is isomorphic to itself, because the identity function $f(u) = u$ is an
+isomorphism. However, there might be several isomorphisms $f$ from $G$ to $G$ itself.
+We call such an isomorphism from $G$ to itself an {\em automorphism} of $G$.
+
+\begin{exercise}
+For each of the graphs below, compute the number of automorphisms it has.
+\begin{center}
+\includegraphics[width=\textwidth]{figures/graphs-number-of-automorphisms.pdf}
+\end{center}
+Justify your answer!
 \end{exercise}
 
 \begin{solution}
@@ -24,8 +50,16 @@
   \end{enumerate}
 \end{solution}
 
+
+Consider the $n$-dimensional Hamming cube $H_n$. This is the graph with vertex
+set $\{0,1\}^n$, and two vertices $x,y \in \{0,1\}^n$ are connected by an edge if 
+they differ in exactly one edge. For example, the right-most graph in the figure above
+is $H_3$.
+
 \begin{exercise}
-  Show that H n has exactly 2 n · n! automorphisms. Be careful: it is easy to construct 2 n · n! diﬀerent automorphisms. It is more diﬃcult to show that there are no automorphisms other than those.
+   Show that $H_n$ has exactly $2^n \cdot n!$ automorphisms.
+   Be careful: it is easy to construct $2^n \cdot n!$ different automorphisms. It is 
+   more difficult to show that there are no automorphisms other than those.
 \end{exercise}
 
 \begin{proof}
@@ -39,8 +73,11 @@
   \end{itemize}
 \end{proof}
 
+A graph $G$ is called {\em asymmetric} if the identity function $f(u) = u$ is the 
+only automorphism of $G$. That is, if $G$ has exactly one automorphism.
+
 \begin{exercise}
-  Give an example of an asymmetric graph on six vertices.
+   Give an example of an asymmetric graph on six vertices.
 \end{exercise}
 
 \begin{solution}
@@ -65,8 +102,19 @@
   \end{proof}
 \end{solution}
 
+For a graph $G = (V,E)$, let $\bar{G} := \left(V, {V \choose 2} \setminus E \right)$ denote
+its {\em complement graph}.
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/graph-complement.pdf}
+\end{center}
+We call a graph {\em self-complementary} if $G \cong \bar{G}$. The above graph
+is not self-complementary. Here is an example of a self-complementary graph:
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/pentagon-pentagram.pdf}
+\end{center}
+
 \begin{exercise}
-  Show that there is no self-complementary graph on 999 vertices.
+   Show that there is no self-complementary graph on $999$ vertices.
 \end{exercise}
 
 \begin{proof}
@@ -74,10 +122,13 @@
 \end{proof}
 
 \begin{exercise}
-  Exercise 6.6. Characterize the natural numbers n for which there is a selfcomplementary graph G on n vertices.
+ Characterize the natural numbers $n$ for which there is a self-complementary
+ graph $G$ on $n$ vertices. That is, state and prove a theorem of the form
+ ``There is a self-complementary graph  on $n$ vertices if and only if 
+ $n$ \texttt{ <put some simple criterion here>}.''
 \end{exercise}
 
-  \begin{theorem*}
+\begin{theorem*}
     There is a self-complementary graph on n vertices if and only if $n\mod 4 = 0$ or $n\mod 4 = 1$.
   \end{theorem*}
   \begin{proof}
@@ -119,5 +170,9 @@
 
 
   \end{proof}
+
+
+
+
 
 \end{document}
