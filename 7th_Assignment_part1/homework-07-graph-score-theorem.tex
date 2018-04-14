@@ -1,0 +1,186 @@
+\documentclass[12pt,a4]{article}
+\input{preamble}
+
+
+
+
+\setcounter{section}{6}
+
+\section{The Graph Score Theorem}
+
+
+
+\begin{itemize}
+ \item Homework assignment published on Monday, 2018-04-09.
+ \item Submit questions and first solution by Sunday, 2018-04-15, 12:00 by
+ email to dominik.scheder@gmail.com and the TAs.
+ \item You will receive feedback by Wednesday, 2018-04-18.
+ \item Submit your final solution by Sunday, 2018-04-22 to me and the two TAs.
+\end{itemize}
+
+
+
+\begin{exercise}
+  Describe, in simple sentences with a minimum of mathematical formalism, (1) the score
+  of a graph, (2) what the graph score theorem is, (3) the idea of the
+  graph score algorithm, (4) where the difficult part of its proof is.
+  Imagine you have a friend who does not take this class, and think about how to answer
+  the above questions to them.
+\end{exercise}
+
+\begin{solution}
+  \quad \newline
+\begin{enumerate}
+\item The score of a graph is the increasing sequence of degrees of all vertexes.
+\item Give a increasing sequence of degrees $ D = (d_1, d_2, d_3 \dots d_n)$ with $d_i$ denoting its element. Consider another sequnces $D^{'}$ of size $n-1$ whose element denoted as $d_i^{'}$ with:\\
+\begin{displaymath}
+d_i^{'} = \left\{ \begin{array}{ll}
+d_i & i < n - d_n\\
+d_i - 1 & i \ge n - d_n
+\end{array}\right.
+\end{displaymath}
+\end{enumerate}
+$D$ is a graph score if and only if $D^{'}$ is a graph score.
+
+\item The idea of graph score algorithm is recursively using theorem to simplify the degree sequnce until it's easy to judge whether the sequnce is a graph score.
+
+\item The difficult part of the proof is the reverse implication-if $D$ is a graph score then $D^{'}$ is a graph score. Since we can't just reverse the constrution process how we get the graph of $D$ from the graph of $D^{'}$.
+\end{solution}
+
+
+\subsection{Alternative Graphs}
+
+Now we will look at different notions of graphs. As defined in class and in the video
+lectures, a graph is a pair $G = (V,E)$ where $V$ is a (usually finite) set, called the {\em vertices},
+and $E \subseteq {V \choose 2}$, called the set of {\em edges}.
+
+\paragraph{Multigraphs.}
+A {\em multigraph} is like a graph, but you can have several parallel edges between
+two vertices. You cannot, however, have self-loops. That is, there cannot
+be an edge from $u$ to $u$ itself. This is an example of a multigraph:
+
+\begin{center}
+  \includegraphics[width=0.25\textwidth]{figures/multigraph-score.pdf}
+\end{center}
+
+We can define degree and score for multigraphs, too. For example, this multigraph
+has score $(4,4,2)$. Obviously no graph
+can have this score.
+
+\begin{exercise}
+  State a score theorem for multigraphs. That is, something like
+  \begin{theorem}[Multigraph Score Theorem]
+     Let $(a_1,\dots,a_n) \in \N_0^n$. There is a multigraph
+     with this score if and only if \texttt{\textup{<fill in some simple criterion here>}}.
+  \end{theorem}
+
+  \textbf{Remark.} This is actually
+  simpler than for graphs.
+\end{exercise}
+
+\begin{solution}
+  Let $(a_1,\dots,a_n) \in \N_0^n$. There is a multigraph with this score if and only if 1) $\sum_{i = 1}^n a_i$ is even and 2) $\sum_{i=1}^{n-1} a_i \ge a_n$.
+\end{solution}
+
+\begin{exercise}
+  Prove your theorem.
+\end{exercise}
+
+\begin{proof}
+First, if $\mathbf{a} = (a_1,\dots,a_n) \in \N_0^n$ is multigraph score then it obviously satisfy the criterion since any vertex degree corresponds to others' ones.\\
+To prove reverse implication, we use induction theorem.\\
+\textbf{Hypothesis} Any sequcence $\mathbf{a^{'}} = (a_1^{'},\dots,a_{n-1}^{'})$ is a multigraph score satisfying both criterions, then it has corresponding multigraph with score $\mathbf{a}$.\\
+\textbf{Base case} $\mathbf{a^{'}} = (a_1^{'}, a_2^{'})$ meeting the conditons obviously has corresponding multigraph score $\mathbf{a} = (a_1, a_2, a_3)$.\\
+\textbf{Induction poof} For any nodecreasing order sequnce $\mathbf{a} = (a_1, a_2, \dots a_n)$ satisfying both criterions, remove the node with degree $a_1$ in $\mathbf{a}$ to get $\mathbf{a^{'}} = (a_2, a_3, \dots a_{n}^{'})$ where $a_n^{'} = a_n - a_1$. \\
+If $a_n^{'}$ is still the largest one, then $\mathbf{a^{'}}$ is obviously a multigraph score. Therefore $\mathbf{a}$ is also a multigraph score according to induction theorem. \\
+If $a_n^{'}$ is not the largest one, which means $a_{n-1}$ is the largest one. Since $a_n > a_{n-1}$ and $a_n^{'} + a_2$ is at least $a_n + a_2 - a_1 > a_n \ge a_{n-1}$, which implies $\mathbf{a^{'}}$ is multigraph score.\\
+Then, we can conclude that the theorem is correct.
+\end{proof}
+
+\newcommand{\wdeg}{\textnormal{wdeg}}
+
+\paragraph{Weighted graphs.} A weighted graph is a graph in which every edge $e$ has a non-negative weight $w_e$.
+In such a graph the {\em weighted degree} of a vertex $u$ is $\wdeg(u) = \sum_{ \{u,v\} \in E} w_{\{u,v\}}$.
+
+\begin{center}
+  \includegraphics[width=0.25\textwidth]{figures/weighted-graph-score.pdf}
+\end{center}
+
+This is an example of a weighted graph, which has score $(3,2,2)$. Obviously no graph
+and no multigraph can have this score.
+
+\begin{exercise}
+  State a score theorem for weighted graphs. That is, state something like
+  \begin{theorem}[Weighted Graph Score Theorem]
+     Let $(a_1,\dots,a_n) \in \R_0^n$. There is a weighted graph
+     with this score if and only if \texttt{\textup{<fill in some simple criterion here>}}.
+  \end{theorem}
+  \textbf{Remark.} This
+  is actually even simpler.
+\end{exercise}
+\begin{solution}
+  Let $(a_1,\dots,a_n) \in \R_0^n$. There is a weighted graph with this score if and only if $\sum_{i = 1}^{n-1} \ge a_n$.
+\end{solution}
+
+\begin{exercise}
+  Prove your theorem.
+\end{exercise}
+
+\begin{proof}
+First, for any weighted graph, we have $\sum_{i = 1}^{n-1} \ge a_n$ since its each edge connected to $a_n$ also connecting a node in $(a_1, \dots a_{n-1})$.\\
+Besides, for any sequnce $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ with $\sum_{i = 1}^{n-1} \ge a_n$, we use induction theorem to prove the theorem.\\
+\textbf{Hypothesis}: Any sequnce $\mathbf{a_{'}} = (a_1^{'},\dots,a_{n-1}^{'}) \in \R_0^n$ which is weighted graph score has a corresponding sequnce $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ meeting the criterion is a weighted graph score.\\
+\textbf{Base case}: $\mathbf{a} = {a_1, a_2}$ with $a_1 \ge a_2$ is a weighted graph score.\\
+\textbf{Induction step}: For any nodecreasing order sequnce $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ with $\sum_{i = 1}^{n-1} \ge a_n$, remove vertex with degree $a_1$ and connected edges to get $\mathbf{a_{'}} = (a_2,\dots,a_{n}^{'})$ where $a_n^{'} = a_n - a_1$.\\
+If $a_{n}^{'}$ is still the largest element in $\mathbf{a^{'}}$, it's obviously that $\sum_{i = 2}^{n-1} \ge a_n - a_1$, which means $\mathbf{a^{'}}$ is a graph weighted score.\\
+If $a_{n}^{'}$ is not the largest element, which means $a_{n-1}$ is the largest one. We have $\sum_{i = 2}^{n-2} + a_n - a_1 \ge a_{n-1}$, so $\mathbf{a^{'}}$ is a graph weighted score.\\
+Accordingly, we have the theorem proved.
+\end{proof}
+
+\paragraph{Allowing negative edge weights.} Suppose now we allow negative edge weights, like here:
+\begin{center}
+  \includegraphics[width=0.25\textwidth]{figures/arbitrary-weighted-graph-score.pdf}
+\end{center}
+This ``graph with real edge weights'' has score $(2,0,0)$. This score is impossible for
+graphs, multigraphs, and weighted graphs with non-negative edge weights.
+
+
+\begin{exercise}
+  State a score theorem for weighted graphs when we allow
+  negative edge weights. That is, state a theorem like
+  \begin{theorem}[Score Theorem for Graphs with Real Edge Weights]
+     Let $(a_1,\dots,a_n) \in \R^n$. There is a  graph with real edge weights
+     with this score if and only if \texttt{\textup{<fill in some simple criterion here>}}.
+  \end{theorem}
+\end{exercise}
+
+\begin{exercise}
+Prove your theorem.
+\end{exercise}
+
+
+\begin{exercise}
+   For each student ID $(a_1,\dots,a_n)$ in your group, check whether
+   this is (1) a graph score, (2) a multigraph score, (3) a weighted graph score, or
+   (4) the score of a graph with real edge weights.
+
+   Whenever the answer is {\em yes}, show the graph, when it is {\em no},
+   give a short argument why.
+\end{exercise}
+
+\paragraph{Example Solution.} My work ID is 50411.
+This is a weighted graph score, as shown by this picture:
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/graph-50411.pdf}
+\end{center}
+This settles (3). It is not a multigraph score, because BLABLABLA. I won't give more details, as it might
+give too many hints about Exercise 7.2. Alright, this settles (2). Note that I do {\em not} need to answer
+(4), as this is already answered by (3). Neither do I need to answer (1), as a ``no'' for (2) implies
+a ``no'' for (1).
+
+
+
+
+
+
+\end{document}
