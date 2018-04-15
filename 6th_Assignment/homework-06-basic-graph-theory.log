@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  11 APR 2018 10:33
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.5.1)  15 APR 2018 22:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -255,30 +255,31 @@ Overfull \hbox (4.57152pt too wide) in paragraph at lines 70--71
 [2]
 File: figures/6.3.png Graphic file (type QTm)
  <use  "figures/6.3.png" >
+File: figures/6.4.png Graphic file (type QTm)
+ <use  "figures/6.4.png" >
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 105.
+(amsmath)                 on input line 115.
 
+[3]
 File: figures/graph-complement.pdf Graphic file (type QTm)
-<use  "figures/graph-complement.pdf" > [3]
+ <use  "figures/graph-complement.pdf" >
 File: figures/pentagon-pentagram.pdf Graphic file (type QTm)
 
 <use  "figures/pentagon-pentagram.pdf" >
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
-File: figures/graph4k.png Graphic file (type QTm)
-<use  "figures/graph4k.png" >
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [4]
+File: figures/graph4k.png Graphic file (type QTm)
+ <use  "figures/graph4k.png" >
 File: figures/graphc4k.png Graphic file (type QTm)
  <use  "figures/graphc4k.png" >
 File: figures/graph4k1.png Graphic file (type QTm)
- <use  "figures/graph4k1.png" >
+
+<use  "figures/graph4k1.png" >
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -289,12 +290,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5] [6] (./homework-06-basic-graph-theory.aux) ) 
 Here is how much of TeX's memory you used:
- 2924 strings out of 493591
- 36795 string characters out of 6143547
+ 2927 strings out of 493591
+ 36832 string characters out of 6143547
  96978 words of memory out of 5000000
- 6294 multiletter control sequences out of 15000+600000
+ 6296 multiletter control sequences out of 15000+600000
  12612 words of font info for 49 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 29i,8n,35p,402b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,364b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on homework-06-basic-graph-theory.pdf (6 pages).
