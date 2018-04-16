@@ -3,7 +3,7 @@ CS 499 Homework Assignments
 
 Dominik Scheder, Shanghai Jiaotong University
 
-##Table of Contents
+## Table of Contents
 
 ### Hw 01 
 
