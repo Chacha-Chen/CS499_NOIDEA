@@ -98,6 +98,12 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT homework-08-spanning-trees.xdv
+INPUT figures/txy.pdf
+INPUT figures/t.pdf
+INPUT figures/gc.pdf
+INPUT figures/tc.pdf
+INPUT figures/mst1.pdf
+INPUT figures/mst2.pdf
 INPUT figures/arrow-diagram.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm

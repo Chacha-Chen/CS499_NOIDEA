@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  16 APR 2018 15:38
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  16 APR 2018 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,20 +252,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
+File: figures/txy.pdf Graphic file (type QTm)
+ <use  "figures/txy.pdf" >
+File: figures/t.pdf Graphic file (type QTm)
+ <use  "figures/t.pdf" > [2]
+File: figures/gc.pdf Graphic file (type QTm)
+
+<use  "figures/gc.pdf" >
+File: figures/tc.pdf Graphic file (type QTm)
+ <use  "figures/tc.pdf" > [3]
+File: figures/mst1.pdf Graphic file (type QTm)
+
+<use  "figures/mst1.pdf" >
+File: figures/mst2.pdf Graphic file (type QTm)
+ <use  "figures/mst2.pdf" > [4]
+Underfull \hbox (badness 10000) in paragraph at lines 158--162
 
  []
 
+[5]
 File: figures/arrow-diagram.pdf Graphic file (type QTm)
-<use  "figures/arrow-diagram.pdf" > [2] [3] [4]
+ <use  "figures/arrow-diagram.pdf" > [6] [7] [8]
 (./homework-08-spanning-trees.aux) ) 
 Here is how much of TeX's memory you used:
- 2954 strings out of 493005
- 37231 string characters out of 6134597
+ 2966 strings out of 493005
+ 37359 string characters out of 6134597
  107973 words of memory out of 5000000
- 6881 multiletter control sequences out of 15000+600000
+ 6887 multiletter control sequences out of 15000+600000
  11900 words of font info for 57 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 29i,8n,35p,289b,255s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,35p,599b,254s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework-08-spanning-trees.xdv (4 pages, 49600 bytes).
+Output written on homework-08-spanning-trees.xdv (8 pages, 88512 bytes).

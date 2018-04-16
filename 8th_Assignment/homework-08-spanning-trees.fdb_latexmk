@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1523864289 "homework-08-spanning-trees.xdv" "homework-08-spanning-trees.pdf" "homework-08-spanning-trees" 1523864289
-  "homework-08-spanning-trees.xdv" 1523864289 49600 f2de3ec4308afa57d20afd95dc4771c6 "xelatex"
+["xdvipdfmx"] 1523888212 "homework-08-spanning-trees.xdv" "homework-08-spanning-trees.pdf" "homework-08-spanning-trees" 1523888213
+  "homework-08-spanning-trees.xdv" 1523888212 88512 ba620a34397bf436226e493caa76470d "xelatex"
   (generated)
   "homework-08-spanning-trees.pdf"
-["xelatex"] 1523864288 "homework-08-spanning-trees.tex" "homework-08-spanning-trees.xdv" "homework-08-spanning-trees" 1523864289
+["xelatex"] 1523888212 "homework-08-spanning-trees.tex" "homework-08-spanning-trees.xdv" "homework-08-spanning-trees" 1523888213
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -57,10 +57,16 @@
   "/usr/local/texlive/2017/texmf-var/web2c/xetex/xelatex.fmt" 1520140291 3678518 360cae1edb57addf5feef5bd838e5bcc ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
   "figures/arrow-diagram.pdf" 1467409443 13634 6a69d6a89321480b2d799efc5bf4b71f ""
-  "homework-08-spanning-trees.aux" 1523864289 444 3048f0c9558ed2040886b877ad8473d2 ""
-  "homework-08-spanning-trees.tex" 1523861995 6349 14a621a4677c8e294d2abd5714dcb739 ""
+  "figures/gc.pdf" 1523881407 20208 540d84d4b999c12a8f30ccaad533b004 ""
+  "figures/mst1.pdf" 1523885215 20204 d83c55dd25591c0327a774d6e5e7f430 ""
+  "figures/mst2.pdf" 1523881354 20205 6f9f4f84164c5402638f8a256f0b2b8a ""
+  "figures/t.pdf" 1523881354 20205 6f9f4f84164c5402638f8a256f0b2b8a ""
+  "figures/tc.pdf" 1523881332 20208 05116257db966ef9b8e8c5716b10069d ""
+  "figures/txy.pdf" 1523881311 20180 199f9284f7bb1b7bdd88da2352a1c97e ""
+  "homework-08-spanning-trees.aux" 1523888212 444 4d82bf42e49a26b828247187e01bddc8 ""
+  "homework-08-spanning-trees.tex" 1523888212 11494 f38d99ec6e2cad78189d356eb9b37e30 ""
   "preamble.tex" 1521460614 2755 0275a1e48bd33a1a60ccf6744ea8c219 ""
   (generated)
+  "homework-08-spanning-trees.aux"
   "homework-08-spanning-trees.log"
   "homework-08-spanning-trees.xdv"
-  "homework-08-spanning-trees.aux"

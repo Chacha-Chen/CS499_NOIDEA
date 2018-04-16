@@ -29,6 +29,19 @@ and $w: E \rightarrow \R^+$ be a weight function.\\
       edge from $X$ crosses this cut and (ii) $e$ is a minimum
       weight edge of $G$ crossing this cut.
 \end{exercise}
+\begin{proof}
+$X$ is good and $X\cup e$ is good, means that there's a minimum spanning tree $T$ such that $X\subseteq E(T)$ and $X\cup e \subseteq E(T)$. Also, $X$ contains two or more components. 
+
+\begin{itemize}
+\item Proof by contradiction that there exists a cut $V=S\cup \overline{S}$ of $X$ such that no edge from $X$ crosses this cut but $e$ crosses this cut:
+
+If $e$ does not cross any cut of $X$, meaning that the two vertices that $e$ connected is within the same connected component of $X$, which leads to a cycle in this component in $X\cup e$. Then it can't be good, a contradiction.
+\item Proof by contradiction that $e$ is a minimum weight edge of G crossing this cut:
+
+If $e$ is not the minimum weight edge of G crossing this cut, which means that there exists a edge $e'$ such that $w(e')<w(e)$. Moreover, $w(X\cup e')< w(X\cup e)$. Consider a tree $T'$ such that $E(T')=(E(T)\setminus e)\cup e'$. $T$ is a spanning tree, so that there are exactly 2 connected components if the edge $e$ is subtracted from it. Then by adding the edge $e'$, $T'$ is also a spanning tree since no circles are incidented. However $w(T)-w(T')=w(e)-w(e')>0$, which means that $w(T')<w(T)$. But $T$ is the minimum spanning tree of $G$, thus a contradiction.
+\end{itemize}
+
+\end{proof}
 
 \begin{definition}
   For $c \in \R$ and a weighted graph $G = (V,E)$, let
@@ -47,9 +60,43 @@ and $w: E \rightarrow \R^+$ be a weight function.\\
 \begin{exercise}
      Illustrate Lemma~\ref{lemma-CC} with an example!
 \end{exercise}
+\begin{solution}
+\end{solution}
+For a figure as below: 
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/txy.pdf}
+\end{center}
+The $MST$ $T$ would be
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/t.pdf}
+\end{center}
+Assume that $c=2$, then $G_2$ is
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/gc.pdf}
+\end{center}
+And $T_2$ is 
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/tc.pdf}
+\end{center}
+Lemma 8.3, obviously, holds for the example above.
 \begin{exercise}
      Prove the lemma.
 \end{exercise}
+\begin{proof}
+The proof is given in $2$ directions as below:
+\end{proof}
+\begin{itemize}
+\item two vertices $u,v \in V$ are connected in $T_c$ if they are connected in $G_c$:
+\begin{itemize}
+\item $\forall e \in E,$ $c\ge w(e)$. Then $T_c$ is the spanning tree which connects every 2 vertices. And $G_c$ is the $G$ itself. The lemma obviously holds.
+\item $\exists e \in E,$  $c< w(e)$. Proof by contradiction, if there exist 2 vertices $u,v$ that are connected in $G_c$, but are not connected in $T_c$.
+Obviously, $u,v$ are connected in $T$. Suppose the connecting path is $(e_1,e_2,...,e_k)$. There exists an edge $e_i\in E(T)$, $1\le i\le k$, such that $w(e_i)>c$. For the only cut $V$ in the 2 connected components of $T'$, where $E(T')=E(T)\setminus e_i$. According to the cut lemma, $e_i$ is the minimum weight edge that connecting the 2 components. Hence, there can not exist a path in which all the edges' weights are less than $c$ in $G$. So $u,v$ can not be connected in $G_c$, a contradiction.
+\end{itemize}
+\item two vertices $u,v \in V$ are connected in $G_c$ if they are connected in $T_c$:
+
+The proof of this direction is much simpler. If $u,v$ are connected in $T_c$, then there must exists a path $(e_1,e_2,...,e_n)$ connecting $u$ and $v$, in which every edge weight is no more than $c$. Further, all the edges in this path would be in $G_c$, which leads to a path connecting $u,v$ in $G_c$ as well.
+\end{itemize}
+
 
 \begin{definition}
   For a weighted graph $G$, let $m_c(G) := | \{ e \in E(G) \ | \ w(e) \leq c\}|$, i.e.,
@@ -65,15 +112,44 @@ and $w: E \rightarrow \R^+$ be a weight function.\\
 \begin{exercise}
 Illustrate Lemma~\ref{lemma-weight-multiplicity} with an example!
 \end{exercise}
+\begin{solution}
+Using the same example in \textbf{exercise 8.4}, the minimum spanning tree is
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/mst1.pdf}
+\end{center}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/mst2.pdf}
+\end{center}
+The lemma, obviously, holds.
+\end{solution}
 \begin{exercise}
 Prove the lemma.
 \end{exercise}
+\begin{proof}
+$T$ and $T'$ both has exactly $|V|-1$ edges.
 
+Assume that $E(T)=(e_1,...,e_k),$ in an order such that $ w(e_1)\le w(e_2)\le...\le w(e_k)$, and $E(T')=(e'_1,...,e'_k), $ in an order such that $w(e'_1)\le w(e'_2)\le...\le w(e'_k)$ and $ k=|V|-1$.
+
+First, we proof that the weight sequence $w(e_1)w(e_2)...w(e_k)$ and 
+\\$w(e'_1)w(e'_2)...w(e'_k)$ are exactly the same.
+
+Consider constructing the minimum spanning tree by Kruskal’s Algorithm. In this approach, each time when you want to expand your subgraph by adding an edge, you only care about the weight of an edge but not the edge, say $(v_i, v_k)$, itself. So, each time, you will always get the exactly weight sequence, however, not always the same MST.
+
+Therefore, for two MST trees of the same weight sequence, the lemma obviously holds.
+\end{proof}
 
 \begin{exercise}
   Suppose no two edges of $G$ have the same weight. 
   Show that $G$ has exactly one minimum spanning tree!
 \end{exercise}
+\begin{proof}
+% Suppose $T$ is a minimum spanning tree in $G$, we proof that it is also the only one if no two edges of $G$ have the same weight.
+
+% Suppose that  
+Consider constructing the minimum spanning tree by Kruskal’s Algorithm. In this approach, each time when you want to expand your subgraph by adding an edge, you have only one choice, because no two edges have the same weight. Therefore, you’ll get exactly the same MST each time you call the algorithm.\\
+Besides, in this algorithm, the choice of the minimal weight edges is arbitrary. And different choice leads to different MST. So the Kruskal’s Algorithm is somehow able to generate all possible MST from a given graph G (not only one MST from all possibilities).\\
+Thus, G has exactly one minimum spanning tree.
+\end{proof}
 
 
 
