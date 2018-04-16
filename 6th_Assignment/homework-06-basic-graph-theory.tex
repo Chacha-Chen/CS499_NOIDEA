@@ -22,11 +22,11 @@
 
 Let $G = (V, E)$ and $H = (V', E')$ be two graphs. A {\em graph isomorphism} from $G$ to $H$
  is a bijective function $f: V \rightarrow V'$ such that
- for all $u,v \in V$ it holds that $\{u,v\} \in E$ if and only if $\{f(u),f(v)\} \in E'$. 
+ for all $u,v \in V$ it holds that $\{u,v\} \in E$ if and only if $\{f(u),f(v)\} \in E'$.
  If such a function exists, we write $G \cong H$ and say that $G$ and $H$ are {\em isomorphic}.
- In other words, $G$ and $H$ being isomorphic means that they 
+ In other words, $G$ and $H$ being isomorphic means that they
  are identical up to the names of its vertices.
- 
+
 Obviously, every graph $G$ is isomorphic to itself, because the identity function $f(u) = u$ is an
 isomorphism. However, there might be several isomorphisms $f$ from $G$ to $G$ itself.
 We call such an isomorphism from $G$ to itself an {\em automorphism} of $G$.
@@ -52,13 +52,13 @@ Justify your answer!
 
 
 Consider the $n$-dimensional Hamming cube $H_n$. This is the graph with vertex
-set $\{0,1\}^n$, and two vertices $x,y \in \{0,1\}^n$ are connected by an edge if 
+set $\{0,1\}^n$, and two vertices $x,y \in \{0,1\}^n$ are connected by an edge if
 they differ in exactly one edge. For example, the right-most graph in the figure above
 is $H_3$.
 
 \begin{exercise}
    Show that $H_n$ has exactly $2^n \cdot n!$ automorphisms.
-   Be careful: it is easy to construct $2^n \cdot n!$ different automorphisms. It is 
+   Be careful: it is easy to construct $2^n \cdot n!$ different automorphisms. It is
    more difficult to show that there are no automorphisms other than those.
 \end{exercise}
 
@@ -69,11 +69,17 @@ is $H_3$.
 
     \item There are no more than $2^n\cdot n!$ automorphisms. If there are more than $2^n\cdot n!$ automorphisms, then after we choose $v_0, v_1, v_2, \ldots, v_n$, we can still find more than one automorphism when numbering $v_{n+1}, v_{n+2}, \ldots, v_{2^n-1}$.
 
-    Consider the n-dimensional Hamming cube as a n-dimensional linear space with each vertex having the coordinates $(x_1, x_2, \ldots, x_n)$ ($x_i = 1$ or $0$ ) However, after choosing $v_0, v_1, \ldots, v_n$, equivalently, we have defined the origin and basis of the space, all vertices' coordinates are fixed, there is no alternative automorphism.
+    Consider the n-dimensional Hamming cube as a n-dimensional Euclidean space, each vertex equals to a point in the Euclidean space with the coordinates $(x_1, x_2, \ldots, x_n)$ ($x_i = 1$ or $0$ ).
+
+    First we choose $v_0$, we denote it the point $(0,0,0, \ldots, 0)$, namely, the origin of the Euclidean space.
+
+    After choosing the adjacent vertices $v_1, \ldots, v_n$, we have chosen the vertices corresponding to $(1,0,0, \ldots, 0)$, $(0,1,0, \ldots, 0)$ $\cdots$ $(0,0,0, \ldots, 1)$, each of that form a unit vector with $v_0$: $(v_0,v_1)$, $(v_0,v_2)$ $\cdots$ $(v_0,v_n)$. All the $n$ vectors form a basis of the Euclidean space.
+
+    Once we choose a origin and a basis of the Euclidean space, all $2^n$ points' coordinates are fixed, which means that the way to number all the vertices is also fixed. Hence there exists no more automorphisms.
   \end{itemize}
 \end{proof}
 
-A graph $G$ is called {\em asymmetric} if the identity function $f(u) = u$ is the 
+A graph $G$ is called {\em asymmetric} if the identity function $f(u) = u$ is the
 only automorphism of $G$. That is, if $G$ has exactly one automorphism.
 
 \begin{exercise}
@@ -92,14 +98,18 @@ only automorphism of $G$. That is, if $G$ has exactly one automorphism.
 \end{exercise}
 
 \begin{solution}
-  The is no asymmetric tree on six vertices.
-  \begin{proof}
-    A tree containing only $2$ leaves is a path, which has $2$ automorphisms. Thus the tree must containing at least $3$ leaves $v_1, v_2, v_3$ and the leaves have different adjacent vertices $v_1', v_2', v_3'$. Otherwise switching the number of $2$ leaves connecting the same adjacent vertex will form a new automorphism.
+    \begin{figure}[h]
+      \centering
+      \includegraphics[width=6cm]{figures/6.4.png}
+    \end{figure}
+  %The is no asymmetric tree on six vertices.
+  %\begin{proof}
+  %  A tree containing only $2$ leaves is a path, which has $2$ automorphisms. Thus the tree must containing at least $3$ leaves $v_1, v_2, v_3$ and the leaves have different adjacent vertices $v_1', v_2', v_3'$. Otherwise switching the number of $2$ leaves connecting the same adjacent vertex will form a new automorphism.
 
-    There already exist $6$ vertices. But if there are only 6 vertice to form a tree, $v_1', v_2', v_3'$ must be connected. But this will form automorphisms by switch the name of vertices groups $(v_1,v_1'), (v_2,v_2'), (v_3,v_3')$.
+  %  There already exist $6$ vertices. But if there are only 6 vertice to form a tree, $v_1', v_2', v_3'$ must be connected. But this will form automorphisms by switch the name of vertices groups $(v_1,v_1'), (v_2,v_2'), (v_3,v_3')$.
 
-    Therefore, an asymmetric tree cannot be found on less than $7$ vertices.
-  \end{proof}
+  %  Therefore, an asymmetric tree cannot be found on less than $7$ vertices.
+  %\end{proof}
 \end{solution}
 
 For a graph $G = (V,E)$, let $\bar{G} := \left(V, {V \choose 2} \setminus E \right)$ denote
@@ -124,7 +134,7 @@ is not self-complementary. Here is an example of a self-complementary graph:
 \begin{exercise}
  Characterize the natural numbers $n$ for which there is a self-complementary
  graph $G$ on $n$ vertices. That is, state and prove a theorem of the form
- ``There is a self-complementary graph  on $n$ vertices if and only if 
+ ``There is a self-complementary graph  on $n$ vertices if and only if
  $n$ \texttt{ <put some simple criterion here>}.''
 \end{exercise}
 
