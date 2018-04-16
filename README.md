@@ -16,10 +16,10 @@ Dominik Scheder, Shanghai Jiaotong University
 
 ### Hw 02
 
- 	1. Partial Ordering
-      	1. Equivalence Relations as a Partial Ordering
-     	2. Chains and Antichains
-     	3. Infinite Sets
+1. Partial Ordering
+   1. Equivalence Relations as a Partial Ordering
+   2. Chains and Antichains
+   3. Infinite Sets
 
 ### Hw 03
 
