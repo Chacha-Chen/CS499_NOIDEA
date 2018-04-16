@@ -4,12 +4,11 @@
 
 \usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
 
+%\usepackage[lined,boxed]{algorithm2e}
+
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
-\usepackage{float}
-\usepackage{epsfig}
-\usepackage{subfigure}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -29,8 +28,14 @@
 \let\oldexercise\exercise
 \renewcommand{\exercise}{\oldexercise\normalfont}
 
+%\let\oldexerciseD\exerciseD
+%\renewcommand{\exerciseD}{\oldexerciseD\normalfont}
+
+%\let\oldexerciseDD\exerciseDD
+%\renewcommand{\exerciseDD}{\oldexerciseDD\normalfont}
 
 \newcommand{\E}{\mathbb{E}}
+%\newcommand{\nth}[1]{#1^{\textsuperscript{th}}}
 \newcommand{\scalar}[2]{\ensuremath{\langle #1, #2\rangle}}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
@@ -40,6 +45,17 @@
 \newcommand{\core}{\textnormal{core}}
 
 
+
+\newif\ifsolution
+
+\solutionfalse
+
+\newcommand{\answer}[1]{
+\ifsolution
+{\color{blue} #1}
+\else
+\fi
+}
 
 
 
@@ -57,9 +73,6 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
 
-\newenvironment{solution}
-  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
-  {\end{proof}}
 
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 
@@ -69,9 +82,7 @@
 \title{
   Mathematical Foundations \\of \\Computer Science\\
   \vspace{3mm}
-{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder}\\
-  \vspace{3mm}
-{\normalsize Group: NOIDEA}
+{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder}
 }
 
 \begin{document}
@@ -86,13 +97,13 @@
 %  I intentionally included very challenging exercises and marked them
 %  with one or two ``$*$''. No star means you should be able to solve
 %  the exercises without big problems once you have understood
-%  the material from the video lecture. One star means it requires
-%  significant additional thinking. Two stars means it is not
+%  the material from the video lecture. One star means it requires 
+%  significant additional thinking. Two stars means it is not 
 %  unlikely that you will fail to solve them, even once you have understood
 %  the material and thought a lot about the exercise. Don't feel bad
 %  if you fail. Failure is part of learning.
 %
 %  This is the first time this course is online. Thus there might be mistakes
-%  (typos or more serious conceptual mistakes) in the exercises. I will be
+%  (typos or more serious conceptual mistakes) in the exercises. I will be 
 %  grateful if you point them out to me!
 %\end{quotation}
