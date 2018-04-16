@@ -1,0 +1,190 @@
+\documentclass[12pt,a4]{article}
+\input{preamble}
+
+
+
+
+\setcounter{section}{7}
+
+\section{Spanning Trees}
+
+
+
+\begin{itemize}
+ \item Homework assignment published on Monday, 2018-04-16
+ \item Submit questions and first solution by Sunday, 2018-04-22, 12:00, by email to me and the TAs.
+ \item Submit your final solution by Sunday, 2018-04-29.
+\end{itemize}
+
+\subsection{Minimum Spanning Trees}
+
+
+Throughout this assignment, let $G = (V,E)$ be a connected graph
+and $w: E \rightarrow \R^+$ be a weight function.\\
+			
+\begin{exercise}
+    Prove the inverse of the cut lemma: 
+      If $X$ is good, $e \not \in X$, and $X \cup e$ is good,
+      then there is a cut $S, V\setminus S$ such that (i) no
+      edge from $X$ crosses this cut and (ii) $e$ is a minimum
+      weight edge of $G$ crossing this cut.
+\end{exercise}
+
+\begin{definition}
+  For $c \in \R$ and a weighted graph $G = (V,E)$, let
+  $G_c := (V, \{e \in E \ | \ w(e) \leq c\})$. That is, $G_c$ is the
+  subgraph of $G$ consisting of all edges of weight at most $c$.
+\end{definition}
+
+\begin{lemma}
+  Let $T$ be a minimum spanning tree of $G$, and let $c \in \R$.  Then
+  $T_c$ and $G_c$ have exactly the same connected components.  (That
+  is, two vertices $u,v \in V$ are connected in $T_c$ if and only if
+  they are connected in $G_c$).
+  \label{lemma-CC}
+\end{lemma}
+
+\begin{exercise}
+     Illustrate Lemma~\ref{lemma-CC} with an example!
+\end{exercise}
+\begin{exercise}
+     Prove the lemma.
+\end{exercise}
+
+\begin{definition}
+  For a weighted graph $G$, let $m_c(G) := | \{ e \in E(G) \ | \ w(e) \leq c\}|$, i.e.,
+  the number of edges of weight at most $c$ (so $G_c$ has $m_c(G)$ edges).
+\end{definition}
+
+\begin{lemma}
+  Let $T, T'$ be two minimum spanning trees of $G$. Then
+  $m_c(T) = m_c(T')$.
+  \label{lemma-weight-multiplicity}
+\end{lemma}
+
+\begin{exercise}
+Illustrate Lemma~\ref{lemma-weight-multiplicity} with an example!
+\end{exercise}
+\begin{exercise}
+Prove the lemma.
+\end{exercise}
+
+
+\begin{exercise}
+  Suppose no two edges of $G$ have the same weight. 
+  Show that $G$ has exactly one minimum spanning tree!
+\end{exercise}
+
+
+
+\subsection{Counting Special Functions}
+
+In the video lecture, we have seen a connection between functions $f: V \rightarrow V$
+and trees on $V$. We used this to learn something about the number of such trees.
+Here, we will go in the reverse direction: the connection will actually teach us a bit
+about the number of functions with a special structure.\\
+
+Let $V$ be a set of size $n$. We have learned that there are $n^n$ functions $f: V \rightarrow V$.
+For such a function we can draw an ``arrow diagram" by simply drawing an arrow from
+$x$ to $f(x)$ for every $V$. For example, let $V = \{0,\dots,7\}$ and $f(x) := x^2 \mod 8$.
+The arrow diagram of $f$ looks as follows:
+\begin{center}
+\includegraphics[width=0.3\textwidth]{figures/arrow-diagram.pdf}
+\end{center}
+The {\em core} of a function is the set of elements lying on cycles in such a diagram.
+For example, the core of the above function is $\{0,1\}$. Formally, the core of $f$ is the 
+set
+\begin{align*}
+%\core(f) = 
+\{x \in V \ | \ \exists k \geq 1 f^{(k)}(x) = x \}
+\end{align*}
+where $f^{(k)}(x) = f( f( \dots f(x) \dots ))$, i.e., the function $f$ applied $k$ times 
+iteratively to $x$.
+
+\begin{exercise}
+Of the $n^n$ functions from $V$ to $V$, how many have a core of size $1$? 
+Give an explicit formula in terms of $n$.
+\end{exercise}
+
+\begin{exercise}
+How many have a core of size $2$ that consists of two $1$-cycles? By this we mean
+that $\core(f) = \{x,y\}$ with $f(x) = x$ and $f(y) = y$.
+\end{exercise}
+
+\textbf{Hint.} For the previous two exercises, you need to use the link between functions
+ $f: [n]\rightarrow [n]$ and 
+vertebrates $(T,h,b)$ from the video lecture. 
+
+
+
+
+
+\subsection{Counting Trees with Pr\"ufer Codes}
+
+In the video lecture, we have seen Cayley's formula, stating that there are exactly
+$n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using 
+{\em vertebrates}. For this homework, read Section 7.4 of the textbook, titled
+``A proof using the Pr\"ufer code''.
+
+
+\begin{exercise}
+  Let $V = \{1,\dots,9\}$ and consider the code $(1,3,3,2,6,6,1)$. Reconstruct a tree
+  from this code. That is, find a tree on $V$ whose Pr\"ufer code is $(1,3,3,2,6,6,1)$.
+\end{exercise}
+
+\begin{exercise}
+  Let $\mathbf{p} = (p_1,p_2,\dots,p_{n-2})$ be the Pr\"ufer  code of some tree $T$ on $[n]$.
+  Find a way to quickly determine the degree of vertex $i$ only by looking
+  at $\mathbf{p}$ and not actually constructing the tree $T$.  
+  In particular, by looking at $\mathbf{p}$, what are the leaves of $T$?
+\end{exercise}
+
+
+\begin{exercise}
+  Describe which tree on $V = [n]$  has the
+  \begin{enumerate}
+  \item Pr\"ufer code $(1,1,\dots,1)$.
+  \item Pr\"ufer code $(1,2,3,\dots, n-2)$.
+  \item Pr\"ufer code $(3,4,5,\dots, n)$.
+  \item Pr\"ufer code $(n, n-1, n-2,\dots,4,3)$.
+  \item Pr\"ufer code $(n-2,n-3,\dots,2,1)$.
+  \item Pr\"ufer code $(1,2,1,2,\dots,1,2)$ (assuming $n$ is even).
+ \end{enumerate}
+ Justify and explain your answers.
+\end{exercise}
+  
+
+The next two exercises use a bit of probability theory. Suppose we want to sample a random
+tree on $[n]$. That is, we want to write a little procedure (say in Java) that uses randomness and outputs
+a tree $T$ on $[n]$, where each of the $n^{n-2}$ trees has the same probability of 
+appearing. 
+
+\begin{exercise}
+   Sketch how one could write such a procedure. Don't actually write program code, just
+   describe it informally. You can assume you have access to a random generator
+   \texttt{randomInt($n$)} that returns a function in $\{1,\dots,n\}$ as well
+   as \texttt{randomReal()} that returns a random real number from the interval $[0,1]$.
+\end{exercise}
+
+Clearly, a tree $T$ on $[n]$ has at least $2$ and at most $n-1$ leaves. But how 
+many leaves does it have on average? For this, we could use your tree sampler from the previous
+exercise, run it 1000 times and compute the average. However, it would be much nicer to have 
+a closed formula.
+
+\begin{exercise}
+  Fix some vertex $u \in [n]$. If we choose a tree $T$ on $[n]$ uniformly at random,
+  what is the probability that $u$ is a leaf?
+   What is the expected number of leaves of $T$?
+\end{exercise}
+
+\begin{exercise}
+  For a fixed vertex $u$, what is the probability that $u$ has degree $2$?
+\end{exercise}
+
+
+
+
+
+
+
+\end{document}
