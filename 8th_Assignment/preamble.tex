@@ -4,11 +4,20 @@
 
 \usepackage{graphicx,amsmath,amssymb,amsthm, boxedminipage,xcolor}
 
+<<<<<<< HEAD
 %\usepackage[lined,boxed]{algorithm2e}
 
 \usepackage{algorithm}
 \usepackage{algpseudocode}
 
+=======
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{subfigure}
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
@@ -28,6 +37,7 @@
 \let\oldexercise\exercise
 \renewcommand{\exercise}{\oldexercise\normalfont}
 
+<<<<<<< HEAD
 %\let\oldexerciseD\exerciseD
 %\renewcommand{\exerciseD}{\oldexerciseD\normalfont}
 
@@ -36,6 +46,10 @@
 
 \newcommand{\E}{\mathbb{E}}
 %\newcommand{\nth}[1]{#1^{\textsuperscript{th}}}
+=======
+
+\newcommand{\E}{\mathbb{E}}
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 \newcommand{\scalar}[2]{\ensuremath{\langle #1, #2\rangle}}
 \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
 \newcommand{\ceil}[1]{\left\lceil #1 \right\rceil}
@@ -46,6 +60,7 @@
 
 
 
+<<<<<<< HEAD
 \newif\ifsolution
 
 \solutionfalse
@@ -57,6 +72,8 @@
 \fi
 }
 
+=======
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 
 
 \newcommand{\poly}{\textnormal{poly}}
@@ -73,6 +90,12 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\Z}{\mathbb{Z}}
 
+<<<<<<< HEAD
+=======
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
+  {\end{proof}}
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 
 \definecolor{darkgreen}{rgb}{0,0.6,0}
 
@@ -82,7 +105,13 @@
 \title{
   Mathematical Foundations \\of \\Computer Science\\
   \vspace{3mm}
+<<<<<<< HEAD
 {\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder}
+=======
+{\normalsize CS 499,	Shanghai Jiaotong University,  Dominik Scheder}\\
+  \vspace{3mm}
+{\normalsize Group: NOIDEA}
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 }
 
 \begin{document}
@@ -97,13 +126,22 @@
 %  I intentionally included very challenging exercises and marked them
 %  with one or two ``$*$''. No star means you should be able to solve
 %  the exercises without big problems once you have understood
+<<<<<<< HEAD
 %  the material from the video lecture. One star means it requires 
 %  significant additional thinking. Two stars means it is not 
+=======
+%  the material from the video lecture. One star means it requires
+%  significant additional thinking. Two stars means it is not
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 %  unlikely that you will fail to solve them, even once you have understood
 %  the material and thought a lot about the exercise. Don't feel bad
 %  if you fail. Failure is part of learning.
 %
 %  This is the first time this course is online. Thus there might be mistakes
+<<<<<<< HEAD
 %  (typos or more serious conceptual mistakes) in the exercises. I will be 
+=======
+%  (typos or more serious conceptual mistakes) in the exercises. I will be
+>>>>>>> cc4dacae8e8d4b71e0cb162bbd6b5636f7b30795
 %  grateful if you point them out to me!
 %\end{quotation}
