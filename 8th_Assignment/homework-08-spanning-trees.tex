@@ -1,9 +1,6 @@
 \documentclass[12pt,a4]{article}
 \input{preamble}
 
-
-
-
 \setcounter{section}{7}
 
 \section{Spanning Trees}
@@ -181,16 +178,36 @@ iteratively to $x$.
 Of the $n^n$ functions from $V$ to $V$, how many have a core of size $1$? 
 Give an explicit formula in terms of $n$.
 \end{exercise}
+\begin{solution}
+One mapping from $V$ to $V$ has a corresponding mapping graph and a corresponding vertebrate in a spanning tree of $(V,E)$.
+
+Hence, how many functions have a core of size $1$ is equal to how many vertebrates generate a mapping graph of exactly one cycle in all the spanning tree with vertices $V$.
+
+The number of spanning tree is $n^{n-2}$.
+
+For each spanning tree,There are $n$ choices to form a function of only $1$ core, that is , by choosing both the \textit{HEAD} and \textit{BUTT} exactly the same. 
+
+In total, there are $n^{n-2}\times n= n^{n-1}$ functions that have a core of size 1.
+
+\end{solution}
 
 \begin{exercise}
 How many have a core of size $2$ that consists of two $1$-cycles? By this we mean
 that $\core(f) = \{x,y\}$ with $f(x) = x$ and $f(y) = y$.
 \end{exercise}
 
+\begin{solution}
+The number of spanning tree is $n^{n-2}$.
+
+For each spanning tree, we choose 2 different elements, connected by the same edge, as \textit{HEAD} and \textit{BUTT} and let them form a cycle to itself in the corresponding mapping graph. Hence, there are $(n-1)$ choices.
+
+In total, there are $n^{n-2}\times(n-1)$ functions.
+\end{solution}
 \textbf{Hint.} For the previous two exercises, you need to use the link between functions
  $f: [n]\rightarrow [n]$ and 
 vertebrates $(T,h,b)$ from the video lecture. 
 
+%一个spanning tree 对应n^2个vertebrates 一个vertebrates 对应一个permutation。
 
 
 
