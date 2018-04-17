@@ -47,11 +47,11 @@ Dominik Scheder, Shanghai Jiaotong University
 1. Spanning Trees
    1. Minimum Spanning Trees
    2. Counting Special Functions
-   3. Counting Trees with Pr¨ufer Codes
+   3. Counting Trees with Prüfer Codes
 
 ​	
 
-## 轮换工作制
+## 轮换工作制(已废弃)
 
 - 轮流写作业，一个part分工一个人。
 - 周六提交初稿，大家校对&提意见，修改完，附上questions之后提交 TA & Dominik。
