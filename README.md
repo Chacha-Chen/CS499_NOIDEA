@@ -33,7 +33,7 @@ Dominik Scheder, Shanghai Jiaotong University
 
 ### Hw 05(Skipped)
 
-### Hw 06
+### Hw 06（36/40）
 
 1. Graph Theory Basics
 
