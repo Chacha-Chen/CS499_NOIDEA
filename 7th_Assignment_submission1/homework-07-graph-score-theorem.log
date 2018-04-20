@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  15 APR 2018 12:11
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.4)  20 APR 2018 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -309,9 +309,13 @@ File: figures/txy-1.pdf Graphic file (type QTm)
 [7]
 File: figures/txy.pdf Graphic file (type QTm)
  <use  "figures/txy.pdf" >
+Overfull \hbox (11.22206pt too wide) in paragraph at lines 269--270
+[]\TU/lmr/m/n/12 a graph score:According to the graph score theorem: $\OT1/cmr/
+m/n/12 (001111225679)$ 
+ []
+
 File: figures/4.pdf Graphic file (type QTm)
- <use  "figures/4.pdf" > [8]
-(./homework-07-graph-score-theorem.aux) ) 
+<use  "figures/4.pdf" > [8] (./homework-07-graph-score-theorem.aux) ) 
 Here is how much of TeX's memory you used:
  2980 strings out of 493005
  37752 string characters out of 6134597
@@ -321,4 +325,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  29i,7n,35p,381b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on homework-07-graph-score-theorem.xdv (8 pages, 92252 bytes).
+Output written on homework-07-graph-score-theorem.xdv (8 pages, 93024 bytes).
