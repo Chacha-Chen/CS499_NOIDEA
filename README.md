@@ -25,7 +25,7 @@ Dominik Scheder, Shanghai Jiaotong University
 
 1. Basic Counting
 
-### Hw 04
+### Hw 04 (80/80)
 
 1. Pascal's Triangle Modulo 2 (Sierpinski Triangle)
    1. Lucas Theorem: (n choose k) mod 2
