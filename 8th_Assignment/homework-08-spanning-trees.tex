@@ -140,12 +140,7 @@ Therefore, for two MST trees of the same weight sequence, the lemma obviously ho
   Show that $G$ has exactly one minimum spanning tree!
 \end{exercise}
 \begin{proof}
-% Suppose $T$ is a minimum spanning tree in $G$, we proof that it is also the only one if no two edges of $G$ have the same weight.
-
-% Suppose that  
-Consider constructing the minimum spanning tree by Kruskal’s Algorithm. In this approach, each time when you want to expand your subgraph by adding an edge, you have only one choice, because no two edges have the same weight. Therefore, you’ll get exactly the same MST each time you call the algorithm.\\
-Besides, in this algorithm, the choice of the minimal weight edges is arbitrary. And different choice leads to different MST. So the Kruskal’s Algorithm is somehow able to generate all possible MST from a given graph G (not only one MST from all possibilities).\\
-Thus, G has exactly one minimum spanning tree.
+Assume there are two minimum spanning trees $T_1$ and $T_2$ of a graph. Consider the edge of the minimum weight among all edges that are contained in \textit{exactly one} of the two minimum spanning trees. Without loss of generality, this edge $e_1$ appears only in $T_1$. $T_2\cup\{e_1\}$ has a cycle, in which there exists an edge $e_2$ only contained in $T_2$, not in $T_1$. And we have $w(e_1) < w(e_2)$, thus $T_2\cup\{e_1\}\slash\{e_2\}$ is a spanning tree of smaller total weight than $T_2$. $T_2$ is not a minimum spanning tree. Therefore, the graph has a unique minimum spanning tree.
 \end{proof}
 
 
@@ -225,12 +220,23 @@ $n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using
   from this code. That is, find a tree on $V$ whose Pr\"ufer code is $(1,3,3,2,6,6,1)$.
 \end{exercise}
 
+\begin{solution}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{figures/8_13.png}
+\end{figure}
+\end{solution}
+
 \begin{exercise}
   Let $\mathbf{p} = (p_1,p_2,\dots,p_{n-2})$ be the Pr\"ufer  code of some tree $T$ on $[n]$.
   Find a way to quickly determine the degree of vertex $i$ only by looking
   at $\mathbf{p}$ and not actually constructing the tree $T$.  
   In particular, by looking at $\mathbf{p}$, what are the leaves of $T$?
 \end{exercise}
+
+\begin{solution}
+  The degree of vertex $i$ equal to the times $i$ appearing in $\mathbf{p}$ plus $1$. The leaves of $T$ are those vertex which do not appear in the Pr\"ufer code.
+\end{solution}
 
 
 \begin{exercise}
@@ -245,6 +251,17 @@ $n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using
  \end{enumerate}
  Justify and explain your answers.
 \end{exercise}
+
+\begin{solution}
+  \begin{enumerate}
+    \item In the tree, the vertex $1$ is directly connected to all other vertices. In the encode process, when tearing off a vertex, $1$ will always be added to the Pr\"ufer code.
+    \item The tree is a path, start from $n-1$, to $1,2,\ldots,n-3,n-2,n$. In the encode process, we firstly tear off $n-2$, adding $1$ to the code. After that, we tear off $1,2,\ldots,n-3$ in order, adding $2,3,\ldots,n-2$ to the code. When the process is finished, the remaining vertices are $n-2$ and $n$.
+    \item The tree is a path, whose vertices from one endpoint to the other endpoint are $1,3,\ldots, n-1, n, n-2, \ldots,4 ,2$ ($n$ is even) or $1, 3,\ldots, n-2,n,n-1,\ldots,4,2$ ($n$ is odd). In the encode process, we always tear off one endpoint of the remaining tree, then tear off the other endpoint, and repeat the procedure until there exist only two vertices. It'obvious that we will get the Pr\"ufer code $(3,4,5,\dots, n)$.
+    \item The tree is a path. The verices start from one endpoint to the other are $1,n,3,\ldots,n-2,n-1,2$. We tear off $1,2,n-1,n-2,\ldots,5,4$ and encode the Pr\"ufer code with $n,n-1,n-2,\ldots,4,3$.
+    \item The tree is a path. From one endpoint to the other endpoint, the vertices are $n-1,n-2,\ldots,2,1,n$. $n$ will never be torn off, so we tear off $n-1,n-2,\ldots,3,2$, adding $n-2,n-3,\ldots,2,1$ to the Pr\"ufer code.
+    \item $1$ and $2$ are connected by an edge. $3,5,\ldots,n-1$ are directly connected to $1$, while $4,6,\ldots,n$ are connected to $2$. We tear off $3,4,5,6,\ldots,n$ in order, so the code is $(1,2,1,2,\dots,1,2)$.
+  \end{enumerate}
+\end{solution}
   
 
 The next two exercises use a bit of probability theory. Suppose we want to sample a random
@@ -259,6 +276,10 @@ appearing.
    as \texttt{randomReal()} that returns a random real number from the interval $[0,1]$.
 \end{exercise}
 
+\begin{solution}
+  We use \texttt{randomInt(n)} to generate a random Pr\"ufer code with $n-2$ digits. For each digit of the code, we generate a random integer from $1$ to $n$. By decoding the Pr\"ufer code, it returns a random tree $T$.
+\end{solution}
+
 Clearly, a tree $T$ on $[n]$ has at least $2$ and at most $n-1$ leaves. But how 
 many leaves does it have on average? For this, we could use your tree sampler from the previous
 exercise, run it 1000 times and compute the average. However, it would be much nicer to have 
@@ -270,9 +291,17 @@ a closed formula.
    What is the expected number of leaves of $T$?
 \end{exercise}
 
+\begin{solution}
+  $u$ is a leaf, in other words, $u$ does not appear in the Pr\"ufer code. The probability is $(n-1/n)^n$. The expected number of leaves of $T$ is $n(n-1/n)^n$.
+\end{solution}
+
 \begin{exercise}
   For a fixed vertex $u$, what is the probability that $u$ has degree $2$?
 \end{exercise}
+
+\begin{solution}
+  For a fixed vertex $u$, if $u$ has degree $2$, $u$ appears in the Pr\"ufer code exactly once. The probability is $n(n-1/n)^{n-1}(1/n) = (n-1/n)^{n-1}$.
+\end{solution}
 
 
 
