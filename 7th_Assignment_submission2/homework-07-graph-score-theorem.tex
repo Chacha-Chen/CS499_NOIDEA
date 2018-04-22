@@ -79,9 +79,8 @@ can have this score.
 \end{exercise}
 
 \begin{solution}
-  Let $(a_1,\dots,a_n) \in \N_0^n$. There is a multigraph with this score if and only if regarding its reordered sequence in ascending order--$(b_1,\dots,b_n) \in \N_0^n$ with $b_1 \le b_2 \le \dots d_n$--1) $\sum_{i = 1}^n b_i$ is even and 2) $\sum_{i=1}^{n-1} b_i \ge b_n$.\\
+  Let $(a_1,\dots,a_n) \in \N_0^n$. There is a multigraph with this score if and only if regarding its reordered sequence in ascending order--$(b_1,\dots,b_n) \in \N_0^n$ with $b_1 \le b_2 \le \dots b_n$ which satisfies 1) $\sum_{i = 1}^n b_i$ is even and 2) $\sum_{i=1}^{n-1} b_i \ge b_n$, when $n\ge 2$; and when $n=1$, $a_1=0$.
 \end{solution}
-
 \begin{exercise}
   Prove your theorem.
 \end{exercise}
@@ -89,11 +88,11 @@ can have this score.
 \begin{proof}
 First, if $\mathbf{a} = (a_1,\dots,a_n) \in \N_0^n$ is multigraph score then it obviously satisfy the criterion according to Handshake Lemma.\\
 To prove the reverse implication, we use induction theorem.\\
-\textbf{Hypothesis:} Any sequcence $\mathbf{a^{'}} = (a_1^{'},\dots,a_{n-1}^{'})$ is a multigraph score satisfying both criterions, then it has corresponding multigraph with score $\mathbf{a}$ of size $n$. \\
-\textbf{Base case:} When $n=2$, $\mathbf{a_1} = (a_1, a_2)$ meeting the conditons obviously has $a_1 = a_2$, then it is a multigraph score.\\
-When $n=3$, let $\mathbf{a} = (a_1, a_2, a_3)$ meeting the conditons be in nodecreasing order. If $a_1 + a_2= a_3$, we can construct a multigraph with two nodes have $a_1$ and $a_2$ edges connected to third node. Else, we recursively reduce $a_1$ and $a_2$ by $1$ until $a_1 + a_2 = a_3$, we can construct the multigraph according above graph by adding edges between nodes $a_1$ and $a_2$.\\
-\textbf{Induction proof:} For any sequence $\mathbf{a} = (a_1, a_2, \dots a_n)$ satisfying both criterions, we sort it to get an ascending order sequence $\mathbf{b} = (b_1, b_2, \dots b_n)$ with $v_i$ denoting the node with degree $b_i$.\\
-Assuming $v_1$ has all edges connected to $v_n$, remove $v_1$ and we get new sequence $\mathbf{b^{'}} = (b_2,b_3, \dots,b_{n-1}, b_n - b_1)$\\
+\textbf{Hypothesis:} If any sequence $\mathbf{a^{'}} = (a_1^{'},\dots,a_{n-1}^{'})$ satisfying both criterion is a multigraph score . Then for any sequences $\mathbf{a}$ that satisfies both criterion, a corresponding multigraph can be constructed using a multi-graph of size $(n-1)$ of a score sequence $\mathbf{a'}$.\\
+\textbf{Base case:} When $n=2$, $\mathbf{a'} = (a'_1, a'_2)$ meeting the conditions obviously has $a'_1 = a'_2$, then it is a multigraph score.\\
+When $n=3$, let $\mathbf{a} = (a_1, a_2, a_3)$ meeting the conditions be in non-decreasing order. If $a_1 + a_2= a_3$, we can construct a multigraph with two nodes have $a_1$ and $a_2$ edges connected to third node. Else, we recursively reduce $a_1$ and $a_2$ by $1$ until $a_1 + a_2 = a_3$, we can construct the multigraph according above graph by adding edges between vertices $v_1$ and $v_2$.\\
+\textbf{Induction proof:} For any sequence $\mathbf{a} = (a_1, a_2, \dots a_n)$ satisfying both criterion, we sort it to get an ascending order sequence $\mathbf{b} = (b_1, b_2, \dots b_n)$ with $v_i$ denoting the node with degree $b_i$.\\
+Let $v_1$ has all edges connected to $v_n$, remove $v_1$ and we get new sequence $\mathbf{b^{'}} = (b_2,b_3, \dots,b_{n-1}, b_n - b_1)$\\
 If $b_n - b_1$ is the largest one in $\mathbf{b^{'}}$, then $\mathbf{b^{'}}$ is obviously meeting the criterion therefore a multigraph score.\\
 If $b_n - b_1$ is not the largest one, which means $b_{n-1}$ is the largest one. Since $b_n > b_{n-1}$ and $b_n + b_2 - b_1 \ge b_n \ge b_{n-1}$, $\mathbf{b^{'}}$ still meet the criterion therefore being a multigraph score.\\
 In all cases we can construct a multigraph with score $\mathbf{a}$ meeting the theorem.
@@ -139,7 +138,7 @@ and no multigraph can have this score.
   is actually even simpler.
 \end{exercise}
 \begin{solution}
-  Let $(a_1,\dots,a_n) \in \R_0^n$. There is a weighted graph with this score if and only if corresponding sorted ascending sequence $(b_1,\dots,b_n)$ meets $\sum_{i=1}^{n-1} b_i \ge b_n$.
+  Let $(a_1,\dots,a_n) \in \R_0^n$. There is a weighted graph with this score if and only if corresponding sorted non-decreasing sequence $(b_1,\dots,b_n)$ meets $\sum_{i=1}^{n-1} b_i \ge b_n$.
 \end{solution}
 
 \begin{exercise}
@@ -148,8 +147,9 @@ and no multigraph can have this score.
 
 \begin{proof}
 First, for any weighted graph, we have $\sum_{i = 1}^{n-1}b_i \ge b_n$ since its each edge connected to $b_n$ also connecting a node in $(b_1, \dots b_{n-1})$.\\
-Besides, for any sequence $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ with $\sum_{i = 1}^{n-1}a_i \ge a_n$, we use induction theorem to prove the theorem.\\
-\textbf{Hypothesis}: Any sequence $\mathbf{a_{'}} = (a_1^{'},\dots,a_{n-1}^{'}) \in \R_0^n$ which is weighted graph score has a corresponding sequence $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ meeting the criterion is a weighted graph score.\\
+Besides, for any non-decreasing sequence $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ with $\sum_{i = 1}^{n-1}a_i \ge a_n$, we use induction theorem to prove the theorem.\\
+Without loss of generosity, we assume that all the score sequences mentioned below are in non-decreasing order.\\
+\textbf{Hypothesis}: If any sequence $\mathbf{a'} = (a_1^{'},\dots,a_{n-1}^{'}) \in \R_0^{n-1}$ which satisfies the criterion above is a weighted graph score. Then for any score sequence of size $n$  $\mathbf{a} = (a_1,\dots,a_n) \in \R_0^n$ a corresponding weighted graph can be constructed from using a weighted graph of size $n-1$ denoted by the score sequence $\mathbf{a'}$.\\
 \textbf{Base case}: When $n=2$, obviously we have $a_1 = a_2$, then $(a_1,a_2)$ must be a weighted graph score.\\
 When $n = 3$, let $w_i$ denote the weight of each edge. We have,
 \begin{displaymath}
