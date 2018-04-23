@@ -49,6 +49,12 @@ Dominik Scheder, Shanghai Jiaotong University
    2. Counting Special Functions
    3. Counting Trees with Prüfer Codes
 
+### Hw 09
+
+1. Hamilton Cycles, Hamilton Paths, and Non-isomorphic Trees
+   1. Regular Orientations of a Regular Graph
+   2. Hamilton Cycles and Ore's Theorem
+   3. Isomorphism Classes of Trees
 ​	
 
 ## 轮换工作制(已废弃)
