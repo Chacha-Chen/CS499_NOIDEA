@@ -1,0 +1,348 @@
+\documentclass[12pt,a4]{article}
+\input{preamble}
+
+
+
+
+\setcounter{section}{8}
+
+\section{Hamilton Cycles, Hamilton Paths, and Non-isomorphic Trees}
+
+
+
+\begin{itemize}
+ \item Homework assignment published on Monday 2018-04-23
+ \item Submit your first solution by Sunday, 2018-04-29, 18:00, by email
+ \item Submit your final solution by Sunday, 2018-05-06.
+\end{itemize}
+
+\subsection{Regular Orientations of a Regular Graph}
+
+We call a graph {\em $d$-regular} if every vertex has degree $d$. 
+A directed graph is $(d,d)$-regular if every vertex has $d$ incoming and $d$
+outgoing edges.
+
+\begin{exercise}
+   Show that in every $4$-regular graph, you can orient the edges such that every vertex
+   has two incoming and two outgoing edges, i.e., such that the resulting
+   digraph is $(2,2)$-regular. See the picture below for an illustration.
+\end{exercise}
+\begin{center}
+\includegraphics[width=\textwidth]{figures/four-regular-oriented.pdf}
+\end{center}
+
+\begin{proof}
+\end{proof}
+
+\begin{enumerate}
+	\item
+	Suppose that there exits a 4-regular graph, we can't orient the edges such that some vertices has two incoming and two outgoing edges.
+
+	\item
+	Assume there are 2 vertices $u,v$ not meeting the condition. Since $\sum \limits_{i=1}^n deg(v)$ is even, let $u$ has 3 incoming edges and $v$ has 3 outgoing edges.
+
+	Then along the arrow find a path from $u$ to $v$ as Figure9-1-1 shows.
+
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{figures/Figure9-1-1.pdf}
+	\small{Figure9-1-1}
+	\end{center}
+
+	The path is $u\rightarrow u_1 \rightarrow u_2 \rightarrow...\rightarrow  u_{k-1} \rightarrow u_k \rightarrow v$.
+
+	Then change the direction of every edges in the path.
+
+	Then the path is changed into $\leftarrow u_1 \leftarrow u_2 \leftarrow...\leftarrow  u_{k-1} \leftarrow u_k \leftarrow v$.
+
+	The graph is as Figure9-1-2 shows.
+
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{figures/Figure9-1-2.pdf}
+	\small{Figure9-1-2}
+	\end{center}
+
+	Then clearly for $u_1,u_2...u_k$,one of their incoming edges is changed into outgoing edges and one of their outgoing edges is changed into incoming edges.They still have two incoming and two outgoing edges.
+
+	For $u,v$ they now each have two incoming and two outgoing edges as well.
+
+	The resulting digraph is (2,2)-regular. 
+	\item
+	If there is 2 vertices and one have 4 incoming edges and another have 4 outgoing edges.Just do the operation above twice.
+
+	If there is more than 2 vertices not meeting the condition. Just group them by 2.And do the same operation on every group.Then we get a (2,2)-regular orentation.
+
+	\item
+	Above all,t in every 4-regular graph, you can orient the edges
+	such that every vertex has two incoming and two outgoing edges, i.e., such that the resulting digraph is (2,2)-regular. 
+\end{enumerate}
+\subsection{Hamilton Cycles and Ore's Theorem}
+
+Consider $K_n$, the complete graph on $n$ vertices. For $n \geq 3$, this obviously has a Hamilton cycle.
+How many edges do you have to delete from $K_n$ to destroy all Hamilton cycles? That is, what is the 
+smallest set $S$ such that $\left( V, {V \choose 2} \setminus S\right)$ has no Hamilton cycle? Let $s_n$ denote
+the size of this set (this depends on $n$, thus the notation $s_n$). For example, $s_2 = 0$ since $K_2$
+has no Hamilton path to begin with; $s_3 = 1$ since removing one edge from $K_3$ results in a graph without
+a Hamilton cycle.
+
+\begin{exercise}
+ Find a closed formula for $s_n$ and prove it! \textbf{Hint.} One part will be easy. For the other part,
+ use Ore's Theorem.
+\end{exercise}
+
+\begin{proof}
+\end{proof}
+\begin{enumerate}
+	\item For a graph.If it has no Hamilton cycles. There must exit two parts that we can explore one then the other but can't travel back.
+
+	\item when we have two disconnected parts, there must be no Hamilton cycles.Let the two partation be $U,V$,with $x$ vertices $\{u_1,u_2...u_x\}$ in $U$ and $y$ vertices $\{v_1,v_2...v_y\}$ in $V$. Define $|V|=n $. Clearly we have
+		\begin{center}
+			$x+y=|V|=n.$
+		\end{center} 
+	\item To find the smallest set $S$ such that $\left( V, {V \choose 2} \setminus S\right)$ has no Hamilton cycle, we must add as many edges as possible to the graph.Then we have the following steps to do.
+		\begin{enumerate}
+			\item Add edges in $U,V$ separately so that $U,V$ are both complete graphs.
+			\item Add edges between $U$ and $V$ as many edges as possible making sure not existing Hamilton cycle.
+			\item Use $x,y$ to expessing the number of edges we add. With $x+y=n$,computing in which case we have the largest number of edges added. Write it as $M_n$
+			\item $S_n=|V|-M_n$.
+		\end{enumerate} 
+	\item Now we have the graph bellow for an illustration. 
+
+	\begin{center}
+	\includegraphics[width=0.5\textwidth]{figures/Figure9-2-1.pdf}\\
+	{\small Two partiation}
+	\end{center}
+
+	When $U,V$ are both complete graph, 
+		\begin{align}
+			|U|={x\choose 2}=\frac{x(x-1)}{2}\\
+			|V|={y\choose 2}=\frac{y(y-1)}{2}
+		\end{align}
+	\item From the definition of Hamilton cycle.We know in a graph, if we explore from a vertex, after a cycle we will come back.
+		\begin{enumerate}
+			\item If there is only a vertex in $U$(or $V$) has edges to the other. ($|U|>1$,$|V|>1$)
+
+			Take $U$ as an example. There is a vertex $u_i$ having edges to vertices in $V$. Just start exploring from $u_i$. 
+
+			If we exploring vertices in $U$ first, we must return to $u_i$ to elpore $V$.$u_i$ is explored twice.
+
+			If we exploring vertices in $V$ first, after exploring all vertices in $V$, we must return to $u_i$ to elpore $U$.$u_i$ is explored twice as well.
+
+			There is no Hamilton cycles.
+
+			Now we can add $max{x,y}$ edges between $U,V$ at most.
+
+			\item If there are two vertices in $U$ having edges to 2 vertices in $V$.
+
+			Since $U,V$ are both complete graph, 
+				\begin{center}
+				$(u_i,u_j)\in |E|$
+
+				$(v_i,v_k)\in |E|$
+				\end{center}
+
+			We can find Hamilton cycles
+			\begin{center}
+				$u_j\rightarrow...\rightarrow u_i\rightarrow u_j$
+
+				$v_l\rightarrow...\rightarrow v_k\rightarrow v_l$
+			\end{center}
+
+			As the figure bellow shows, we can easly find a cycle
+				\begin{center}
+					$\underbrace{u_j\rightarrow...\rightarrow u_i}_{\text Hamilton\ cycle\ of\ U}~~\rightarrow~~\overbrace{ v_l\rightarrow...\rightarrow v_k}^{\text Hamilton\ cycle\ of\ V}~~\rightarrow ~~u_j$
+				\end{center}
+
+				\begin{center}
+				\includegraphics[width=0.5\textwidth]{figures/Figure9-2-2.pdf}\\
+				\end{center}
+
+			Thus between $U$ and $V$, if there are more than 2 vertices in one partation have edges to vertices the other, they must be connected to the same vertex.
+		\end{enumerate} 
+	\item So 
+		\begin{align}
+			M_n=max\{|U|+|V|\}+max\{x,y\}
+		\end{align}
+		\begin{align}
+			S_n&=|V|-M_n\\
+			&=max\{{n\choose 2}-{x\choose 2}-{y\choose 2}\}-max\{x,y\}\\
+		\end{align}
+		Since
+		\begin{align}
+			x+y=n
+		\end{align}
+		\begin{align}
+			S_n=max\{x(n-x)\}-max\{x,y\}
+		\end{align}
+		If n is even, 
+		\begin{align}
+			S_n = \frac{n^2-2n}{4}
+		\end{align}
+
+		If n is odd, 
+		\begin{align}
+			S_n = \frac{n^2-2n-3}{4}\ \ (n>3)
+		\end{align}
+
+	\item Above all
+
+
+
+	$$
+	S_n =
+	\left\{
+		\begin{aligned}
+			&0 & (n=1\ or\ 3)\\
+			&\frac{n^2-2n-3}{4} & (n>3\ and\ n\ is\ odd)\\
+			&\frac{n^2-2n}{4}&(n\ is\ even)
+		\end{aligned}
+	\right.
+	$$
+
+\end{enumerate}
+
+A {\em tournament} is a directed graph in which, for each pair $u,v \in V$, exactly one of the 
+directed edges $(u,v)$ and $(v,u)$ is in the graph. Imagine a sports tournament in which every participant
+plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat $v$ in this tournament.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/tournament-five.pdf}\\
+{\small A tournament on five vertices.}
+\end{center}
+
+\begin{exercise}
+   Show that every tournament has a {\em directed Hamilton path}, i.e., a sequence
+   $u_1,u_2,\dots,u_n$ such that $(u_i, u_{i+1}) \in E$ for all $i = 1,\dots, n-1$. See the picture below.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figures/tournament-five-path.pdf}\\
+{\small The same tournament wiht a Hamilton path.}
+\end{center}
+  You probably won't be able to use the proof of Ore's Theorem directly, but you can use the proof idea.
+\end{exercise}
+\begin{proof}
+\end{proof}
+
+\begin{enumerate}
+	%\item If a vertex has both incoming edges and outgoing edges, we can explore it along this path. When exploring the next vertex,  find a next outgoing edge and repeat this loop until having exploring all vertices.
+	%\item Since every vertex is connected to all other vertices, it seems clearly for every graph like this we can find a Hamilton path. To prove it, now we prove that there don't exist situations finding no Hamilton path.
+
+	%\item Suppose there exist a graph having no directed Hamilton paths.
+
+	%Choose a vertex as a start randomly, if it has an incoming edge, we choose the () as a start
+
+	\item  We can use an induction to prove it.
+	\item Base case: when there are 2 vertices, clearly there is a Hamilton path.See the picture bellow.
+
+	\item Now a graph with k vertices has a Hamilton path. Add a vertex $u$ to it.
+
+	Along the path, numbered the vertices as their explored order as $(v_1,v_2...v_k)$.
+
+	\item If the edge between $v_k$ and $u$ is $(v_k,u)$ ,add $u$ as the tail of the path.Then we get $(v_1,...v_k,u)$.
+	%\item If there exist $(v_i,v_{i+1})$ that $u$ is connected with them by $(v_i,u)$,$(u,v_{i+1})$.
+
+	%Clearly we can insert u into the path:$(v_1,v_2...v_i,u,v_{i+1},...,v_k)$.
+
+	%\item Else if all edges are from $v_i$ to $u$,or from $u$ to $v_i$, add $u$ as the tail or head of the path.Then we get $(v_1,...v_k,u)$ or $(u,v_1,...v_k)$.
+
+	\item Else turn to ${v_k-1}$, if there is $(v_{k-1},u)$, clearly we can insert u into the path:$(v_1,v_2...v_k,u,v_{k+1},v_k)$.
+
+	\item Else turn to the vertex before continously until there is $(v_i,u)$, Clearly we can insert u into the path:$(v_1,v_2...v_i,u,v_{i+1},...,v_k)$.
+
+	\item Else all edges are from from $u$ to $v_i$, add $u$ as the head of the path.Then we get $(v_1,...v_k,u)$ or $(u,v_1,...v_k)$.
+
+	\item Above all, every tournament has a {\em directed Hamilton path}.
+\end{enumerate}
+
+\subsection{Isomorphism Classes of Trees}
+
+In the lecture (and in the videos) we have seen that the number of trees on 
+vertex set $V = \{1,2,\dots,n\}$ is $n^{n-2}$. This however ignores isomorphisms.
+For example, there are $3^{3-2} = 3$ trees on vertex set $\{1,2,3\}$, but all those 
+trees look alike (are isomorphic). On $\{1,2,3,4\}$, there are 16 trees, but 
+there are only two isomorphism classes: the path and the star. For five vertices, there are 125 trees
+but only three isomorphism classes: the path, the star, and the ``T-shape'' (see video on
+counting the number of trees). For $n=6$ we get the path, the Y-shape, the Euro symbol, the Star Wars fighter, the Scandinavian cross, and the star, so six isomorphism classes (but a total of 1296 trees).
+
+\begin{exercise}
+  List of isomorphism classes on seven vertices. That is, draw trees $T_1,\dots,T_m$ on seven vertices such that 
+  no two of them are isomorphic but every tree on seven vertices is isomorphic to one of them. 
+  How many do you get?
+\end{exercise}
+
+
+
+
+\begin{tabular}{r|c|c|c|c|c|c|c}
+$n$ & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ \hline
+number of isomorphism classes & 
+          1 & 1 & 1 & 2 & 3 & 6 & ? 
+\end{tabular}
+\vspace{5mm}
+
+\begin{solution}
+\end{solution}
+
+We get 9 different trees.
+\begin{center}
+\includegraphics[width=\textwidth]{figures/Figure9-4-1.pdf}\\
+{\small $T_1,T_2...T_9$}
+\end{center}
+
+
+Alright, so let's denote by $t_n$ the number of isomorphism classes of trees on $n$ vertices.
+That is, $t_n$ is the largest number $m$ such that we can find trees $T_1,\dots,T_m$ on 
+$n$ vertices such that no two of them are isomorphic. We would like to have an exact and
+ explicit formula for $t_n$, but that is probably too much to ask for.
+Instead, let us try to understand $t_n$ approximately and asymptotically.
+
+\begin{exercise}
+  Show that $t_n \leq 4^n$. Hint: Consider the video on the isomorphism problem on trees.
+  It defines a way to encode a tree as a $0/1$-sequence.
+\end{exercise}
+\begin{proof}
+\end{proof}
+Encode a tree as 0/1-sequence in the way below.
+
+If there is a vertex ,we write 1 to explore it and then write 0 to return.
+
+Take the following tree as an example.
+\begin{center}
+\includegraphics[width=0.58\textwidth]{figures/Figure9-5-1.pdf}\\
+%{\small $T_1,T_2...T_9$}
+\end{center}
+
+Then if we have n vertices, we have a sequence of 2n bits.
+
+There are $2^{2n}=4^n$ trees.
+
+However, in a tree if the leftchild tree of a node is the same as the rightchild tree of the same node, they are isomorphisms.BUt they have different 0/1-sequences.
+
+Thus $t_n\le 4^n$
+
+\begin{exercise}
+  Show that $t_n \geq \frac{e^n}{\poly(n)}$, where $\poly(n)$ is some polynomial in $n$.
+  Hint: There are $n^{n-2}$ trees on $V = [n]$. We group them together in ``buckets''
+  of isomorphic trees. How large can a bucket be? Answer this and then use Stirling's approximation
+  for $n!$.
+\end{exercise}
+\begin{proof}
+\end{proof}
+\begin{enumerate}
+	\item For a tree, choose a longest line as main line.Clearly we have the following conclusion: trees of different length of main line must not be isomorphisms.
+	\item Then to get different trees, by adding shorter lines to the main line, making sure .
+		\begin{enumerate}
+			\item 
+			\item The shorest main line 
+		\end{enumerate}
+\end{enumerate}
+\begin{exerciseDD}
+   Try to improve those bounds. That is, find some $a < 4$ such that $t_n \in O(a^n)$ or 
+   some $b > e$ such that $t_n \in \Omega(b^n)$. Any improvement will be kind of interesting.
+   Aim for simple proofs!
+\end{exerciseDD}
+
+\textbf{Remark.} The ``true'' rate of growth is known by a result of George P\'olya but apparently 
+it is quite difficult (I write ``apparently'' because I have never studied this work).
+
+
+\end{document}
