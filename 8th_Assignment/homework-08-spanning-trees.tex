@@ -20,14 +20,14 @@ Throughout this assignment, let $G = (V,E)$ be a connected graph
 and $w: E \rightarrow \R^+$ be a weight function.\\
 
 \begin{exercise}
-    Prove the inverse of the cut lemma: 
+    Prove the inverse of the cut lemma:
       If $X$ is good, $e \not \in X$, and $X \cup e$ is good,
       then there is a cut $S, V\setminus S$ such that (i) no
       edge from $X$ crosses this cut and (ii) $e$ is a minimum
       weight edge of $G$ crossing this cut.
 \end{exercise}
 \begin{proof}
-$X$ is good and $X\cup e$ is good, means that there's a minimum spanning tree $T$ such that $X\subseteq E(T)$ and $X\cup e \subseteq E(T)$. Also, $X$ contains two or more components. 
+$X$ is good and $X\cup e$ is good, means that there's a minimum spanning tree $T$ such that $X\subseteq E(T)$ and $X\cup e \subseteq E(T)$. Also, $X$ contains two or more components.
 
 \begin{itemize}
 \item Proof by contradiction that there exists a cut $V=S\cup \overline{S}$ of $X$ such that no edge from $X$ crosses this cut but $e$ crosses this cut:
@@ -59,7 +59,7 @@ If $e$ is not the minimum weight edge of G crossing this cut, which means that t
 \end{exercise}
 \begin{solution}
 \end{solution}
-For a figure as below: 
+For a figure as below:
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures/txy.pdf}
 \end{center}
@@ -71,7 +71,7 @@ Assume that $c=2$, then $G_2$ is
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures/gc.pdf}
 \end{center}
-And $T_2$ is 
+And $T_2$ is
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures/tc.pdf}
 \end{center}
@@ -124,19 +124,11 @@ Prove the lemma.
 \end{exercise}
 \begin{proof}
 $T$ and $T'$ both has exactly $|V|-1$ edges.
-
-Assume that $E(T)=(e_1,...,e_k),$ in an order such that $ w(e_1)\le w(e_2)\le...\le w(e_k)$, and $E(T')=(e'_1,...,e'_k), $ in an order such that $w(e'_1)\le w(e'_2)\le...\le w(e'_k)$ and $ k=|V|-1$.
-
-First, we proof that the weight sequence $w(e_1)w(e_2)...w(e_k)$ and 
-\\$w(e'_1)w(e'_2)...w(e'_k)$ are exactly the same.
-
-Consider constructing the minimum spanning tree by Kruskal’s Algorithm. In this approach, each time when you want to expand your subgraph by adding an edge, you only care about the weight of an edge but not the edge, say $(v_i, v_k)$, itself. So, each time, you will always get the exactly weight sequence, however, not always the same MST.
-
-Therefore, for two MST trees of the same weight sequence, the lemma obviously holds.
+Derived from the previous lemma, $T_c$, $T_c^{\prime}$ and $G$ have exactly the same connected components. The numbers of edges of $T_c$ and $T_c^{\prime}$ are equal to the number of vertices minus the number of connected components. Thus $m_c(T) = m_c(T')$.
 \end{proof}
 
 \begin{exercise}
-  Suppose no two edges of $G$ have the same weight. 
+  Suppose no two edges of $G$ have the same weight.
   Show that $G$ has exactly one minimum spanning tree!
 \end{exercise}
 \begin{proof}
@@ -160,17 +152,17 @@ The arrow diagram of $f$ looks as follows:
 \includegraphics[width=0.3\textwidth]{figures/arrow-diagram.pdf}
 \end{center}
 The {\em core} of a function is the set of elements lying on cycles in such a diagram.
-For example, the core of the above function is $\{0,1\}$. Formally, the core of $f$ is the 
+For example, the core of the above function is $\{0,1\}$. Formally, the core of $f$ is the
 set
 \begin{align*}
-%\core(f) = 
+%\core(f) =
 \{x \in V \ | \ \exists k \geq 1 f^{(k)}(x) = x \}
 \end{align*}
-where $f^{(k)}(x) = f( f( \dots f(x) \dots ))$, i.e., the function $f$ applied $k$ times 
+where $f^{(k)}(x) = f( f( \dots f(x) \dots ))$, i.e., the function $f$ applied $k$ times
 iteratively to $x$.
 
 \begin{exercise}
-Of the $n^n$ functions from $V$ to $V$, how many have a core of size $1$? 
+Of the $n^n$ functions from $V$ to $V$, how many have a core of size $1$?
 Give an explicit formula in terms of $n$.
 \end{exercise}
 \begin{solution}
@@ -180,7 +172,7 @@ Hence, how many functions have a core of size $1$ is equal to how many vertebrat
 
 The number of spanning tree is $n^{n-2}$.
 
-For each spanning tree,There are $n$ choices to form a function of only $1$ core, that is , by choosing both the \textit{HEAD} and \textit{BUTT} exactly the same. 
+For each spanning tree,There are $n$ choices to form a function of only $1$ core, that is , by choosing both the \textit{HEAD} and \textit{BUTT} exactly the same.
 
 In total, there are $n^{n-2}\times n= n^{n-1}$ functions that have a core of size 1.
 
@@ -199,8 +191,8 @@ For each spanning tree, we choose 2 different elements, connected by the same ed
 In total, there are $n^{n-2}\times(n-1)$ functions.
 \end{solution}
 \textbf{Hint.} For the previous two exercises, you need to use the link between functions
- $f: [n]\rightarrow [n]$ and 
-vertebrates $(T,h,b)$ from the video lecture. 
+ $f: [n]\rightarrow [n]$ and
+vertebrates $(T,h,b)$ from the video lecture.
 
 %一个spanning tree 对应n^2个vertebrates 一个vertebrates 对应一个permutation。
 
@@ -210,7 +202,7 @@ vertebrates $(T,h,b)$ from the video lecture.
 \subsection{Counting Trees with Pr\"ufer Codes}
 
 In the video lecture, we have seen Cayley's formula, stating that there are exactly
-$n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using 
+$n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using
 {\em vertebrates}. For this homework, read Section 7.4 of the textbook, titled
 ``A proof using the Pr\"ufer code''.
 
@@ -230,7 +222,7 @@ $n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using
 \begin{exercise}
   Let $\mathbf{p} = (p_1,p_2,\dots,p_{n-2})$ be the Pr\"ufer  code of some tree $T$ on $[n]$.
   Find a way to quickly determine the degree of vertex $i$ only by looking
-  at $\mathbf{p}$ and not actually constructing the tree $T$.  
+  at $\mathbf{p}$ and not actually constructing the tree $T$.
   In particular, by looking at $\mathbf{p}$, what are the leaves of $T$?
 \end{exercise}
 
@@ -262,12 +254,12 @@ $n^{n-2}$ trees on the vertex set $[n]$. We showed a proof using
     \item $1$ and $2$ are connected by an edge. $3,5,\ldots,n-1$ are directly connected to $1$, while $4,6,\ldots,n$ are connected to $2$. We tear off $3,4,5,6,\ldots,n$ in order, so the code is $(1,2,1,2,\dots,1,2)$.
   \end{enumerate}
 \end{solution}
-  
+
 
 The next two exercises use a bit of probability theory. Suppose we want to sample a random
 tree on $[n]$. That is, we want to write a little procedure (say in Java) that uses randomness and outputs
-a tree $T$ on $[n]$, where each of the $n^{n-2}$ trees has the same probability of 
-appearing. 
+a tree $T$ on $[n]$, where each of the $n^{n-2}$ trees has the same probability of
+appearing.
 
 \begin{exercise}
    Sketch how one could write such a procedure. Don't actually write program code, just
@@ -280,9 +272,9 @@ appearing.
   We use \texttt{randomInt(n)} to generate a random Pr\"ufer code with $n-2$ digits. For each digit of the code, we generate a random integer from $1$ to $n$. By decoding the Pr\"ufer code, it returns a random tree $T$.
 \end{solution}
 
-Clearly, a tree $T$ on $[n]$ has at least $2$ and at most $n-1$ leaves. But how 
+Clearly, a tree $T$ on $[n]$ has at least $2$ and at most $n-1$ leaves. But how
 many leaves does it have on average? For this, we could use your tree sampler from the previous
-exercise, run it 1000 times and compute the average. However, it would be much nicer to have 
+exercise, run it 1000 times and compute the average. However, it would be much nicer to have
 a closed formula.
 
 \begin{exercise}

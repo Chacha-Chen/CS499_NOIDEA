@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  22 APR 2018 09:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.5.1)  29 APR 2018 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -363,52 +363,48 @@ Package pdftex.def Info: figures/mst2.pdf used on input line 118.
 (pdftex.def)             Requested size: 155.99762pt x 99.02701pt.
 
 [4 <./figures/mst1.pdf>]
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ™ in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--154
+Underfull \hbox (badness 10000) in paragraph at lines 142--146
 
  []
 
-[5 <./figures/mst2.pdf>]
-<figures/arrow-diagram.pdf, id=185, 140.30719pt x 107.335pt>
+<figures/arrow-diagram.pdf, id=157, 140.30719pt x 107.335pt>
 File: figures/arrow-diagram.pdf Graphic file (type pdf)
 
 <use figures/arrow-diagram.pdf>
-Package pdftex.def Info: figures/arrow-diagram.pdf used on input line 160.
+Package pdftex.def Info: figures/arrow-diagram.pdf used on input line 152.
 (pdftex.def)             Requested size: 117.00119pt x 89.50566pt.
- [6 <./figures/arrow-diagram.pdf>]
-<figures/8_13.png, id=197, 561.09625pt x 431.6125pt>
+ [5 <./figures/mst2.pdf>] [6 <./figures/arrow-diagram.pdf>] <figures/8_13.png, 
+id=197, 561.09625pt x 431.6125pt>
 File: figures/8_13.png Graphic file (type png)
- <use figures/8_13.png>
-Package pdftex.def Info: figures/8_13.png used on input line 226.
-(pdftex.def)             Requested size: 170.71652pt x 131.31561pt.
 
-[7 <./figures/8_13.png>] [8] [9] (./homework-08-spanning-trees.aux) ) 
+<use figures/8_13.png>
+Package pdftex.def Info: figures/8_13.png used on input line 218.
+(pdftex.def)             Requested size: 170.71652pt x 131.31561pt.
+ [7 <./figures/8_13.png>] [8] [9]
+(./homework-08-spanning-trees.aux) ) 
 Here is how much of TeX's memory you used:
  3842 strings out of 493014
  51230 string characters out of 6133352
- 119922 words of memory out of 5000000
+ 118922 words of memory out of 5000000
  7299 multiletter control sequences out of 15000+600000
  13540 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,8n,35p,642b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on homework-08-spanning-trees.pdf (9 pages, 256988 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmtt12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on homework-08-spanning-trees.pdf (9 pages, 256013 bytes).
 PDF statistics:
  251 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream
