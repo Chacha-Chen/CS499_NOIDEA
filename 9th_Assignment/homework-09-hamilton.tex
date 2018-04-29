@@ -89,116 +89,19 @@ a Hamilton cycle.
  use Ore's Theorem.
 \end{exercise}
 
-\begin{proof}
-\end{proof}
-\begin{enumerate}
-	\item For a graph.If it has no Hamilton cycles. There must exit two parts that we can explore one then the other but can't travel back.
 
-	\item when we have two disconnected parts, there must be no Hamilton cycles.Let the two partation be $U,V$,with $x$ vertices $\{u_1,u_2...u_x\}$ in $U$ and $y$ vertices $\{v_1,v_2...v_y\}$ in $V$. Define $|V|=n $. Clearly we have
-		\begin{center}
-			$x+y=|V|=n.$
-		\end{center} 
-	\item To find the smallest set $S$ such that $\left( V, {V \choose 2} \setminus S\right)$ has no Hamilton cycle, we must add as many edges as possible to the graph.Then we have the following steps to do.
-		\begin{enumerate}
-			\item Add edges in $U,V$ separately so that $U,V$ are both complete graphs.
-			\item Add edges between $U$ and $V$ as many edges as possible making sure not existing Hamilton cycle.
-			\item Use $x,y$ to expessing the number of edges we add. With $x+y=n$,computing in which case we have the largest number of edges added. Write it as $M_n$
-			\item $S_n=|V|-M_n$.
-		\end{enumerate} 
-	\item Now we have the graph bellow for an illustration. 
+\begin{solution}
+  The formular is $s_n = n - 2$ when $n > 2$.
 
-	\begin{center}
-	\includegraphics[width=0.5\textwidth]{figures/Figure9-2-1.pdf}\\
-	{\small Two partiation}
-	\end{center}
+  First, if we remove $n-2$ edges of a vertex $v$ in $K_n$ and get graph $G$, then $v$ has degree one. Obviously $G$ doesn't contain Hamilton cycle. We have $s_n \le n - 2$.
 
-	When $U,V$ are both complete graph, 
-		\begin{align}
-			|U|={x\choose 2}=\frac{x(x-1)}{2}\\
-			|V|={y\choose 2}=\frac{y(y-1)}{2}
-		\end{align}
-	\item From the definition of Hamilton cycle.We know in a graph, if we explore from a vertex, after a cycle we will come back.
-		\begin{enumerate}
-			\item If there is only a vertex in $U$(or $V$) has edges to the other. ($|U|>1$,$|V|>1$)
+  Second, if we remove $n-3$ deges of a vertex $v$ in $K_n$ and get graph $G_1$, then $v$ has degree $2$ and vertexs adjacent to $v$ have degree $n-1$. Degree of all vertexs can be demonstrated as $(2,n-1,n-1,n-2 \dots,n-2)$. According to Ore's theorem, $G_1$ contain Hamilton Cycle.
 
-			Take $U$ as an example. There is a vertex $u_i$ having edges to vertices in $V$. Just start exploring from $u_i$. 
+  To estimate all cases when $s_n = n - 3$, we add $k$ edges adjacent to $v$ and remove $k$ other edges in $G_1$ instead. We can find that the degree of all vertexs in $G_1$ still meet Ore's theorem. In other words, we can't destory all Hamilton Cycle when $s_n = n - 3$. Thus, $s_n > n -3$.
 
-			If we exploring vertices in $U$ first, we must return to $u_i$ to elpore $V$.$u_i$ is explored twice.
+  Since $s_n > n-3$ and $s_n \le n-2$, we have $s_n = n-2$.
 
-			If we exploring vertices in $V$ first, after exploring all vertices in $V$, we must return to $u_i$ to elpore $U$.$u_i$ is explored twice as well.
-
-			There is no Hamilton cycles.
-
-			Now we can add $max{x,y}$ edges between $U,V$ at most.
-
-			\item If there are two vertices in $U$ having edges to 2 vertices in $V$.
-
-			Since $U,V$ are both complete graph, 
-				\begin{center}
-				$(u_i,u_j)\in |E|$
-
-				$(v_i,v_k)\in |E|$
-				\end{center}
-
-			We can find Hamilton cycles
-			\begin{center}
-				$u_j\rightarrow...\rightarrow u_i\rightarrow u_j$
-
-				$v_l\rightarrow...\rightarrow v_k\rightarrow v_l$
-			\end{center}
-
-			As the figure bellow shows, we can easly find a cycle
-				\begin{center}
-					$\underbrace{u_j\rightarrow...\rightarrow u_i}_{\text Hamilton\ cycle\ of\ U}~~\rightarrow~~\overbrace{ v_l\rightarrow...\rightarrow v_k}^{\text Hamilton\ cycle\ of\ V}~~\rightarrow ~~u_j$
-				\end{center}
-
-				\begin{center}
-				\includegraphics[width=0.5\textwidth]{figures/Figure9-2-2.pdf}\\
-				\end{center}
-
-			Thus between $U$ and $V$, if there are more than 2 vertices in one partation have edges to vertices the other, they must be connected to the same vertex.
-		\end{enumerate} 
-	\item So 
-		\begin{align}
-			M_n=max\{|U|+|V|\}+max\{x,y\}
-		\end{align}
-		\begin{align}
-			S_n&=|V|-M_n\\
-			&=max\{{n\choose 2}-{x\choose 2}-{y\choose 2}\}-max\{x,y\}\\
-		\end{align}
-		Since
-		\begin{align}
-			x+y=n
-		\end{align}
-		\begin{align}
-			S_n=max\{x(n-x)\}-max\{x,y\}
-		\end{align}
-		If n is even, 
-		\begin{align}
-			S_n = \frac{n^2-2n}{4}
-		\end{align}
-
-		If n is odd, 
-		\begin{align}
-			S_n = \frac{n^2-2n-3}{4}\ \ (n>3)
-		\end{align}
-
-	\item Above all
-
-
-
-	$$
-	S_n =
-	\left\{
-		\begin{aligned}
-			&0 & (n=1\ or\ 3)\\
-			&\frac{n^2-2n-3}{4} & (n>3\ and\ n\ is\ odd)\\
-			&\frac{n^2-2n}{4}&(n\ is\ even)
-		\end{aligned}
-	\right.
-	$$
-
-\end{enumerate}
+\end{solution}
 
 A {\em tournament} is a directed graph in which, for each pair $u,v \in V$, exactly one of the 
 directed edges $(u,v)$ and $(v,u)$ is in the graph. Imagine a sports tournament in which every participant
@@ -220,11 +123,9 @@ plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat 
   You probably won't be able to use the proof of Ore's Theorem directly, but you can use the proof idea.
 \end{exercise}
 \begin{proof}
-\end{proof}
+
 
 \begin{enumerate}
-	
-
 	\item  We can use an induction to prove it.
 	\item Base case: when there are 2 vertices, clearly there is a Hamilton path.See the picture bellow.
 
@@ -234,7 +135,6 @@ plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat 
 
 	\item If the edge between $v_k$ and $u$ is $(v_k,u)$ ,add $u$ as the tail of the path.Then we get $(v_1,...v_k,u)$.
 	
-
 	\item Else turn to ${v_k-1}$, if there is $(v_{k-1},u)$, clearly we can insert u into the path:$(v_1,v_2...v_k,u,v_{k+1},v_k)$.
 
 	\item Else turn to the vertex before continously until there is $(v_i,u)$, Clearly we can insert u into the path:$(v_1,v_2...v_i,u,v_{i+1},...,v_k)$.
@@ -243,7 +143,7 @@ plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat 
 
 	\item Above all, every tournament has a {\em directed Hamilton path}.
 \end{enumerate}
-
+\end{proof}
 \subsection{Isomorphism Classes of Trees}
 
 In the lecture (and in the videos) we have seen that the number of trees on 
@@ -316,9 +216,24 @@ Thus $t_n\le 4^n$
   of isomorphic trees. How large can a bucket be? Answer this and then use Stirling's approximation
   for $n!$.
 \end{exercise}
-\begin{proof}
-\end{proof}
 
+\begin{proof}
+	For a tree with $n$ vertices, it is less than $n!$ naming methods for the same structure.
+	\begin{align}
+	t_n\ge \frac{n^{n-2}}{n!}=\frac{n^n}{n^2\times n!}
+	\end{align}
+	From Stirling's approximation, 
+	\begin{align}
+	n!  \approx\sqrt{2\pi n}(\frac{n}{e})^n
+	\end{align}
+	Then 
+	\begin{align}
+	t_n\ge \frac{e^n}{n^2\sqrt{2\pi n}}.
+	\end{align}
+	Let \begin{align}poly(n)=n^2\sqrt{2\pi n}.\end{align}
+
+	We have $t_n \geq \frac{e^n}{\poly(n)}$, where $\poly(n)$ is some polynomial in $n$.
+\end{proof}
 \begin{exerciseDD}
    Try to improve those bounds. That is, find some $a < 4$ such that $t_n \in O(a^n)$ or 
    some $b > e$ such that $t_n \in \Omega(b^n)$. Any improvement will be kind of interesting.
