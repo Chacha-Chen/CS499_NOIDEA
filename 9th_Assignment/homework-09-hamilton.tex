@@ -223,12 +223,7 @@ plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat 
 \end{proof}
 
 \begin{enumerate}
-	%\item If a vertex has both incoming edges and outgoing edges, we can explore it along this path. When exploring the next vertex,  find a next outgoing edge and repeat this loop until having exploring all vertices.
-	%\item Since every vertex is connected to all other vertices, it seems clearly for every graph like this we can find a Hamilton path. To prove it, now we prove that there don't exist situations finding no Hamilton path.
-
-	%\item Suppose there exist a graph having no directed Hamilton paths.
-
-	%Choose a vertex as a start randomly, if it has an incoming edge, we choose the () as a start
+	
 
 	\item  We can use an induction to prove it.
 	\item Base case: when there are 2 vertices, clearly there is a Hamilton path.See the picture bellow.
@@ -238,11 +233,7 @@ plays against every other exactly once. Draw an arc from $u$ to $v$ if $u$ beat 
 	Along the path, numbered the vertices as their explored order as $(v_1,v_2...v_k)$.
 
 	\item If the edge between $v_k$ and $u$ is $(v_k,u)$ ,add $u$ as the tail of the path.Then we get $(v_1,...v_k,u)$.
-	%\item If there exist $(v_i,v_{i+1})$ that $u$ is connected with them by $(v_i,u)$,$(u,v_{i+1})$.
-
-	%Clearly we can insert u into the path:$(v_1,v_2...v_i,u,v_{i+1},...,v_k)$.
-
-	%\item Else if all edges are from $v_i$ to $u$,or from $u$ to $v_i$, add $u$ as the tail or head of the path.Then we get $(v_1,...v_k,u)$ or $(u,v_1,...v_k)$.
+	
 
 	\item Else turn to ${v_k-1}$, if there is $(v_{k-1},u)$, clearly we can insert u into the path:$(v_1,v_2...v_k,u,v_{k+1},v_k)$.
 
@@ -327,14 +318,7 @@ Thus $t_n\le 4^n$
 \end{exercise}
 \begin{proof}
 \end{proof}
-\begin{enumerate}
-	\item For a tree, choose a longest line as main line.Clearly we have the following conclusion: trees of different length of main line must not be isomorphisms.
-	\item Then to get different trees, by adding shorter lines to the main line, making sure .
-		\begin{enumerate}
-			\item 
-			\item The shorest main line 
-		\end{enumerate}
-\end{enumerate}
+
 \begin{exerciseDD}
    Try to improve those bounds. That is, find some $a < 4$ such that $t_n \in O(a^n)$ or 
    some $b > e$ such that $t_n \in \Omega(b^n)$. Any improvement will be kind of interesting.
