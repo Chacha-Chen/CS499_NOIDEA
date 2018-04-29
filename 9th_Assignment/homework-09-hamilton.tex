@@ -32,49 +32,11 @@ outgoing edges.
 \end{center}
 
 \begin{proof}
+
+A graph $G$ has an Eulerian Walk if and only if $G$ is connected and evety vertex in $G$ has even degree.\\
+Every $4$-regular graph satisfies above criterions therefore containing Eulerian Walk. We orient edges along the Eulerian walk. Since Eulerian walk can cover all the edges only once ending at start vertex, every vertex in $4$-regular graph has two incoming and two outcoming edges.\\
+
 \end{proof}
-
-\begin{enumerate}
-	\item
-	Suppose that there exits a 4-regular graph, we can't orient the edges such that some vertices has two incoming and two outgoing edges.
-
-	\item
-	Assume there are 2 vertices $u,v$ not meeting the condition. Since $\sum \limits_{i=1}^n deg(v)$ is even, let $u$ has 3 incoming edges and $v$ has 3 outgoing edges.
-
-	Then along the arrow find a path from $u$ to $v$ as Figure9-1-1 shows.
-
-	\begin{center}
-	\includegraphics[width=0.5\textwidth]{figures/Figure9-1-1.pdf}
-	\small{Figure9-1-1}
-	\end{center}
-
-	The path is $u\rightarrow u_1 \rightarrow u_2 \rightarrow...\rightarrow  u_{k-1} \rightarrow u_k \rightarrow v$.
-
-	Then change the direction of every edges in the path.
-
-	Then the path is changed into $\leftarrow u_1 \leftarrow u_2 \leftarrow...\leftarrow  u_{k-1} \leftarrow u_k \leftarrow v$.
-
-	The graph is as Figure9-1-2 shows.
-
-	\begin{center}
-	\includegraphics[width=0.5\textwidth]{figures/Figure9-1-2.pdf}
-	\small{Figure9-1-2}
-	\end{center}
-
-	Then clearly for $u_1,u_2...u_k$,one of their incoming edges is changed into outgoing edges and one of their outgoing edges is changed into incoming edges.They still have two incoming and two outgoing edges.
-
-	For $u,v$ they now each have two incoming and two outgoing edges as well.
-
-	The resulting digraph is (2,2)-regular. 
-	\item
-	If there is 2 vertices and one have 4 incoming edges and another have 4 outgoing edges.Just do the operation above twice.
-
-	If there is more than 2 vertices not meeting the condition. Just group them by 2.And do the same operation on every group.Then we get a (2,2)-regular orentation.
-
-	\item
-	Above all,t in every 4-regular graph, you can orient the edges
-	such that every vertex has two incoming and two outgoing edges, i.e., such that the resulting digraph is (2,2)-regular. 
-\end{enumerate}
 \subsection{Hamilton Cycles and Ore's Theorem}
 
 Consider $K_n$, the complete graph on $n$ vertices. For $n \geq 3$, this obviously has a Hamilton cycle.
@@ -171,14 +133,14 @@ number of isomorphism classes &
 \vspace{5mm}
 
 \begin{solution}
-\end{solution}
+
 
 We get 9 different trees.
 \begin{center}
 \includegraphics[width=\textwidth]{figures/Figure9-4-1.pdf}\\
 {\small $T_1,T_2...T_9$}
 \end{center}
-
+\end{solution}
 
 Alright, so let's denote by $t_n$ the number of isomorphism classes of trees on $n$ vertices.
 That is, $t_n$ is the largest number $m$ such that we can find trees $T_1,\dots,T_m$ on 
@@ -191,7 +153,7 @@ Instead, let us try to understand $t_n$ approximately and asymptotically.
   It defines a way to encode a tree as a $0/1$-sequence.
 \end{exercise}
 \begin{proof}
-\end{proof}
+
 Encode a tree as 0/1-sequence in the way below.
 
 If there is a vertex ,we write 1 to explore it and then write 0 to return.
@@ -209,7 +171,7 @@ There are $2^{2n}=4^n$ trees.
 However, in a tree if the leftchild tree of a node is the same as the rightchild tree of the same node, they are isomorphisms.BUt they have different 0/1-sequences.
 
 Thus $t_n\le 4^n$
-
+\end{proof}
 \begin{exercise}
   Show that $t_n \geq \frac{e^n}{\poly(n)}$, where $\poly(n)$ is some polynomial in $n$.
   Hint: There are $n^{n-2}$ trees on $V = [n]$. We group them together in ``buckets''
