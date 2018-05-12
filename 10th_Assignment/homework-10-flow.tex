@@ -28,7 +28,22 @@
    \textbf{Remark.} It sounds obvious. However, find a formal proof that works with the 
    axiomatic definition of flows. 
 \end{exercise}
-
+\begin{solution}By flow conservation, $\sum_{w}f(v,w)=0$, for all $v\in V\setminus\{s,t\}$.\\
+Also by definition of the value of a flow, we have:\\
+\begin{align*}
+{\rm val}(f) &= \sum_{w \in V} f(s,w)\\ 
+&=\sum_{u\in S, w\in V}f(u,w)\\
+& =\sum_{u \in S}(\sum_{w_1\in S}f(u,w_1)+\sum_{w_2\in V\setminus S}f(u,w_2))\\
+&=\sum_{u \in S, w_1\in S}f(u,w_1)+\sum_{u \in S, w_2\in V\setminus S}f(u,w_2)\\
+&= \sum_{u \in S , v \in V \setminus S} f(u,v)+\sum_{u \in S, w_1\in S}f(u,w_1)
+%&=\sum_{u \in S , v \in V \setminus S} f(u,v) \\
+\end{align*}
+Recall the skew-symmetry that $f(u,v)=-f(v,u)$, we have:
+\begin{equation}
+\sum_{u \in S, w_1\in S}f(u,w_1)=\sum_{w_1\in S, u \in S}-f(w_1,u)=-\sum_{u \in S, w_1\in S}f(u,w_1)=0
+\end{equation}
+In conclusion, ${\rm val}(f) =\sum_{u \in S, v \in V \setminus S} f(u,v) \ .$
+\end{solution}
 
 \begin{exercise}
 Let $G = (V,E,c)$ be a flow network.
@@ -40,6 +55,9 @@ Let $G = (V,E,c)$ be a flow network.
   something that needs more than 3 lines to write, you are on the wrong
   track.
 \end{exercise}
+\begin{solution}
+Suppose there is no flow from $s$ to $t$ of value $k$. Then there is a s-t cut $s\in S, t\in V\setminus S$ such that $c(S,V\setminus S)<k$. If $r\in S$, then there is a r-t cut $(S,V\setminus S)$ such that the capacity is less than $k$, so there's no flow of value $k$ from $r$ to $t$. Else if $r\in V\setminus S$, then there is a s-r cut $(S, V\setminus S)$, whose capacity is less than $k$ and no flow value of $k$ exists. In either of these cases, we reach a contradiction, so flow must be transitive.
+\end{solution}
 
 
 
@@ -97,12 +115,34 @@ and something that looks like a layering but is not:
 
 \begin{exercise}
    Suppose the network $(G,s,t,c)$ has a $k$-layering. Show that ${\rm dist}(s,t) \geq k$.
-   That is, every $s$-$t$-path in $G$ has at most $k$ edges.
+   That is, every $s$-$t$-path in $G$ has at least $k$ edges.
 \end{exercise}
+\begin{solution} Prove by contradiction:\\
+Suppose that there is a $s$-$t$-path, say $s$-$v_1$-$\dots$-$v_{n}$-$t$, in $G$ that has less than $k$ edges ($n+1<k$). By definition, $s\in V_0$ and $t\in V_k$ and every edge moves at most one level forward. Hence, for the $s$-$t$-path, $s$-$v_1$-$\dots$-$v_{n}$-$t$, we have:
+\begin{align*}
+&s\in V_0\\
+&v_1\in V_{a_1}, a_1\le 1\\
+&v_2\in V_{a_2}, a_2\le a_1+1\le2\\
+\dots
+&v_n\in V_{a_n}, a_n\le a_{n-1}+1\le n\\
+&t\in V_{a_{n+1}},a_{n+1}\le a_n+1\le n+1<k
+\end{align*}
+However, $t\in V_k$, a contradiction.
+\end{solution} 
 
 \begin{exercise}
    Conversely, suppose ${\rm dist}(s,t) = k$. Show that $(G,s,t,c)$ has a $k$-layering.
 \end{exercise}
+\begin{solution}
+Prove by construction:\\
+${\rm dist}(s,t) = k$, suppose the shortest path between $s$ and $t$ are $s$-$v_1$-$\dots$-$v_{k-1}$-$t$. Construction steps are as follows:
+\begin{itemize}
+\item First, add $s$ to $V_0$, $v_1$ to $V_1$, \dots, $v_{k-1}$ to $V_{k-1}$, $t$ to $V_k$.
+\item Consider the vertices that are directly connected with vertices that are already in the partitions, iteratively add them to any partitions as long as the adding satisfies \emph{POINT 3} above.
+\item Recursively do step 2 above until no vertices left (since a flow network is a connected component as a whole).
+\end{itemize}
+
+\end{solution}
 
 Let $(G,s,t,c)$ be a flow network and $V_0,\dots,V_k$ a $k$-layering. We call this 
 layering {\em optimal} if ${\rm dist}_G(s,t) = k$. Here, ${\rm dist}_G(u,v)$ 
