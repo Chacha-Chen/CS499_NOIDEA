@@ -163,14 +163,18 @@ Let us explore how layerings and the Ford-Fulkerson Method interact.
    $V_0, V_1,\dots, V_k$ is a layering of $(G_f,s,t,c_f)$, too. Obviously, condition (1) and (2) in
    the definition of $k$-layerings still hold, so you only have to check  condition (3).
 \end{exercise}
+\begin{solution}
+Consider the route operation, changes made on original edges in $G$ are only limited on the capacity value and the added new edges each has a corresponding reversely directed edge in $G$, which is to say, that if any edge in $G$ satisfied \emph{POINT 3}, then any edge in $G_f$ will not violate \emph{POINT 3}.
+\end{solution}
 
 
 \begin{exercise}
    Show that every network $(G,s,t,c)$ has an optimal layering, provided there is a path
    from $s$ to $t$.
 \end{exercise}
-
-
+\begin{solution}
+Since there is a path from $s$ to $t$, there is a shortest path, say the $dist(s,t)=k$. According to \textbf{Exercise 10.5}, $G$ has a $k-layering$, which is the optimal layering by definition.
+\end{solution}
 \begin{exercise}
    Imagine we are in some iteration of the while-loop of the Ford-Fulkerson method.
    Let $V_0, \dots, V_k$ be an optimal layering of $(G,s,t,c)$. Show that after at most $m$
