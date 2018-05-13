@@ -183,6 +183,9 @@ Since there is a path from $s$ to $t$, there is a shortest path, say the $dist(s
    iteration to iteration of the while-loop, not the partition $V_0,\dots,V_k$. We consider
    the partition $V_0,\dots,V_k$ to be fixed in this exercise.
 \end{exercise}
+\begin{proof}
+  Derived from the difinition of the layering. any flow $f$ can not pass the partition forwarding, which means that flow go from $V_i$ to $V_j$($j > i + 1$) directly is not permitted. Because there is at most $m$ edges from $V_i$ to $V_{i+1}$, after at most $m$ iterations, if more flows want to pass the partition, they need to go back from $V_{i+1}$ to $V_i$, making $dist(s,t)>k$ and $V_0, \dots, V_k$ no longer the optimal layering.
+\end{proof}
 
 \begin{exercise}
 Show that the Edmonds-Karp algorithm terminates after $n \cdot m$ iterations of the
@@ -191,6 +194,14 @@ this layering as long as its optimal. Once it ceases to be optimal, compute a ne
 layering. Note that the Edmonds-Karp algorithm does not actually need to compute any
 layering. It's us who compute it to show that $n \cdot m$ bound on the number of iterations.
 \end{exercise}
+\begin{proof}
+  For the Edmonds-Karp algorithm is a special cases of the Ford-Fulkerson algorithm, when using Edmonds-Karp algorithm, after at most $m$ iterations of the while-loop, $V_0,\dots,V_k$ will cease to be an optimal layering. That is, $dist(s,t)$ is no longer $k$.
+
+  Because the Edmonds-Karp always choose the short path from $s$ to $t$ as $p$, then $dist(s,t) = k'$ is now at least $k+1$. And we have $1 \leq k \leq n$, we can find a new optimal layering at most $n$ times.
+
+  Hence the Edmonds-Karp algorithm terminates after $n \cdot m$ iterations of the
+  while-loop.
+\end{proof}
 
 \begin{exercise}
    Show that every network has a maximum flow $f$.
@@ -199,6 +210,9 @@ layering. It's us who compute it to show that $n \cdot m$ bound on the number of
    sequence of flows $f_1, f_2, f_3, \dots$ of increasing value that does not reach any maximum.
     Use the previous exercises!
 \end{exercise}
+\begin{proof}
+  Using the Edmonds-Karp algorithm, the iteration with be terminated in at most $n \cdot m$ iterations, thus will never producing a infinite sequence. That is, the Edmonds-Karp algorithm will find a maximum flow $f$.
+\end{proof}
 
 
 \end{document}
