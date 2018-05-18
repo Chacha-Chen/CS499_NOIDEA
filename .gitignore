@@ -36,6 +36,7 @@ Temporary Items
 *.cb
 *.cb2
 .*.lb
+*.xdv
 
 ## Build tool auxiliary files:
 *.fdb_latexmk
