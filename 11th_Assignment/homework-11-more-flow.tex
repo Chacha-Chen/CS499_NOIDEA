@@ -35,6 +35,10 @@ graph $H_n [ L_k \cup L_{k+1}]$. See the picture below for an illustration ($n=3
  Show that the bipartite graph $H_n [L_k \cup L_{k+1}]$ has a matching of size $|L_k| = {n \choose k}$.
 \end{exercise}
 
+\begin{proof}
+Since $|\Gamma(L_k)| = \binom{n}{k+1} \ge |L_k|$, $\delta(L_k) \le 0$. According to Hall's Therorem, we can find matchings satisfying $M(A) = |L_k| - \delta(A)$. Then $H_n$ has a matching of size $\binom{n}{k}$.
+\end{proof}
+
 \begin{exercise}
  Let $G = (V,E)$ be a bipartite graph with left side $L$ and right side $R$.
  Suppose $G$ is $d$-regular (every vertex has degree $d$), so in particular $|L| = |R|$.
@@ -42,12 +46,24 @@ graph $H_n [ L_k \cup L_{k+1}]$. See the picture below for an illustration ($n=3
  has a perfect matching (that is, a matching $M$ of size $|L|$).
 \end{exercise}
 
+\begin{proof}
+Since $G$ is $d$-regular, we have $|\Gamma(L_k)| = |R| = |L|$. Also according to Hall's Therorem, we can find a matching with size $|L| - \delta(L) = |L|$, which is a perfect matching.
+\end{proof}
+
 \begin{exercise}
   Let $G$ a $d$-regular bipartite graph. Show that the edges $E(G)$ can be partitioned
   into $d$ perfect matchings. That is, there are matchings $M_1, \dots, M_d \subseteq E(G)$ such that
   (1) $M_i \cap M_j = \emptyset$ for $1 \leq i < j \leq d$ and
   (2) $M_1 \cup M_2 \cup \dots \cup M_d = E(G)$.
 \end{exercise}
+
+\begin{proof}
+We can prove it by induction.\\
+\textbf{Base case}:When $d=1$, we can easily find a perfect matching satisfying two conditions.\\
+\textbf{Induction step}:Assume any $k$-regular bipartite graph $G$ can be partitoned into $k$ perfect matchings. Those matchings are denoted as $M_1, \dots, M_k \subseteq E(G)$. Then we increase the degree of each vertex by 1 by adding $|L|$ edges between $L$ and $R$. We get a new $k+1$-regular bipartite graph $G^{'}$ \\
+The newly added edges consist a perfect maching denoted as $M_{k+1}$. Obviously, $M_i \cap M_j = \emptyset$ for $1 \leq i < j \leq k+1$ and $M_1 \cup M_2 \cup \dots \cup M_{k+1}= E(G^{'})$\\
+Since we can construct and $k+1$-regular bipartite graph from $k$-regular bipartite graph, we can always show that $E(G)$ can be partitionedinto $d$ perfect matchings content with the conditions.
+\end{proof}
 
 \subsection{Networks with Vertex Capacities}
 
@@ -68,7 +84,18 @@ the outflow from a vertex $u$ should not exceed $c(u)$:
       such that every $s$-$t$-flow $f$ in $G$ that respects the vertex capacities
       corresponds to an $s$-$t$-flow $f'$ (of same value) in $G'$ that
       respects edge capacities, and vice versa.
+
+    \begin{solution}
+      For any vertex $v$ in $G$, we replace it with two vertexs $v_in$ and $v_out$ and edge $(v_in,v_out)$ with capacity equal to $c(v)$.\\
+      Then for any edge $(u,v)$ in $G$, we replace it with $(u,v_in)$ and for any edge $(v,u)$ in $G$, we replace it with $(v_out,u)$. Those edges have unlimited capacity.
+    \end{solution}
+
     \item Draw a picture illustrating your solution.
+    \begin{solution}
+      \begin{center}
+      \includegraphics[width=\textwidth]{figures/11.png}
+      \end{center}
+    \end{solution}
     \item Show that there is a polynomial time algorithm solving the
       following problem: Given a directed graph $G = (V,E)$ and two
       vertices $s,t \in V$.  Are there $k$ paths $p_1,\dots,p_k$, each
@@ -76,6 +103,11 @@ the outflow from a vertex $u$ should not exceed $c(u)$:
         disjoint}?  Here, internally vertex disjoint means that for $i
       \ne j$ the paths $p_i,p_j$ share no vertices besides $s$ and
       $t$.
+
+    \begin{proof}
+      Let each vertex capacity be one. Then there are $k$ internally vertex disjoint paths if and only if there is a flow with size $k$.\\
+      Since we can transform a model with vertex capacity to a network with edge capacity, we can use Ford-Fulkerson algorithm to find the maximum flow in polynomial time. Then we can solve this problem in polynomial time.
+    \end{proof}
   \end{enumerate}
 \end{exercise}
 
@@ -89,6 +121,13 @@ the outflow from a vertex $u$ should not exceed $c(u)$:
   (ii) two different paths $p,p'$ do not share any vertices.
 \end{exercise}
 
+\begin{proof}
+\begin{enumerate}
+\item Let each vertex capacity be one.
+\item Add source vertex and target vertex with unlimited capacity, connect source vertex to all vertexs in $L_i$ and all vertexs in $L_{n-i}$ to target vertex.
+\item Transform the vertex capacity network to edge capacity network, then we can use Ford-Fulkerson Algorithm to find the flow of network is $\binom{n}{i}$, which means there are $\binom{n}{i}$ content with the two conditions.
+\end{enumerate}
+\end{proof}
 
 \subsection{Always, Sometimes, or Never Full}
 
@@ -112,6 +151,12 @@ Consider this network:
 \item Indicate which edges are (i) always crossing, (ii) sometimes crossing, (iii) never crossing.
 \end{enumerate}
 \end{exercise}
+\textbf{solution}\\
+\begin{enumerate}
+\item Always full:$e$; Sometimes full:$b,c,d,f,g,h,i$; Never full:$a$.
+\item Always crossing:$e$; Sometiems crossing:None; Never crossing:$a,b,c,d,f,g,h,i$.
+\end{enumerate}
+
 
 \begin{exercise}
 An edge $e$ can be ($x$) always full, ($y$) sometimes full, ($z$) never full; it can be ($x$') always crossing, ($y'$) sometimes crossing, ($z'$) never crossing. So there are nine possible combinations: ($xx'$) always full and always crossing, ($xy'$) always full and sometimes crossing, and so on. Or are there? Maybe some possibilities are impossible.
