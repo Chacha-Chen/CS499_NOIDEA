@@ -28,11 +28,14 @@
    \textbf{Remark.} It sounds obvious. However, find a formal proof that works with the
    axiomatic definition of flows.
 \end{exercise}
-\begin{proof}By flow conservation, $\sum_{w}f(v,w)=0$, for all $v\in V\setminus\{s,t\}$.\\
-Also by definition of the value of a flow, we have:\\
+\begin{proof}
+By definition of the value of a flow, we have:\\
 \begin{align*}
 {\rm val}(f) &= \sum_{w \in V} f(s,w)\\
-&=\sum_{u\in S, w\in V}f(u,w)\\
+\end{align*}
+By flow conservation, $\sum_{w}f(v,w)=0$, for all $v\in V\setminus\{s,t\}$. Hence\\
+\begin{align*}
+\sum_{w \in V} f(s,w)&=\sum_{u\in S, w\in V}f(u,w)\\
 & =\sum_{u \in S}(\sum_{w_1\in S}f(u,w_1)+\sum_{w_2\in V\setminus S}f(u,w_2))\\
 &=\sum_{u \in S, w_1\in S}f(u,w_1)+\sum_{u \in S, w_2\in V\setminus S}f(u,w_2)\\
 &= \sum_{u \in S , v \in V \setminus S} f(u,v)+\sum_{u \in S, w_1\in S}f(u,w_1)
@@ -138,8 +141,17 @@ Prove by construction:\\
 ${\rm dist}(s,t) = k$, suppose the shortest path between $s$ and $t$ are $s$-$v_1$-$\dots$-$v_{k-1}$-$t$. Construction steps are as follows:
 \begin{itemize}
 \item First, add $s$ to $V_0$, $v_1$ to $V_1$, \dots, $v_{k-1}$ to $V_{k-1}$, $t$ to $V_k$.
-\item Consider the vertices that are directly connected with vertices that are already in the partitions, iteratively add them to any partitions as long as the adding satisfies \emph{POINT 3} above.
-\item Recursively do step 2 above until no vertices left (since a flow network is a connected component as a whole).
+\item Consider the vertices that are directly connected with vertices that are already in the partitions, iteratively add them to any partitions as long as the adding satisfies \emph{POINT 3} above.\\
+\textbf{Claim:}\\ There is an assignment such that each vertex satisfies \emph{POINT 3}.\\
+\textbf{Pf.}\\
+Arbitrarily find a path where only the beginning node and the end node have been assigned partitions and all the nodes in between haven't. We need to assign these nodes. The assignment works as follows:
+\begin{itemize}
+\item Suppose, w.l.o.g., the first node $v_i$ is in partition $i$ and the last node $v_j$ is in partition $j$, $i\le j$.
+\item Primarily, we need to prove that the number of the nodes in between is at least $j-i$. Proof by contradiction: If there exists a path, say p*, such that the number of the nodes in between is less than $j-i$, then consider the shortest path $s-v_0-...-v_i-...-v_j-...-v_k-t$, change the subpath $v_i-...-v_j$ with $p*$, a shorter path is obtained, a contradiction.
+\item Recursion is used doing the assignment. When $(i+1)\le (j-1)$, assign the node directly connected to the beginning node $v_i$ with $i+1$ and the node directly connected to the ending node $v_j$ with $j-1$, jump to the first step, that is find another path where only the first and the last nodes have already in partitions. When $(i+1)\> (j-1)$, also we have $i\le j$, hence $i=j-1$ or $i=j$, the node in between is at most $1$, we can assign this node to either partition $i$ or partition $j$.\\
+\\ In conclusion, the assignment above trivially satisfies \emph{Point 3}.
+\end{itemize}
+\item Further, no vertices are left (since a flow network is a connected component as a whole).
 \end{itemize}
 
 \end{proof}
