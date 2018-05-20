@@ -170,5 +170,9 @@ it is possible to be always full and always crossing, and it is possible to be a
 Fill out the table! That is, for each of the remaining seven cases, find out whether it is possible or not. If it is
 possible, draw a (simple) network showing that it is possible; if impossible, give a proof of this fact.
 \end{exercise}
-
+\begin{solution}
+$(zx^{'})$ and $(zy^{'})$ are impossible since the maximum flow cross the edge, it must be full according to the definition.\\
+$(yx^{'})$ and $(yy^{'})$ are impossible. If a network can have various minimum cut, in the maximum flow, all edges in these minimum cut should be full.\\
+$(xz^{'})$ is impossilbe. Since the minimum cut equals to the maximum flow, any edge which is always full can be a part of some minimum cut.\\
+\end{solution}
 \end{document}
