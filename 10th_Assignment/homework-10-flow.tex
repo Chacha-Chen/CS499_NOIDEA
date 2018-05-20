@@ -196,7 +196,7 @@ Since there is a path from $s$ to $t$, there is a shortest path, say the $dist(s
    the partition $V_0,\dots,V_k$ to be fixed in this exercise.
 \end{exercise}
 \begin{proof}
-  Derived from the difinition of the layering. any flow $f$ can not pass the partition forwarding, which means that flow go from $V_i$ to $V_j$($j > i + 1$) directly is not permitted. Because there is at most $m$ edges from $V_i$ to $V_{i+1}$, after at most $m$ iterations, if more flows want to pass the partition, they need to go back from $V_{i+1}$ to $V_i$, making $dist(s,t)>k$ and $V_0, \dots, V_k$ no longer the optimal layering.
+  Derived from the difinition of the layering. any flow $f$ can not pass the partition forwarding, which means that flow go from $V_i$ to $V_j$($j > i + 1$) directly is not permitted. Because there is at most $m$ edges from $V_i$ to $V_{i+1}$, after at most $m$ iterations, if more flows want to pass the partition, they need to go back from $V_{i+1}$ to $V_j$($j\leq i+1$), making $dist(s,t)>k$ and $V_0, \dots, V_k$ no longer the optimal layering.
 \end{proof}
 
 \begin{exercise}
