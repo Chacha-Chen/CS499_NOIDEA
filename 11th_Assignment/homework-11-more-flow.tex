@@ -47,7 +47,7 @@ Since $|\Gamma(L_k)| = \binom{n}{k+1} \ge |L_k|$, $\delta(L_k) \le 0$. According
 \end{exercise}
 
 \begin{proof}
-Since $G$ is $d$-regular, we have $|\Gamma(L_k)| = |R| = |L|$. Also according to Hall's Therorem, we can find a matching with size $|L| - \delta(L) = |L|$, which is a perfect matching.
+Since $G$ is $d$-regular, we have $|\Gamma(L)| = |R|$ as each vertex is connected to ones in $L$. As we already know $|R| = |L|$, according to Hall's Therorem, we can find a matching with size $|L| - \delta(L) = |L|$, which is a perfect matching.
 \end{proof}
 
 \begin{exercise}
@@ -125,7 +125,7 @@ the outflow from a vertex $u$ should not exceed $c(u)$:
 \begin{enumerate}
 \item Let each vertex capacity be one.
 \item Add source vertex and target vertex with unlimited capacity, connect source vertex to all vertexs in $L_i$ and all vertexs in $L_{n-i}$ to target vertex.
-\item Transform the vertex capacity network to edge capacity network, then we can use Ford-Fulkerson Algorithm to find the flow of network is $\binom{n}{i}$, which means there are $\binom{n}{i}$ content with the two conditions.
+\item Transform the vertex capacity network to edge capacity network according to above method. Asd the minimum cut is $\binom{n}{i}$, we are supposed to find $\binom{n}{i}$ disjoint paths through Ford-Fulkerson Algorithm, which means there are $\binom{n}{i}$ paths content with the two conditions.
 \end{enumerate}
 \end{proof}
 
@@ -162,8 +162,7 @@ Consider this network:
 An edge $e$ can be ($x$) always full, ($y$) sometimes full, ($z$) never full; it can be ($x$') always crossing, ($y'$) sometimes crossing, ($z'$) never crossing. So there are nine possible combinations: ($xx'$) always full and always crossing, ($xy'$) always full and sometimes crossing, and so on. Or are there? Maybe some possibilities are impossible.
 Let's draw a table:
 \begin{center}
-\includegraphics[width=0.8\textwidth]{figures/always-somtimes-never-table.pdf} \\
-\small The nine possible cases, some of which are maybe impossible.
+\includegraphics[width=0.8\textwidth]{figures/11-1.png} \\
 \end{center}
 The two very simple flow networks in the table already show that $(xx')$ and $(yy')$ are possible; that is,
 it is possible to be always full and always crossing, and it is possible to be always full and sometimes crossing.
