@@ -67,16 +67,3 @@ Dominik Scheder, Shanghai Jiaotong University
    2. Networks with Vertex Capacities
    3. Always, Sometimes, or Never Full
 
-## 轮换工作制(已废弃)
-
-- 轮流写作业，一个part分工一个人。
-- 周六提交初稿，大家校对&提意见，修改完，附上questions之后提交 TA & Dominik。
-
-
-| 周数   | 1    | 2    |
-| ---- | ---- | ---- |
-| txy  | 0    | 1    |
-| gyf  | 1    | 0    |
-| qwx  | 1    | 0    |
-| ccc  | 1    | 0    |
-| zyl  | 0    | 1    |
