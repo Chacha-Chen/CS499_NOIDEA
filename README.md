@@ -5,7 +5,7 @@ Dominik Scheder, Shanghai Jiaotong University
 
 ## Table of Contents
 
-### Hw 01
+### Hw 01 (98/100)
 
 1. Broken Chessboard and Jumping With Coins
    1. Tiling a Damaged Checkerboard
@@ -21,7 +21,7 @@ Dominik Scheder, Shanghai Jiaotong University
    2. Chains and Antichains
    3. Infinite Sets
 
-### Hw 03
+### Hw 03 (50/50)
 
 1. Basic Counting
 
