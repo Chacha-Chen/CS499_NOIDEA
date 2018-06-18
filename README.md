@@ -10,8 +10,7 @@ Dominik Scheder, Shanghai Jiaotong University
 1. Broken Chessboard and Jumping With Coins
    1. Tiling a Damaged Checkerboard
    2. Jumping with Coins
-2. Exclusion-Inclusion
-   1. Sets
+2. Exclusion-Inclusion Theorem
 3. Feasible Intersection Patterns
 
 ### Hw 02
@@ -19,6 +18,9 @@ Dominik Scheder, Shanghai Jiaotong University
 1. Partial Ordering
    1. Equivalence Relations as a Partial Ordering
    2. Chains and Antichains
+      1. Mirsky's Theorem: maximum chain(height) = minimum anti-chain partition
+      2. Dilworth'S Theorem: maximum antichaim(weight) = minimum chain partition
+      4. Erdös-Szekeres Theore
    3. Infinite Sets
 
 ### Hw 03 (50/50)
