@@ -20,7 +20,7 @@ Dominik Scheder, Shanghai Jiaotong University
    2. Chains and Antichains
       1. Mirsky's Theorem: maximum chain(height) = minimum anti-chain partition
       2. Dilworth'S Theorem: maximum antichaim(weight) = minimum chain partition
-      4. Erdös-Szekeres Theore
+      4. Erdös-Szekeres Theorem
    3. Infinite Sets
 
 ### Hw 03 (50/50)
