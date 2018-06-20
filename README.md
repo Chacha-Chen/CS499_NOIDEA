@@ -5,13 +5,12 @@ Dominik Scheder, Shanghai Jiaotong University
 
 ## Table of Contents
 
-### Hw 01
+### Hw 01 (98/100)
 
 1. Broken Chessboard and Jumping With Coins
    1. Tiling a Damaged Checkerboard
    2. Jumping with Coins
-2. Exclusion-Inclusion
-   1. Sets
+2. Exclusion-Inclusion Theorem
 3. Feasible Intersection Patterns
 
 ### Hw 02
@@ -19,9 +18,12 @@ Dominik Scheder, Shanghai Jiaotong University
 1. Partial Ordering
    1. Equivalence Relations as a Partial Ordering
    2. Chains and Antichains
+      1. Mirsky's Theorem: maximum chain(height) = minimum anti-chain partition
+      2. Dilworth'S Theorem: maximum antichaim(weight) = minimum chain partition
+      4. Erdös-Szekeres Theorem
    3. Infinite Sets
 
-### Hw 03
+### Hw 03 (50/50)
 
 1. Basic Counting
 
@@ -67,16 +69,3 @@ Dominik Scheder, Shanghai Jiaotong University
    2. Networks with Vertex Capacities
    3. Always, Sometimes, or Never Full
 
-## 轮换工作制(已废弃)
-
-- 轮流写作业，一个part分工一个人。
-- 周六提交初稿，大家校对&提意见，修改完，附上questions之后提交 TA & Dominik。
-
-
-| 周数   | 1    | 2    |
-| ---- | ---- | ---- |
-| txy  | 0    | 1    |
-| gyf  | 1    | 0    |
-| qwx  | 1    | 0    |
-| ccc  | 1    | 0    |
-| zyl  | 0    | 1    |
